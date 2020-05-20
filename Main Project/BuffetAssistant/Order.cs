@@ -10,7 +10,8 @@ namespace BuffetAssistant.Classes
     {
         Ready,
         Unready,
-        Cancle
+        Cancle,
+        Paid
     }
     class Order
     {
