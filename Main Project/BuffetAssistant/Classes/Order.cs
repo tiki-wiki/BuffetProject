@@ -30,5 +30,16 @@ namespace BuffetAssistant.Classes
             get { return name; }
             set { name = value; }
         }
+        public Order()
+        {
+
+        }
+        public Order(int id,string name,double totalPrice,Status state,int quantity)
+        {
+            this.id = id;
+            this.name = name;
+            this.totalPrice = totalPrice;
+            this.state = state;
+        }
     }
 }
