@@ -17,7 +17,7 @@ namespace BuffetAssistant.Classes
     {
         private int id;
         private string name;
-        private double totalPricel;
+        private double totalPrice;
         private Status state;
         private int Quantity;
         public int ID
