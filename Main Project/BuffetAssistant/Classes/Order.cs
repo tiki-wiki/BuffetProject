@@ -16,5 +16,10 @@ namespace BuffetAssistant.Classes
             get { return id; }
             set { id = value; }
         }
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
     }
 }
