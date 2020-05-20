@@ -10,13 +10,16 @@ namespace BuffetAssistant.Classes
     {
         Ready,
         Unready,
-        Cancle
+        Cancle,
+        Paid
     }
     class Order
     {
         private int id;
         private string name;
         private double totalPricel;
+        private Status state;
+        private int Quantity;
         public int ID
         {
             get { return id;}
