@@ -22,6 +22,7 @@ namespace BuffetAssistant.Classes
             get { return id;}
             set { id = value; }
         }
+        //Hello
         public string Name
         {
             get { return name; }
