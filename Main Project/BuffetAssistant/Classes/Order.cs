@@ -17,5 +17,10 @@ namespace BuffetAssistant.Classes
         private int id;
         private string name;
         private double totalPricel;
+        public int ID
+        {
+            get { return id;}
+            set { id = value; }
+        }
     }
 }
