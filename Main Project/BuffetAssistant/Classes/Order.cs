@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace BuffetAssistant.Classes
 {
+    public enum Status
+    {
+        Ready,
+        Unready,
+        Cancle
+    }
     class Order
     {
-
+        private int id;
+        private string name;
+        private double totalPricel;
     }
 }
