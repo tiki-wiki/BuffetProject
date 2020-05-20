@@ -9,5 +9,6 @@ namespace BuffetAssistant.Classes
     class Order
     {
         private int id;
+        private string name;
     }
 }
