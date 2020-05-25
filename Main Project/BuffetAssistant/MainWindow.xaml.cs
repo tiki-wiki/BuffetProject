@@ -30,7 +30,8 @@ namespace BuffetAssistant
             o1.Quantity = 50;
             o1.TotalPrice = 25000;
 
-            hamInfo.Text=o1.ID.ToString()+"\n"+o1.Name+"\n"+o1
+            hamInfo.Text = "Id:"+o1.ID.ToString() + "\n"+"Name:" + o1.Name + "\n"+"Quantity:" + 
+                o1.Quantity.ToString() + "\n"+"TotalPrice:" + o1.TotalPrice.ToString();
         }
     }
 }
