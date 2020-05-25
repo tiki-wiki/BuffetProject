@@ -37,7 +37,13 @@ namespace BuffetAssistant
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (EXP.IsExpanded == true)
+            {
+                orderListBox.Items.Add("Order 1");
+                orderListBox.Items.Add(o1.ID);
                 orderListBox.Items.Add(o1.Name);
+                orderListBox.Items.Add(o1.Quantity);
+                orderListBox.Items.Add(o1.TotalPrice);
+            }
         }
     }
 }
