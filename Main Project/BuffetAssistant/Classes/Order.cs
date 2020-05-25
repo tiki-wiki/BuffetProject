@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
+using System.Reflection;
 
 namespace BuffetAssistant.Classes
 {
@@ -65,7 +67,11 @@ namespace BuffetAssistant.Classes
         }
         public Order()
         {
-
+            this.id = 0;
+            this.name = "No Name";
+            this.totalPrice = 0;
+            this.state = Status.Unready;
+            this.quantity = 1;
         }
     }
 }
