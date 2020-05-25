@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="492.5" Width="853.75">
     <Grid Margin="0,0,2,1">
-        <StackPanel Width="330" Margin="49,41,467.8,77.2" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="741*"/>
+            <ColumnDefinition Width="106*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Width="330" Margin="49,41,361.7,77.2" >
             <Border BorderBrush="Black" BorderThickness="2" Width="330" Height="347">
                 <StackPanel Margin="0,0,0,-1.8">
                     <Image Source="http://uupload.ir/files/g6b2_image.jpg" Margin="10,10,221,10" Height="70" />
@@ -20,9 +24,8 @@
                 </StackPanel>
             </Border>
         </StackPanel>
-        <ListBox Name="orderListBox"  Width="400" Height="350" Margin="369,14,23,55">
-        </ListBox>
-        <Button Width="100" Height="40" Click="Button_Click" Content="Add" Margin="370,369,322,10"/>
-        <Button Width="100" Height="40" Content="Remove" Margin="486,369,206,10"/>
+        <ListBox Name="orderListBox" Height="350" Margin="396,37,3.7,77.2"/>
+        <Button Width="100" Height="40" Click="Button_Click" Content="Add" Margin="397,392,243.7,32.2"/>
+        <Button Width="100" Height="40" Content="Remove" Margin="513,392,127.7,32.2"/>
     </Grid>
 </Window>
