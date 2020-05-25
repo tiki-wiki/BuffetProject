@@ -45,19 +45,21 @@ namespace BuffetAssistant.Classes
             get { return quantity; }
             set
             {
-                if (quantity >0)
-                {
+                if (quantity > 0)
                     quantity = value;
-                }
             }
         }
         public double TotalPrice
         {
             get { return totalPrice; }
-            set { totalPrice = value; }
+            set
+            {
+                if (totalPrice > 0)
+                    totalPrice = value;
+            }
         }
         //constructors
-        public Order(int id,string name,double totalPrice,Status state,int quantity)
+        public Order(int id, string name, double totalPrice, Status state, int quantity)
         {
             this.id = id;
             this.name = name;
