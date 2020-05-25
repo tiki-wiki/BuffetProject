@@ -40,7 +40,7 @@ namespace BuffetAssistant.Classes
             get { return quantity; }
             set
             {
-                if (quantity < -1)
+                if (quantity >0)
                 {
                     quantity = value;
                 }
@@ -49,13 +49,15 @@ namespace BuffetAssistant.Classes
         public double TotalPrice
         {
             get { return totalPrice; }
-            set
-            {
-                if (totalPrice < -1)
-                {
-                    totalPrice = value;
-                }
-            }
+            set { totalPrice = value; }
+        }
+        public Order(int id,string name,double totalPrice,Status state,int quantity)
+        {
+            this.id = id;
+            this.name = name;
+            this.totalPrice = totalPrice;
+            this.state = state;
+            this.quantity = quantity;
         }
     }
 }
