@@ -7,10 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel Width="330" Height="340" Margin="10,10,430,10" >
-            <Border BorderBrush="Black" BorderThickness="2" Width="330" Height="340">
-                <Image Source="http://uupload.ir/files/g6b2_image.jpg" Margin="8,-2,200,225" />
+        <StackPanel Width="330" Margin="23,41,442.2,56.8" >
+            <Border BorderBrush="Black" BorderThickness="2" Width="330" Height="322">
+                <StackPanel Margin="0,0,0,8">
+                    <Image Source="http://uupload.ir/files/g6b2_image.jpg" Margin="10,10,249,10" Height="55" />
+                    <TextBlock Text="همبرگر" Margin="28,-10,242,10" Height="20"/>
+                </StackPanel>
             </Border>
         </StackPanel>
+        <ListBox Width="400" Height="350" Margin="369,14,23,55"></ListBox>
+        <Button Width="100" Height="40" Content="Add" Margin="370,369,322,10"/>
+        <Button Width="100" Height="40" Content="Remove" Margin="486,369,206,10"/>
     </Grid>
 </Window>
