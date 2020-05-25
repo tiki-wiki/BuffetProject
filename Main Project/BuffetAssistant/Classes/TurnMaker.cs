@@ -13,8 +13,9 @@ namespace BuffetAssistant.Classes
 
         public static int MakeTurn()
         {
-            Random randomNumber = new Random();
+            Random randomNumber = new Random(SIZE);
             turnNumber = randomNumber.Next();
+            return turnNumber;
         }
     }
 }
