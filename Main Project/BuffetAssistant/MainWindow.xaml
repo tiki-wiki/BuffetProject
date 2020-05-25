@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="492.5" Width="853.75">
     <Grid Margin="0,0,2,1">
-        <StackPanel Width="330" Margin="23,41,442.2,56.8" >
-            <Border BorderBrush="Black" BorderThickness="2" Width="330" Height="322">
-                <StackPanel Margin="0,0,0,8">
+        <StackPanel Width="330" Margin="49,41,467.8,77.2" >
+            <Border BorderBrush="Black" BorderThickness="2" Width="330" Height="347">
+                <StackPanel Margin="0,0,0,-1.8">
                     <Image Source="http://uupload.ir/files/g6b2_image.jpg" Margin="10,10,249,10" Height="55" />
                     <Expander IsExpanded="False" Height="70" Margin="3,0,10,0">
                         <Expander.Header>
