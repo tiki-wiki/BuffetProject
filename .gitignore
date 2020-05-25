@@ -9,7 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
-*.catche
+*.cache
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -359,3 +359,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 Main Project/BuffetAssistant/.vs/BuffetAssistant/v16/.suo
+Main Project/BuffetAssistant/.vs/BuffetAssistant/v16/.suo
+Main Project/BuffetAssistant/obj/Debug/DesignTimeResolveAssemblyReferences.cache
