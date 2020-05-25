@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="492.5" Width="853.75">
+    <Grid Margin="0,0,2,1">
         <StackPanel Width="330" Margin="23,41,442.2,56.8" >
             <Border BorderBrush="Black" BorderThickness="2" Width="330" Height="322">
                 <StackPanel Margin="0,0,0,8">
