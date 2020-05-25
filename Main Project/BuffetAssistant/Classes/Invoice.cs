@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace BuffetAssistant.Classes
 {
@@ -13,7 +14,7 @@ namespace BuffetAssistant.Classes
         private int turnNumber;
         private double totalPrice;
         private DateTime date;
-        private Image icon;
+        private ImageSource icon;
         private string thank;
         public int ID
         {
@@ -49,7 +50,6 @@ namespace BuffetAssistant.Classes
             get { return thank; }
             set { thank = value; }
         }
-
         
     }
 }
