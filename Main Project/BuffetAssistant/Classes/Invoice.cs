@@ -40,7 +40,7 @@ namespace BuffetAssistant.Classes
             get { return date; }
             set { date = value; }
         }
-        public Image Icon
+        public ImageSource Icon
         {
             get { return icon; }
             set { icon = value; }
