@@ -11,10 +11,11 @@
             <Border BorderBrush="Black" BorderThickness="2" Width="330" Height="322">
                 <StackPanel Margin="0,0,0,8">
                     <Image Source="http://uupload.ir/files/g6b2_image.jpg" Margin="10,10,249,10" Height="55" />
-                    <Expander>
+                    <Expander IsExpanded="False">
                         <Expander.Header>
                             <TextBlock Text="همبرگر" Margin="0,-10,0,10" Height="21"/>
                         </Expander.Header>
+                        <TextBlock Name="hamInfo" Width="200"/>
                     </Expander>
                 </StackPanel>
             </Border>

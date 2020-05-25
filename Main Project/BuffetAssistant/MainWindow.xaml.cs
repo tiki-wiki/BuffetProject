@@ -24,6 +24,13 @@ namespace BuffetAssistant
         public MainWindow()
         {
             InitializeComponent();
+            Order o1 = new Order();
+            o1.ID = 1;
+            o1.Name = "Hamburger";
+            o1.Quantity = 50;
+            o1.TotalPrice = 25000;
+
+            hamInfo.Text=o1.ID.ToString()+"\n"+o1.Name+"\n"+o1
         }
     }
 }
