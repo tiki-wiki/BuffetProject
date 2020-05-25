@@ -8,5 +8,11 @@ namespace BuffetAssistant.Classes
 {
     class TurnMaker
     {
+        private int turnNumber;
+
+        public static int MakeTurn()
+        {
+
+        }
     }
 }
