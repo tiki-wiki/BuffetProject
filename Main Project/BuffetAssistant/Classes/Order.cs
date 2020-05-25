@@ -8,6 +8,7 @@ using System.Reflection;
 
 namespace BuffetAssistant.Classes
 {
+    //Order States
     public enum Status
     {
         Ready,
@@ -28,7 +29,11 @@ namespace BuffetAssistant.Classes
         public int ID
         {
             get { return id; }
-            set { id = value; }
+            set
+            {
+                if (id > 0)
+                    id = value;
+            }
         }
         public string Name
         {
@@ -52,11 +57,7 @@ namespace BuffetAssistant.Classes
         public double TotalPrice
         {
             get { return totalPrice; }
-            set
-            {
-                if (totalPrice > 0)
-                    totalPrice = value;
-            }
+            set { totalPrice = value; }
         }
         //constructors
         public Order(int id, string name, double totalPrice, Status state, int quantity)

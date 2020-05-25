@@ -24,7 +24,7 @@ namespace BuffetAssistant.Classes
         }
         public NormalOrder()
         {
-            this.id = 0;
+            this.id = 1;
             this.name = "No Name";
             this.totalPrice = 0;
             this.state = Status.Unready;

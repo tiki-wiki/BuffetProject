@@ -66,6 +66,7 @@
     </Compile>
     <Compile Include="Classes\NormalOrder.cs" />
     <Compile Include="Classes\Order.cs" />
+    <Compile Include="Classes\Payment.cs" />
     <Compile Include="Classes\SpecialOrder.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

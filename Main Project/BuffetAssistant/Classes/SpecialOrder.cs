@@ -35,9 +35,9 @@ namespace BuffetAssistant.Classes
         }
         public SpecialOrder()
         {
-            this.id = 0;
+            this.id = 1;
             this.name = "No Name";
-            this.totalPrice = 0;
+            this.specialPrice = 0;
             this.state = Status.Unready;
             this.quantity = 1;
         }
