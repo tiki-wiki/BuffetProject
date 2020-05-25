@@ -15,11 +15,14 @@ namespace BuffetAssistant.Classes
     }
     class Order
     {
+        //fields
         private int id;
         private string name;
         private double totalPrice;
         private Status state;
         private int quantity;
+
+        //properties
         public int ID
         {
             get { return id; }
@@ -51,6 +54,7 @@ namespace BuffetAssistant.Classes
             get { return totalPrice; }
             set { totalPrice = value; }
         }
+        //constructors
         public Order(int id,string name,double totalPrice,Status state,int quantity)
         {
             this.id = id;
@@ -58,6 +62,10 @@ namespace BuffetAssistant.Classes
             this.totalPrice = totalPrice;
             this.state = state;
             this.quantity = quantity;
+        }
+        public Order()
+        {
+
         }
     }
 }
