@@ -19,7 +19,7 @@ namespace BuffetAssistant.Classes
         private string name;
         private double totalPrice;
         private Status state;
-        private int Quantity;
+        private int quantity;
         public int ID
         {
             get { return id; }
@@ -30,16 +30,32 @@ namespace BuffetAssistant.Classes
             get { return name; }
             set { name = value; }
         }
-        public Order()
+        public Status State
         {
-
+            get { return state; }
+            set { state = value; }
         }
-        public Order(int id,string name,double totalPrice,Status state,int quantity)
+        public int Quantity
         {
-            this.id = id;
-            this.name = name;
-            this.totalPrice = totalPrice;
-            this.state = state;
+            get { return quantity; }
+            set
+            {
+                if (quantity < -1)
+                {
+                    quantity = value;
+                }
+            }
+        }
+        public double TotalPrice
+        {
+            get { return totalPrice; }
+            set
+            {
+                if (totalPrice < -1)
+                {
+                    totalPrice = value;
+                }
+            }
         }
     }
 }
