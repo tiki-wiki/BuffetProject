@@ -24,20 +24,12 @@ namespace BuffetAssistant.Classes
         public int ID
         {
             get { return id; }
-            set
-            {
-                if (id > 0)
-                    id = value;
-            }
+            set { id = value; }
         }
         public List<Order>Orders
         {
             get { return orders; }
-            set
-            {
-                if (orders.Count > 0)
-                    orders = value;
-            }
+            set { orders = value; }
         }
         public string Details
         {
@@ -47,11 +39,7 @@ namespace BuffetAssistant.Classes
         private double Total
         {
             get { return total; }
-            set
-            {
-                if (total > 0)
-                    total = value;
-            }
+            set{total = value;}
         }
         public DateTime Date
         {
