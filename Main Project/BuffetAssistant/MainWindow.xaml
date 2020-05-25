@@ -20,7 +20,13 @@
                 </StackPanel>
             </Border>
         </StackPanel>
-        <ListBox Name="orderListBox"  Width="400" Height="350" Margin="369,14,23,55"></ListBox>
+        <ListBox Name="orderListBox"  Width="400" Height="350" Margin="369,14,23,55">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <Button Width="100" Height="40" Click="Button_Click" Content="Add" Margin="370,369,322,10"/>
         <Button Width="100" Height="40" Content="Remove" Margin="486,369,206,10"/>
     </Grid>
