@@ -46,5 +46,14 @@ namespace BuffetAssistant
                 EXP.IsExpanded = false;
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+        
+            if (orderListBox.SelectedItems.Count!=0)
+            {
+                orderListBox.Items.Remove(orderListBox.SelectedItem);
+            }
+        }
     }
 }
