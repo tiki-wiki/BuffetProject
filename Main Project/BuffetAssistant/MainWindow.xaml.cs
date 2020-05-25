@@ -43,6 +43,7 @@ namespace BuffetAssistant
                 orderListBox.Items.Add(o1.Name);
                 orderListBox.Items.Add(o1.Quantity);
                 orderListBox.Items.Add(o1.TotalPrice);
+                EXP.IsExpanded = false;
             }
         }
     }
