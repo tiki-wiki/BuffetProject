@@ -9,10 +9,7 @@
     <Grid>
         <StackPanel Width="330" Height="340" Margin="10,10,430,10" >
             <Border BorderBrush="Black" BorderThickness="2" Width="330" Height="340">
-                <StackPanel>
-                    <Image Source="http://uupload.ir/files/g6b2_image.jpg" Margin="8,-2,200,225" />
-                    <TextBlock Text="Hambergur"/>
-                </StackPanel>
+                <Image Source="http://uupload.ir/files/g6b2_image.jpg" Margin="8,-2,200,225" />
             </Border>
         </StackPanel>
     </Grid>
