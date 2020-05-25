@@ -8,10 +8,9 @@ namespace BuffetAssistant.Classes
 {
     class TurnMaker
     {
-        private static int turnNumber;
+        private int turnNumber;
         private const int SIZE = 2000;
-
-        public static int MakeTurn()
+        public int MakeTurn()
         {
             Random randomNumber = new Random(SIZE);
             turnNumber = randomNumber.Next();
