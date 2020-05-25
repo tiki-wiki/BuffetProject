@@ -21,21 +21,23 @@ namespace BuffetAssistant
     /// </summary>
     public partial class MainWindow : Window
     {
+        Order o1;
         public MainWindow()
         {
             InitializeComponent();
-            Order o1 = new Order();
+            o1 = new Order();
             o1.ID = 4;
             o1.Name = "Hamburger";
             o1.Quantity = 50;
             o1.TotalPrice = 2500;
-            hamInfo.Text = "Id:"+o1.ID.ToString() + "\n"+"Name:" + o1.Name + "\n"+"Quantity:" + 
-                o1.Quantity.ToString() + "\n"+"TotalPrice: "+ o1.TotalPrice.ToString()+"$";
+            hamInfo.Text = "Id:" + o1.ID.ToString() + "\n" + "Name:" + o1.Name + "\n" + "Quantity:" +
+                o1.Quantity.ToString() + "\n" + "TotalPrice: " + o1.TotalPrice.ToString() + "$";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           
+            if (EXP.IsExpanded == true)
+                orderListBox.Items.Add(o1.Name);
         }
     }
 }
