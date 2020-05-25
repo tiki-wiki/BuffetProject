@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BuffetAssistant.Classes
 {
-    class SpecialOrder:Order
+    class SpecialOrder : Order
     {
         //fields
         private int id;
@@ -21,11 +21,10 @@ namespace BuffetAssistant.Classes
             get { return specialPrice; }
             set
             {
-                if (specialPrice > 0)
-                    specialPrice = value;
+                specialPrice = value;
             }
         }
-        public SpecialOrder(int id,string name,double specialPrice,Status state,int quantity)
+        public SpecialOrder(int id, string name, double specialPrice, Status state, int quantity)
         {
             this.id = id;
             this.name = name;

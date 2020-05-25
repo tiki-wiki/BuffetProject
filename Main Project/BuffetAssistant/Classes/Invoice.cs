@@ -31,8 +31,7 @@ namespace BuffetAssistant.Classes
             get { return totalPrice; }
             set
             {
-                if (totalPrice > 0)
-                    totalPrice = value;
+                totalPrice = value;
             }
         }
         public DateTime Date
@@ -50,6 +49,6 @@ namespace BuffetAssistant.Classes
             get { return thank; }
             set { thank = value; }
         }
-        
+
     }
 }

@@ -29,11 +29,7 @@ namespace BuffetAssistant.Classes
         public int ID
         {
             get { return id; }
-            set
-            {
-                if (id > 0)
-                    id = value;
-            }
+            set { id = value; }
         }
         public string Name
         {
@@ -50,8 +46,7 @@ namespace BuffetAssistant.Classes
             get { return quantity; }
             set
             {
-                if (quantity > 0)
-                    quantity = value;
+                quantity = value;
             }
         }
         public double TotalPrice
