@@ -32,5 +32,10 @@ namespace BuffetAssistant
             hamInfo.Text = "Id:"+o1.ID.ToString() + "\n"+"Name:" + o1.Name + "\n"+"Quantity:" + 
                 o1.Quantity.ToString() + "\n"+"TotalPrice:" + o1.TotalPrice.ToString();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
