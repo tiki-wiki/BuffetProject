@@ -30,7 +30,5 @@ namespace BuffetAssistant.Classes
             this.state = Status.Unready;
             this.quantity = 1;
         }
-        //hello
-       
     }
 }
