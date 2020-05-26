@@ -10,7 +10,7 @@
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}"/>
     </Window.Background>
-
     <Grid>
+        
     </Grid>
 </Window>
