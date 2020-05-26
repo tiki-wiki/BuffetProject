@@ -32,7 +32,7 @@
             </Button.Resources>
         </Button>
         
-        <Button Background="SkyBlue" Name="settingButton" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="1"  FontSize="24" FontFamily="BNazanin">
+        <Button Style="{StaticResource ButtonBack}" Name="settingButton" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="1"  FontSize="24" FontFamily="BNazanin">
             <StackPanel Orientation="Vertical">
                 <Image Source="http://uupload.ir/files/sy3_32.png" Width="90" Height="90"/>
                 <TextBlock Text="تنظیمات"/>

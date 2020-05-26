@@ -5,5 +5,17 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
+        <ResourceDictionary>
+            <Style x:Key="ButtonBack" TargetType="Button">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <GradientStop Color="SkyBlue" Offset="0.1"/>
+                            <GradientStop Color="White" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

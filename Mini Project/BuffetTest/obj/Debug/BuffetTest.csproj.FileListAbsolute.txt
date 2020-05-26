@@ -28,3 +28,4 @@ D:\Temp\BuffetProject\Mini Project\BuffetTest\obj\Debug\BuffetTest.csproj.Genera
 D:\Temp\BuffetProject\Mini Project\BuffetTest\obj\Debug\BuffetTest.csproj.CoreCompileInputs.cache
 D:\Temp\BuffetProject\Mini Project\BuffetTest\obj\Debug\BuffetTest.exe
 D:\Temp\BuffetProject\Mini Project\BuffetTest\obj\Debug\BuffetTest.pdb
+D:\Temp\BuffetProject\Mini Project\BuffetTest\obj\Debug\App.baml
