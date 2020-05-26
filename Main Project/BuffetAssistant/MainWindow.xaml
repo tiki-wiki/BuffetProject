@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
-        Title="MainWindow" Height="492.5" Width="853.75" WindowStyle="None" PreviewMouseDown="Window_PreviewMouseDown">
+        Title="MainWindow" Height="492.5" Width="853.75" WindowStyle="None"  PreviewMouseDown="Window_PreviewMouseDown">
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}"/>
     </Window.Background>
-    
-    <WrapPanel>
-        
-    </WrapPanel>
+
+    <Grid>
+        <Button Margin="117,318,539,61"/>
+    </Grid>
 </Window>
