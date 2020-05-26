@@ -9,4 +9,7 @@
     <Window.Background>
         <ImageBrush ImageSource="Images\MainWindowBackground.jpeg"/>
     </Window.Background>
+    <Grid>
+        
+    </Grid>
 </Window>
