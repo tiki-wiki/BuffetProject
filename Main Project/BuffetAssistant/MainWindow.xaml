@@ -6,23 +6,6 @@
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
         Title="MainWindow" Height="492.5" Width="853.75">
-    <Grid Margin="0,0,2,1">
-        <StackPanel Width="330" Margin="49,41,467.8,77.2" >
-            <Border BorderBrush="Black" BorderThickness="2" Width="330" Height="347">
-                <StackPanel Margin="0,0,0,-1.8">
-                    <Image Source="http://uupload.ir/files/g6b2_image.jpg" Margin="10,10,221,10" Height="70" />
-                    <Expander Name="EXP"  IsExpanded="False" Height="121" Margin="3,0,10,0">
-                        <Expander.Header>
-                            <TextBlock Text="همبرگر" Margin="0,-10,0,10" Height="21"/>
-                        </Expander.Header>
-                        <TextBlock Name="hamInfo" Margin="0,0,-1.4,0" Height="87"/>
-                    </Expander>
-                </StackPanel>
-            </Border>
-        </StackPanel>
-        <ListBox Name="orderListBox"  Width="400" Height="350" Margin="369,14,23,55">
-        </ListBox>
-        <Button Width="100" Height="40" Click="Button_Click" Content="Add" Margin="370,369,322,10"/>
-        <Button Width="100" Height="40" Content="Remove" Click="Button_Click_1" Margin="486,369,206,10"/>
+    <Grid >
     </Grid>
 </Window>
