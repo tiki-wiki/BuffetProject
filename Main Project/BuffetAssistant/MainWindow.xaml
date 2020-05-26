@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuffetAssistant"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="MainWindow" Height="492.5" Width="853.75" WindowStyle="None"  PreviewMouseDown="Window_PreviewMouseDown">
     <Window.Background>
@@ -11,6 +12,5 @@
     </Window.Background>
 
     <Grid>
-        <Button Margin="117,318,539,61"/>
     </Grid>
 </Window>
