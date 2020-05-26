@@ -12,24 +12,24 @@
             <!--main window backgound-->
             <BitmapImage x:Key="MainwindowBackground" UriSource="Images\MainWindowBackground.jpeg"/>
 
-            <!--main window styles-->
-
-            <Style x:Key="mainButtonColor" TargetType="Button">
+            
+            <Style x:Key="buttonColor" TargetType="Button">
                 <Style.Setters>
                     <Setter Property="Background">
                         <Setter.Value>
                             <LinearGradientBrush>
                                 <GradientStop Color="Green" Offset="0.1"/>
-                                <GradientStop Color="White" Offset="1.2"/>
+                                <GradientStop Color="Green" Offset="1.0"/>
                             </LinearGradientBrush>
                         </Setter.Value>
                     </Setter>
-                    <Setter Property="Width" Value="160"/>
-                    <Setter Property="Height" Value="85"/>
                 </Style.Setters>
             </Style>
-            <Style x:Key="mainButtonStyle" TargetType="Border" BasedOn="{StaticResource mainButtonColor}">
-                <Setter Property="CornerRadius" Value="750"/>
+
+            <Style x:Key="borderButton" TargetType="Border">
+                <Style.Setters>
+                    <Setter Property="CornerRadius" Value="750"/>
+                </Style.Setters>
             </Style>
         </ResourceDictionary>
     </Application.Resources>
