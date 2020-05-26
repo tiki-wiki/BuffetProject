@@ -11,6 +11,10 @@
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}"/>
     </Window.Background>
     <Grid>
-        
+        <WrapPanel Margin="0,0,413.8,-0.4"  >
+            <Border>
+
+            </Border>
+        </WrapPanel>
     </Grid>
 </Window>
