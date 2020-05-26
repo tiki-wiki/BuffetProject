@@ -21,10 +21,14 @@ namespace BuffetAssistant
     /// </summary>
     public partial class MainWindow : Window
     {
-        Order o1;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }
