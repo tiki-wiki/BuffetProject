@@ -11,10 +11,19 @@
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}"/>
     </Window.Background>
     <Grid>
-        <WrapPanel Margin="0,0,413.8,-0.4"  >
-            <Border>
-
-            </Border>
+        <WrapPanel Margin="0,0,413.8,-0.4">
+            <Grid Height="487" Width="435">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0*"/>
+                    <RowDefinition Height="0*"/>
+                    <RowDefinition Height="0*"/>
+                </Grid.RowDefinitions>
+            </Grid>
         </WrapPanel>
     </Grid>
 </Window>
