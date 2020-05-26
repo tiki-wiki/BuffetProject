@@ -6,13 +6,13 @@
         xmlns:local="clr-namespace:BuffetAssistant"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="492.5" Width="853.75" WindowStyle="None"  PreviewMouseDown="Window_PreviewMouseDown">
+        Title="MainWindow" ResizeMode="NoResize" Height="562.1" Width="953.35" WindowStyle="None"  PreviewMouseDown="Window_PreviewMouseDown">
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}"/>
     </Window.Background>
     <Grid>
-        <WrapPanel Margin="0,0,-0.2,-0.4">
-            <Grid Height="487" Width="435">
+        <WrapPanel Margin="0,0,460.4,-0.8">
+            <Grid Height="556" Width="487">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
@@ -21,9 +21,11 @@
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
-
-                <Button Width="140" Height="56" FontSize="25" Content="سفارش" Grid.Column="1" Grid.Row="1"/>
+                <!--Controls-->
+                <Button Style="{StaticResource mainButtonColor}"  FontSize="25" Content="سفارش" Grid.Column="1" Grid.Row="1"/>
             </Grid>
         </WrapPanel>
     </Grid>
