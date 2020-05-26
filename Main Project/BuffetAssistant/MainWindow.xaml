@@ -9,7 +9,8 @@
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}"/>
     </Window.Background>
-    <Grid>
+    
+    <WrapPanel>
         
-    </Grid>
+    </WrapPanel>
 </Window>
