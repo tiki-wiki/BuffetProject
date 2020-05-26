@@ -9,9 +9,9 @@
     <Grid>
         <!--Columns-->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
         <!--Rows-->
@@ -36,6 +36,18 @@
             <StackPanel Orientation="Vertical">
                 <Image Source="http://uupload.ir/files/sy3_32.png" Width="90" Height="90"/>
                 <TextBlock Text="تنظیمات"/>
+            </StackPanel>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="720"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Style="{StaticResource ButtonBack}" Name="Report" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="2"  FontSize="24" FontFamily="BNazanin">
+            <StackPanel Orientation="Vertical">
+                <Image Source="http://uupload.ir/files/qc8n_61.png" Width="90" Height="90"/>
+                <TextBlock Text="گزارش گیری"/>
             </StackPanel>
             <Button.Resources>
                 <Style TargetType="Border">
