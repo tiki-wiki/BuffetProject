@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\BuffetTest\bin\Debug\BuffetTest.exe.config
+C:\Users\Administrator\Desktop\BuffetTest\bin\Debug\BuffetTest.exe
+C:\Users\Administrator\Desktop\BuffetTest\bin\Debug\BuffetTest.pdb
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\BuffetTest.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\App.g.cs
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\BuffetTest_MarkupCompile.cache
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\BuffetTest_MarkupCompile.lref
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\BuffetTest.g.resources
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\BuffetTest.Properties.Resources.resources
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\BuffetTest.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\BuffetTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\BuffetTest.exe
+C:\Users\Administrator\Desktop\BuffetTest\obj\Debug\BuffetTest.pdb
