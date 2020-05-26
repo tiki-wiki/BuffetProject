@@ -6,6 +6,16 @@
     <Application.Resources>
         <ResourceDictionary>
             <BitmapImage x:Key="MainwindowBackground" UriSource="Images\MainWindowBackground.jpeg"/>
+            <Style x:Key="ButtonsDisgn" TargetType="Button">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#FF00B9FF"></GradientStop>
+                            <GradientStop Color="#FF00FF51" ></GradientStop>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
