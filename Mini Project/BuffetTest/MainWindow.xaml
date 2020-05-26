@@ -20,8 +20,7 @@
             <RowDefinition Height="4*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
-
-        <Button Background="SkyBlue" Name="orderButton" Width="250" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="0"  FontSize="24" FontFamily="BNazanin">
+        <Button Background="SkyBlue" Name="orderButton" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="0"  FontSize="24" FontFamily="BNazanin">
             <StackPanel Orientation="Vertical">
                 <Image Source="http://uupload.ir/files/h945_53.png" Width="90" Height="90"/>
                 <TextBlock Text="سفارش"/>
@@ -33,7 +32,7 @@
             </Button.Resources>
         </Button>
         
-        <Button Background="SkyBlue" Name="settingButton" Width="250" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="1"  FontSize="24" FontFamily="BNazanin">
+        <Button Background="SkyBlue" Name="settingButton" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="1"  FontSize="24" FontFamily="BNazanin">
             <StackPanel Orientation="Vertical">
                 <Image Source="http://uupload.ir/files/sy3_32.png" Width="90" Height="90"/>
                 <TextBlock Text="تنظیمات"/>
