@@ -44,7 +44,7 @@
             </Button.Resources>
         </Button>
 
-        <Button Style="{StaticResource ButtonStyle}" Name="Report" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="2"  FontSize="24" FontFamily="BNazanin">
+        <Button Style="{StaticResource ButtonStyle}" Name="Report"  Cursor="Hand"  BorderThickness="0" Grid.Row="1" Grid.Column="2"  FontSize="24" FontFamily="BNazanin">
             <StackPanel Orientation="Vertical">
                 <Image Source="http://uupload.ir/files/qc8n_61.png" Width="90" Height="90"/>
                 <TextBlock Text="گزارش گیری"/>
