@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:BuffetAssistant"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        
+        <ResourceDictionary>
+            <BitmapImage x:Key="MainwindowBackground" UriSource="Images\MainWindowBackground.jpeg"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
