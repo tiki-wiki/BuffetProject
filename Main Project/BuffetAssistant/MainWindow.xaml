@@ -6,6 +6,10 @@
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
         Title="MainWindow" Height="492.5" Width="853.75" WindowStyle="None" PreviewMouseDown="Window_PreviewMouseDown">
+    <Window.Background>
+        <ImageBrush ImageSource="Images\MainWindowBackground.jpeg"/>
+    </Window.Background>
     <Grid >
+        
     </Grid>
 </Window>
