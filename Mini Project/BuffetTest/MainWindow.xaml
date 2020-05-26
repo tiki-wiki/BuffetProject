@@ -20,7 +20,7 @@
             <RowDefinition Height="4*"/>
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
-        <Button Style="{StaticResource ButtonBack}" Name="orderButton" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="0"  FontSize="24" FontFamily="BNazanin">
+        <Button Style="{StaticResource ButtonStyle}" Name="orderButton" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="0"  FontSize="24" FontFamily="BNazanin">
             <StackPanel Orientation="Vertical">
                 <Image Source="http://uupload.ir/files/h945_53.png" Width="90" Height="90"/>
                 <TextBlock Text="سفارش"/>
@@ -32,7 +32,7 @@
             </Button.Resources>
         </Button>
         
-        <Button Style="{StaticResource ButtonBack}" Name="settingButton" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="1"  FontSize="24" FontFamily="BNazanin">
+        <Button Style="{StaticResource ButtonStyle}" Name="settingButton" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="1"  FontSize="24" FontFamily="BNazanin">
             <StackPanel Orientation="Vertical">
                 <Image Source="http://uupload.ir/files/sy3_32.png" Width="90" Height="90"/>
                 <TextBlock Text="تنظیمات"/>
@@ -44,7 +44,7 @@
             </Button.Resources>
         </Button>
 
-        <Button Style="{StaticResource ButtonBack}" Name="Report" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="2"  FontSize="24" FontFamily="BNazanin">
+        <Button Style="{StaticResource ButtonStyle}" Name="Report" Width="190" Cursor="Hand" Height="180" BorderThickness="0" Grid.Row="1" Grid.Column="2"  FontSize="24" FontFamily="BNazanin">
             <StackPanel Orientation="Vertical">
                 <Image Source="http://uupload.ir/files/qc8n_61.png" Width="90" Height="90"/>
                 <TextBlock Text="گزارش گیری"/>

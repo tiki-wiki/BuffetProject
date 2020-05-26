@@ -6,7 +6,7 @@
     <Application.Resources>
 
         <ResourceDictionary>
-            <Style x:Key="ButtonBack" TargetType="Button">
+            <Style x:Key="ButtonStyle" TargetType="Button">
                 <Setter Property="Background">
                     <Setter.Value>
                         <LinearGradientBrush>
