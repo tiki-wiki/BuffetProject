@@ -35,5 +35,20 @@ namespace BuffetAssistant
         {
             this.DragMove();
         }
+
+        private void minimizeBTN_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void orderBTN_Click(object sender, RoutedEventArgs e)
+        {
+            OrderWindow orderWindow = new OrderWindow();
+            this.Background.Opacity = 0.4;
+            orderWindow.ShowDialog();
+
+            if (orderWindow.WindowState== WindowState.Normal)
+                this.Background.Opacity = 0.8;
+        }
     }
 }

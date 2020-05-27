@@ -35,6 +35,8 @@
                     <Setter Property="FontSize" Value="19" />
                     <Setter Property="FontFamily" Value="B Yekan"/>
                     <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="BorderBrush" Value="White"/>
+                    <Setter Property="BorderThickness" Value="1.1"/>
                     <Setter Property="BitmapEffect">
                         <Setter.Value>
                             <DropShadowBitmapEffect ShadowDepth="9" Softness="2" Opacity="0.3" Color="Black"/>

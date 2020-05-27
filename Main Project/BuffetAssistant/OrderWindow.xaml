@@ -1,0 +1,25 @@
+﻿<Window x:Class="BuffetAssistant.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuffetAssistant"
+        mc:Ignorable="d"
+        Title="OrderWindow" Height="473.4" Width="442.2" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" Grid.Column="0"  Margin="82,356,90,32.8" Foreground="White" Height="Auto" Width="Auto">
+            <StackPanel Orientation="Horizontal" Height="56">
+                <TextBlock Text="خروج" Height="49" Margin="10,15,10,10" TextAlignment="Center"/>
+            </StackPanel>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
