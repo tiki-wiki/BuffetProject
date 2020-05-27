@@ -115,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Icons\money.png" />
+    <Resource Include="Assets\Icons\manage.png" />
     <Content Include="Assets\Icons\order.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

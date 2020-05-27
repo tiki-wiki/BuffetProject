@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="MainWindow" MouseDown="Drag" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="562.1" Width="953.35" WindowStyle="None">
     <Window.Background>
-        <ImageBrush ImageSource="{StaticResource MainwindowBackground}"/>
+        <ImageBrush ImageSource="{StaticResource MainwindowBackground}" Opacity="0.8"/>
     </Window.Background>
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Close" Executed="CloseCommandHandler"/>
@@ -36,43 +36,57 @@
                 </Grid.RowDefinitions>
                 <!--Controls-->
 
+                <TextBlock Style="{StaticResource appNameStyle}" Text="بوفه یار" Margin="10,25,10,10" />
+
                 <!--big buttons-->
-                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" Grid.Column="0" Grid.Row="1"  Margin="60,24.6,46.8,28.6">
-                    <StackPanel Orientation="Horizontal">
+                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" Grid.Column="0" Grid.Row="1"  Margin="109,85.6,97.8,82" Foreground="White" Grid.RowSpan="2">
+                    <StackPanel Orientation="Horizontal" Height="56">
                         <Image Source="{StaticResource orderIcon}" Height="51" Width="73"/>
-                        <TextBlock Text="ثبت سفارش" Height="25" />
+                        <TextBlock Text="ثبت سفارش" Height="49" Margin="10,15,10,10" TextAlignment="Center"/>
                     </StackPanel>
                     <Button.Resources>
                         <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="12"/>
+                            <Setter Property="CornerRadius" Value="25"/>
                         </Style>
                     </Button.Resources>
                 </Button>
 
-                <Button Style="{StaticResource mainWindoButtons}" Name="reportBTN" Grid.Column="0" Grid.Row="2" Margin="60,18.4,46.8,36" >
+                <Button Style="{StaticResource mainWindoButtons}" Name="reportBTN" Grid.Column="0" Grid.Row="2" Margin="109,47.4,97.8,9" >
                     <Button.Resources>
                         <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="12"/>
+                            <Setter Property="CornerRadius" Value="25"/>
                         </Style>
                     </Button.Resources>
                     <StackPanel Orientation="Horizontal" Height="42">
                         <Image Source="{StaticResource reportIcon}" Height="41" Width="81" />
-                        <TextBlock Text="گزارش گیری" Width="88" Height="26" />
+                        <TextBlock Text="گزارش مالی" Margin="10,6,10,0" TextAlignment="Center" />
                     </StackPanel>
                 </Button>
 
-                <Button Style="{StaticResource mainWindoButtons}" Name="storeBTN" Grid.Column="0" Grid.Row="3" Margin="60,10,46.8,44.4" >
+                <Button Style="{StaticResource mainWindoButtons}" Name="storeBTN" Grid.Column="0" Grid.Row="3" Margin="109,6,97.8,50.4" >
                     <Button.Resources>
                         <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="12"/>
+                            <Setter Property="CornerRadius" Value="25"/>
                         </Style>
                     </Button.Resources>
                     <StackPanel Orientation="Horizontal" Height="42">
                         <Image Source="{StaticResource storeIcon}" Height="41" Width="81" />
-                        <TextBlock Text="انبار" Width="88" Height="26" />
+                        <TextBlock Text="انبار" Width="88" Margin="10,6,10,0" TextAlignment="Center"/>
                     </StackPanel>
                 </Button>
-                
+
+                <Button Style="{StaticResource mainWindoButtons}" Name="manageBTN" Grid.Column="0" Grid.Row="3" Margin="109,78,97.8,90.8" Grid.RowSpan="2" >
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="25"/>
+                        </Style>
+                    </Button.Resources>
+                    <StackPanel Orientation="Horizontal" Height="42">
+                        <Image Source="{StaticResource manageIcon}" Width="39"  />
+                        <TextBlock Text="مدیریت" Width="88" Margin="10,8,10,0" TextAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+
                 <Button Margin="178.2,10,9.8,67.4"
                          Background="Transparent" Command="ApplicationCommands.Close"  Name="closeBTN" BorderThickness="0" Grid.Column="2" Grid.Row="0">
                     <Button.Content>
