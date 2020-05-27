@@ -25,10 +25,9 @@ namespace BuffetAssistant
         {
             InitializeComponent();
         }
-
-        private void Window_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        private void CloseCommandHandler(object sender, ExecutedRoutedEventArgs e)
         {
-            DragMove();
+            Application.Current.Shutdown();
         }
     }
 }

@@ -4,29 +4,46 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuffetAssistant"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" ResizeMode="NoResize" Height="562.1" Width="953.35" WindowStyle="None"  PreviewMouseDown="Window_PreviewMouseDown">
+        Title="MainWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="562.1" Width="953.35" WindowStyle="None">
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}"/>
     </Window.Background>
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Close" Executed="CloseCommandHandler"/>
+    </Window.CommandBindings>
+    
     <Grid>
-        <WrapPanel Margin="0,0,460.4,-0.8">
-            <Grid Height="556" Width="487">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Margin="0,0,0.2,-1">
+            <Grid Height="561" Width="953">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="1*"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="111.2"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <!--Controls-->
 
-                <Button FontSize="25" Content="سفارش" Grid.Column="1" Grid.Row="1"/>
+                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" FontSize="25" Content="سفارش" Grid.Column="1" Grid.Row="1"/>
+
+                <Button Margin="178.2,10,9.8,67.4"
+                        Background="Transparent" Command="ApplicationCommands.Close"  Name="closeBTN" BorderThickness="0" Grid.Column="3" Grid.Row="0">
+                    <Button.Content>
+                        <materialIcon:PackIcon Kind="Shutdown" Foreground="White" FontSize="100" Height="35" Width="50"/>
+                    </Button.Content>
+                </Button>
             </Grid>
         </WrapPanel>
     </Grid>
