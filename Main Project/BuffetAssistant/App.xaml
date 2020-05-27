@@ -34,8 +34,6 @@
                     <Setter Property="FontSize" Value="18" />
                     <Setter Property="FontFamily" Value="BYekan"/>
                     <Setter Property="Foreground" Value="White"/>
-                    <Setter Property="BorderBrush" Value="White"/>
-                    <Setter Property="BorderThickness" Value="1.5"/>
                 </Style.Setters>
             </Style>
         </ResourceDictionary>
