@@ -6,8 +6,8 @@
              xmlns:materialColor="clr-namespace:MaterialDesignColors.Recommended;assembly=MaterialDesignColors"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-
-
+        
+        
         <!--styles-->
         <ResourceDictionary>
 
@@ -35,6 +35,7 @@
                     <Setter Property="FontFamily" Value="BYekan"/>
                     <Setter Property="Foreground" Value="White"/>
                     <Setter Property="BorderBrush" Value="White"/>
+                    <Setter Property="BorderThickness" Value="1.5"/>
                 </Style.Setters>
             </Style>
         </ResourceDictionary>
