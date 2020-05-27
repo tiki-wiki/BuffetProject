@@ -68,7 +68,7 @@
                         </Style>
                     </Button.Resources>
                     <StackPanel Orientation="Horizontal" Height="42">
-                        <Image Source="{StaticResource reportIcon}" Height="41" Width="81" />
+                        <Image Source="{StaticResource storeIcon}" Height="41" Width="81" />
                         <TextBlock Text="انبار" Width="88" Height="26" />
                     </StackPanel>
                 </Button>

@@ -118,6 +118,7 @@
     <Content Include="Assets\Icons\order.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Assets\Icons\store.png" />
     <Content Include="Assets\Images\MainWindowBackground.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
