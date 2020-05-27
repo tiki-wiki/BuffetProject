@@ -37,7 +37,7 @@
                 <!--Controls-->
 
                 <!--big buttons-->
-                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" Grid.Column="0" Grid.Row="1"  Margin="60,46.6,46.8,9.6">
+                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" Grid.Column="0" Grid.Row="1"  Margin="60,28.6,46.8,27.6">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="{StaticResource orderIcon}" Height="51" Width="73"/>
                         <TextBlock Text="ثبت سفارش" Height="25" />
@@ -49,15 +49,27 @@
                     </Button.Resources>
                 </Button>
 
-                <Button Style="{StaticResource mainWindoButtons}" Name="reportBTN" Grid.Column="0" Grid.Row="2" Margin="45,10.4,31.8,47" >
+                <Button Style="{StaticResource mainWindoButtons}" Name="reportBTN" Grid.Column="0" Grid.Row="2" Margin="60,31.4,46.8,26" >
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="12"/>
                         </Style>
                     </Button.Resources>
-                    <StackPanel Orientation="Horizontal" Margin="-25">
+                    <StackPanel Orientation="Horizontal" Height="42">
                         <Image Source="{StaticResource reportIcon}" Height="41" Width="81" />
-                        <TextBlock Text="گزارش گیری" Width="88" />
+                        <TextBlock Text="گزارش گیری" Width="88" Height="26" />
+                    </StackPanel>
+                </Button>
+
+                <Button Style="{StaticResource mainWindoButtons}" Name="storeBTN" Grid.Column="0" Grid.Row="3" Margin="60,31.4,46.8,26" >
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="12"/>
+                        </Style>
+                    </Button.Resources>
+                    <StackPanel Orientation="Horizontal" Height="42">
+                        <Image Source="{StaticResource reportIcon}" Height="41" Width="81" />
+                        <TextBlock Text="انبار" Width="88" Height="26" />
                     </StackPanel>
                 </Button>
 
