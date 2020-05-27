@@ -6,15 +6,16 @@
         xmlns:local="clr-namespace:BuffetAssistant"
         xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="562.1" Width="953.35" WindowStyle="None">
+        Title="MainWindow" MouseDown="Drag" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="562.1" Width="953.35" WindowStyle="None">
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}"/>
     </Window.Background>
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Close" Executed="CloseCommandHandler"/>
     </Window.CommandBindings>
-    
+
     <Grid>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
@@ -36,12 +37,29 @@
                 </Grid.RowDefinitions>
                 <!--Controls-->
 
-                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" FontSize="25" Content="سفارش" Grid.Column="1" Grid.Row="1"/>
+                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN"  Grid.Column="1" Grid.Row="1" Margin="20.6,13.6,37.8,12.6">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="{StaticResource orderIcon}" Height="53" Width="123"/>
+                        <TextBlock Text="ثبت سفارش" Height="25" Width="97"/>
+                    </StackPanel>
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="12"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Button Style="{StaticResource mainWindoButtons}" Name="reportBTN" Content="گزارش گیری" Grid.Column="0" Grid.Row="1" Margin="38,13.6,20.4,12.6">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="12"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
 
                 <Button Margin="178.2,10,9.8,67.4"
-                        Background="Transparent" Command="ApplicationCommands.Close"  Name="closeBTN" BorderThickness="0" Grid.Column="3" Grid.Row="0">
+                         Background="Transparent" Command="ApplicationCommands.Close"  Name="closeBTN" BorderThickness="0" Grid.Column="3" Grid.Row="0">
                     <Button.Content>
-                        <materialIcon:PackIcon Kind="Shutdown" Foreground="White" FontSize="100" Height="35" Width="50"/>
+                        <materialIcon:PackIcon  Kind="Shutdown" Foreground="White" Background="Transparent" FontSize="100" Height="35" Width="50"/>
                     </Button.Content>
                 </Button>
             </Grid>

@@ -2,28 +2,36 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:BuffetAssistant"
+             xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:materialColor="clr-namespace:MaterialDesignColors.Recommended;assembly=MaterialDesignColors"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
 
-        <!--All App Styles-->
+        <!--styles-->
         <ResourceDictionary>
 
-            <!--main window backgound-->
-            <BitmapImage x:Key="MainwindowBackground" UriSource="Images\MainWindowBackground.jpeg"/>
+            <!--main window styles-->
+
+            <BitmapImage x:Key="MainwindowBackground" UriSource="Assets\Images\MainWindowBackground.jpeg"/>
+            <BitmapImage x:Key="orderIcon" UriSource="Assets\Icons\order.png" />
 
             <Style x:Key="mainWindoButtons" TargetType="Button">
                 <Style.Setters>
                     <Setter Property="Background">
                         <Setter.Value>
                             <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
-                                <GradientStop Color="Transparent" Offset="0.2"/>
-                                <GradientStop Color="White" Offset="1.6"/>
+                                <GradientStop Color="Red" Offset="1.8"/>
+                                <GradientStop Color="Orange" Offset="0.4"/>
                             </LinearGradientBrush>
                         </Setter.Value>
                     </Setter>
-                    <Setter Property="Width" Value="150"/>
+                    <Setter Property="Width" Value="180"/>
                     <Setter Property="Height" Value="85"/>
+                    <Setter Property="FontSize" Value="19" />
+                    <Setter Property="FontFamily" Value="BNazanin"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="BorderBrush" Value="White"/>
                 </Style.Setters>
             </Style>
         </ResourceDictionary>
