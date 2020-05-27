@@ -37,7 +37,7 @@
                 <!--Controls-->
 
                 <!--big buttons-->
-                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" Grid.Column="0" Grid.Row="1"  Margin="60,28.6,46.8,27.6">
+                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" Grid.Column="0" Grid.Row="1"  Margin="60,24.6,46.8,28.6">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="{StaticResource orderIcon}" Height="51" Width="73"/>
                         <TextBlock Text="ثبت سفارش" Height="25" />
@@ -49,7 +49,7 @@
                     </Button.Resources>
                 </Button>
 
-                <Button Style="{StaticResource mainWindoButtons}" Name="reportBTN" Grid.Column="0" Grid.Row="2" Margin="60,31.4,46.8,26" >
+                <Button Style="{StaticResource mainWindoButtons}" Name="reportBTN" Grid.Column="0" Grid.Row="2" Margin="60,18.4,46.8,36" >
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="12"/>
@@ -61,7 +61,7 @@
                     </StackPanel>
                 </Button>
 
-                <Button Style="{StaticResource mainWindoButtons}" Name="storeBTN" Grid.Column="0" Grid.Row="3" Margin="60,31.4,46.8,26" >
+                <Button Style="{StaticResource mainWindoButtons}" Name="storeBTN" Grid.Column="0" Grid.Row="3" Margin="60,10,46.8,44.4" >
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="12"/>
