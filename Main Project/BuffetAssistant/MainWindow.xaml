@@ -23,10 +23,9 @@
         <WrapPanel Margin="0,0,0.2,-1">
             <Grid Height="561" Width="953">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="477*"/>
+                    <ColumnDefinition Width="238*"/>
+                    <ColumnDefinition Width="238*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -37,10 +36,11 @@
                 </Grid.RowDefinitions>
                 <!--Controls-->
 
-                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN"  Grid.Column="1" Grid.Row="1" Margin="20.6,13.6,37.8,12.6">
-                    <StackPanel Orientation="Vertical">
-                        <Image Source="{StaticResource orderIcon}" Height="53" Width="123"/>
-                        <TextBlock Text="ثبت سفارش" Height="25" Width="97"/>
+                <!--big buttons-->
+                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" Grid.Column="0" Grid.Row="1"  Margin="60,46.6,46.8,9.6">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{StaticResource orderIcon}" Height="51" Width="73"/>
+                        <TextBlock Text="ثبت سفارش" Height="25" />
                     </StackPanel>
                     <Button.Resources>
                         <Style TargetType="Border">
@@ -48,16 +48,21 @@
                         </Style>
                     </Button.Resources>
                 </Button>
-                <Button Style="{StaticResource mainWindoButtons}" Name="reportBTN" Content="گزارش گیری" Grid.Column="0" Grid.Row="1" Margin="38,13.6,20.4,12.6">
+
+                <Button Style="{StaticResource mainWindoButtons}" Name="reportBTN" Grid.Column="0" Grid.Row="2" Margin="45,10.4,31.8,47" >
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="12"/>
                         </Style>
                     </Button.Resources>
+                    <StackPanel Orientation="Horizontal" Margin="-25">
+                        <Image Source="{StaticResource reportIcon}" Height="41" Width="81" />
+                        <TextBlock Text="گزارش گیری" Width="88" />
+                    </StackPanel>
                 </Button>
 
                 <Button Margin="178.2,10,9.8,67.4"
-                         Background="Transparent" Command="ApplicationCommands.Close"  Name="closeBTN" BorderThickness="0" Grid.Column="3" Grid.Row="0">
+                         Background="Transparent" Command="ApplicationCommands.Close"  Name="closeBTN" BorderThickness="0" Grid.Column="2" Grid.Row="0">
                     <Button.Content>
                         <materialIcon:PackIcon  Kind="Shutdown" Foreground="White" Background="Transparent" FontSize="100" Height="35" Width="50"/>
                     </Button.Content>

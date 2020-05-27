@@ -114,6 +114,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assets\Icons\money.png" />
     <Content Include="Assets\Icons\order.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
