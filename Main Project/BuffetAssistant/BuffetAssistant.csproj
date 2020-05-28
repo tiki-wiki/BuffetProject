@@ -121,10 +121,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assets\Images\SpecialOrder.jpg" />
     <Resource Include="Assets\Images\SimpleOrder.jpg" />
-    <Content Include="Assets\Images\SpecialOrder.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Resource Include="Assets\Icons\money.png" />
     <Resource Include="Assets\Icons\manage.png" />
     <Content Include="Assets\Icons\order.png">
