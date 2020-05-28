@@ -29,7 +29,6 @@
                 </Style>
             </Button.Resources>
         </Button>
-
         </DockPanel>
     </Grid>
 </Window>
