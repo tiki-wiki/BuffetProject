@@ -121,9 +121,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Images\SimpleOrder.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Resource Include="Assets\Images\SimpleOrder.jpg" />
     <Content Include="Assets\Images\SpecialOrder.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
