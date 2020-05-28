@@ -8,7 +8,7 @@
         Title="OrderWindow" Height="488.4" Width="489.6" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
     <Grid Name="orderGrid">
         <DockPanel Margin="0,351,0.2,-0.4" >
-            <Button Style="{StaticResource orderWindowBTN}" Name="normalOrderBTN" DockPanel.Dock="Left"  Foreground="White" Margin="50,10,0,10">
+            <Button Style="{StaticResource orderWindowBTN}" MouseEnter="normalOrderBTN_MouseEnter" MouseLeave="normalOrderBTN_MouseLeave" Name="normalOrderBTN" DockPanel.Dock="Left"  Foreground="White" Margin="50,10,0,10">
                 <Button.Content>
                     <TextBlock Text="سفارش عادی" Height="26" TextAlignment="Center"/>
                 </Button.Content>
@@ -30,17 +30,24 @@
                 </Button.Resources>
             </Button>
         </DockPanel>
-        <Image x:Name="imgNormal" Grid.RowSpan="2" Source="Assets\Images\SimpleOrder.jpg" Margin="41,135,248.2,169.6"/>
 
-        <Grid Margin="41,135,248.2,169.6">
-            <Image x:Name="imgNormalgray" Width="{Binding ActualWidth, ElementName=imgNormal}"
-               Height="{Binding ActualHeight, ElementName=imgNormal}" MouseEnter="ImgNormalgray_MouseEnter" MouseLeave="ImgNormalgray_MouseLeave" >
-                <Image.Source>
-                    <FormatConvertedBitmap Source="{Binding Source, ElementName=imgNormal}"
+        <Image x:Name="imgNormal" Grid.RowSpan="2" Source="{StaticResource normalOrderImage}" Margin="41,135,248.2,169.6"/>
+        <Image x:Name="imgNormalgray"
+               Height="{Binding ActualHeight, ElementName=imgNormal}" Margin="41,135,248.2,169.6">
+            <Image.Source>
+                <FormatConvertedBitmap Source="{Binding Source, ElementName=imgNormal}"
                                        DestinationFormat="Gray8"/>
-                </Image.Source>
-            </Image>
-        </Grid>
-        <Image Source="Assets\Images\SpecialOrder.jpg" Margin="240,99,49.2,169.6"/>
+            </Image.Source>
+        </Image>
+
+        <Image x:Name="imgSpecial" Source="{StaticResource specialOrderImage}" Margin="240,135,42.2,169.6"/>
+        <Image x:Name="imgSpecialgray"
+               Height="{Binding ActualHeight, ElementName=imgNormal}" Margin="41,135,248.2,169.6">
+            <Image.Source>
+                <FormatConvertedBitmap Source="{Binding Source, ElementName=imgNormal}"
+                                       DestinationFormat="Gray8"/>
+            </Image.Source>
+        </Image>
+
     </Grid>
 </Window>

@@ -28,14 +28,15 @@ namespace BuffetAssistant
         {
         }
 
-        private void ImgNormalgray_MouseEnter(object sender, MouseEventArgs e)
+        private void normalOrderBTN_MouseEnter(object sender, MouseEventArgs e)
         {
             imgNormalgray.Opacity = 0;
         }
 
-        private void ImgNormalgray_MouseLeave(object sender, MouseEventArgs e)
+        private void normalOrderBTN_MouseLeave(object sender, MouseEventArgs e)
         {
             imgNormalgray.Opacity = 1;
+
         }
     }
 }
