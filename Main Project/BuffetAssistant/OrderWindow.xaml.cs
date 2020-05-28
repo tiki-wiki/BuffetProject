@@ -23,5 +23,10 @@ namespace BuffetAssistant
         {
             InitializeComponent();
         }
+
+        private void specialOrderBTN_MouseEnter(object sender, MouseEventArgs e)
+        {
+        }
+
     }
 }
