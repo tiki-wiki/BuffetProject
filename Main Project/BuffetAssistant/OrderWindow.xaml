@@ -32,7 +32,7 @@
         </DockPanel>
 
         <!--simple hambergur-->
-        <Image x:Name="imgNormal" Grid.RowSpan="2" Source="{StaticResource normalOrderImage}" Margin="41,135,248.2,169.6"/>
+        <Image x:Name="imgNormal"  Source="{StaticResource normalOrderImage}" Margin="41,135,248.2,169.6"/>
         <Image x:Name="imgNormalgray"
                Height="{Binding ActualHeight, ElementName=imgNormal}" Margin="41,135,248.2,169.6">
             <Image.Source>
