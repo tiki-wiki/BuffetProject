@@ -31,6 +31,7 @@
             </Button>
         </DockPanel>
 
+        <!--simple hambergur-->
         <Image x:Name="imgNormal" Grid.RowSpan="2" Source="{StaticResource normalOrderImage}" Margin="41,135,248.2,169.6"/>
         <Image x:Name="imgNormalgray"
                Height="{Binding ActualHeight, ElementName=imgNormal}" Margin="41,135,248.2,169.6">
@@ -40,5 +41,14 @@
             </Image.Source>
         </Image>
 
+        <!--special Hambergur-->
+        <Image x:Name="imgSpecial" Source="{StaticResource specialOrderImage}" Margin="240,135,49.2,169.6"/>
+        <Image x:Name="imgSpecialGray"
+               Height="{Binding ActualHeight, ElementName=imgNormal}" Margin="41,135,248.2,169.6">
+            <Image.Source>
+                <FormatConvertedBitmap Source="{Binding Source, ElementName=imgNormal}"
+                                       DestinationFormat="Gray8"/>
+            </Image.Source>
+        </Image>
     </Grid>
 </Window>
