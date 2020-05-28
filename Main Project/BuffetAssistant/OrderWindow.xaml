@@ -30,7 +30,17 @@
                 </Button.Resources>
             </Button>
         </DockPanel>
-        <Image Source="Assets\Images\SimpleOrder.jpg" Margin="41,135,248.2,169.6"/>
+        <Image x:Name="imgNormal" Grid.RowSpan="2" Source="Assets\Images\SimpleOrder.jpg" Margin="41,135,248.2,169.6"/>
+
+        <Grid Margin="41,135,248.2,169.6">
+            <Image x:Name="imgNormalgray" Width="{Binding ActualWidth, ElementName=imgNormal}"
+               Height="{Binding ActualHeight, ElementName=imgNormal}" MouseEnter="ImgNormalgray_MouseEnter" MouseLeave="ImgNormalgray_MouseLeave" >
+                <Image.Source>
+                    <FormatConvertedBitmap Source="{Binding Source, ElementName=imgNormal}"
+                                       DestinationFormat="Gray8"/>
+                </Image.Source>
+            </Image>
+        </Grid>
         <Image Source="Assets\Images\SpecialOrder.jpg" Margin="240,99,49.2,169.6"/>
     </Grid>
 </Window>
