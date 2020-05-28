@@ -38,7 +38,7 @@
                 <TextBlock Style="{StaticResource appNameStyle}" Text="بوفه یار" Margin="10,25,10,10" />
 
                 <!--big buttons-->
-                <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" Click="orderBTN_Click" Grid.Column="0" Grid.Row="1"  Margin="109,85.6,97.8,82" Foreground="White" Grid.RowSpan="2">
+                <Button Style="{StaticResource mainWindowButtons}" Name="orderBTN" Click="orderBTN_Click" Grid.Column="0" Grid.Row="1"  Margin="109,85.6,97.8,82" Foreground="White" Grid.RowSpan="2">
                     <StackPanel Orientation="Horizontal" Height="56">
                         <Image Source="{StaticResource orderIcon}" Height="51" Width="73"/>
                         <TextBlock Text="ثبت سفارش" Height="49" Margin="10,15,10,10" TextAlignment="Center"/>
@@ -50,7 +50,7 @@
                     </Button.Resources>
                 </Button>
 
-                <Button Style="{StaticResource mainWindoButtons}" Name="reportBTN" Grid.Column="0" Grid.Row="2" Margin="109,47.4,97.8,9" >
+                <Button Style="{StaticResource mainWindowButtons}" Name="reportBTN" Grid.Column="0" Grid.Row="2" Margin="109,47.4,97.8,9" >
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="20"/>
@@ -62,7 +62,7 @@
                     </StackPanel>
                 </Button>
 
-                <Button Style="{StaticResource mainWindoButtons}" Name="storeBTN" Grid.Column="0" Grid.Row="3" Margin="109,6,97.8,50.4" >
+                <Button Style="{StaticResource mainWindowButtons}" Name="storeBTN" Grid.Column="0" Grid.Row="3" Margin="109,6,97.8,50.4" >
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="20"/>
@@ -74,7 +74,7 @@
                     </StackPanel>
                 </Button>
 
-                <Button Style="{StaticResource mainWindoButtons}" Name="manageBTN" Grid.Column="0" Grid.Row="3" Margin="109,78,97.8,90.8" Grid.RowSpan="2" >
+                <Button Style="{StaticResource mainWindowButtons}" Name="manageBTN" Grid.Column="0" Grid.Row="3" Margin="109,78,97.8,90.8" Grid.RowSpan="2" >
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="20"/>

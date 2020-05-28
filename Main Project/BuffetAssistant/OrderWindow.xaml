@@ -5,21 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
-        Title="OrderWindow" Height="473.4" Width="442.2" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
+        Title="OrderWindow" Height="488.4" Width="489.6" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="0*"/>
-        </Grid.ColumnDefinitions>
-        <Button Style="{StaticResource mainWindoButtons}" Name="orderBTN" Grid.Column="0"  Margin="82,356,90,32.8" Foreground="White" Height="Auto" Width="Auto">
-            <StackPanel Orientation="Horizontal" Height="56">
-                <TextBlock Text="خروج" Height="49" Margin="10,15,10,10" TextAlignment="Center"/>
-            </StackPanel>
+        <StackPanel Margin="0,351,0.2,-0.4" Orientation="Horizontal">
+            <Button Style="{StaticResource orderWindowBTN}" Name="normalOrderBTN"  Foreground="White" Margin="50,10,0,10">
+            <Button.Content>
+                <TextBlock Text="سفارش عادی" Height="26" TextAlignment="Center"/>
+            </Button.Content>
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </Button.Resources>
         </Button>
+
+        <Button Style="{StaticResource orderWindowBTN}" Name="specialOrderBTN" Foreground="White" Margin="20,10,10,10">
+            <Button.Content>
+                <TextBlock Text="سفارش ویژه" Height="26" TextAlignment="Center"/>
+            </Button.Content>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        </StackPanel>
     </Grid>
 </Window>
