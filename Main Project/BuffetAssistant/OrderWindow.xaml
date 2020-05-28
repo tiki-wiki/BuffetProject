@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
-        Title="OrderWindow" Height="488.4" Width="489.6" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" >
+        Title="OrderWindow" Height="488.4" Width="489.6" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
     <Grid>
         <DockPanel Margin="0,351,0.2,-0.4" >
             <Button Style="{StaticResource orderWindowBTN}" Name="normalOrderBTN" DockPanel.Dock="Left"  Foreground="White" Margin="50,10,0,10">
