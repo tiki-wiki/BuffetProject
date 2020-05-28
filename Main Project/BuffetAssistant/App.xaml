@@ -6,8 +6,6 @@
              xmlns:materialColor="clr-namespace:MaterialDesignColors.Recommended;assembly=MaterialDesignColors"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-
-
         <!--styles-->
         <ResourceDictionary>
 
