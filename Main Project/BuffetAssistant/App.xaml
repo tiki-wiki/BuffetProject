@@ -6,18 +6,18 @@
              xmlns:materialColor="clr-namespace:MaterialDesignColors.Recommended;assembly=MaterialDesignColors"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-
-
         <!--styles-->
         <ResourceDictionary>
 
-            <!--main window styles-->
-
+            <!--Images-->
             <BitmapImage x:Key="MainwindowBackground" UriSource="Assets\Images\MainWindowBackground.jpeg"/>
             <BitmapImage x:Key="orderIcon" UriSource="Assets\Icons\order.png" />
             <BitmapImage x:Key="reportIcon" UriSource="Assets\Icons\money.png" />
             <BitmapImage x:Key="storeIcon" UriSource="Assets\Icons\store.png" />
             <BitmapImage x:Key="manageIcon" UriSource="Assets\Icons\manage.png" />
+            <BitmapImage x:Key="normalOrderImage" UriSource="Assets\Images\SimpleOrder.jpg" />
+            <BitmapImage x:Key="specialOrderImage" UriSource="Assets\Images\SpecialOrder.jpg" />
+            
             <!--main window button styles-->
             <Style x:Key="mainWindowButtons" TargetType="Button">
                 <Style.Setters>
