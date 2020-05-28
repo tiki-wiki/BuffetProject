@@ -44,7 +44,7 @@
         <!--special Hambergur-->
         <Image x:Name="imgSpecial" Source="{StaticResource specialOrderImage}" Margin="240,135,49.2,169.6"/>
         <Image x:Name="imgSpecialGray"
-               Height="{Binding ActualHeight, ElementName=imgSpecial}" Margin="41,135,248.2,169.6">
+               Height="{Binding ActualHeight, ElementName=imgSpecial}" Margin="240,135,49.2,169.6">
             <Image.Source>
                 <FormatConvertedBitmap Source="{Binding Source, ElementName=imgSpecial}"
                                        DestinationFormat="Gray8"/>
