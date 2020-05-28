@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
-        Title="OrderWindow" Height="488.4" Width="489.6" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
+        Title="OrderWindow" Height="488.4" Width="489.6" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" >
     <Grid>
-        <StackPanel Margin="0,351,0.2,-0.4" Orientation="Horizontal">
-            <Button Style="{StaticResource orderWindowBTN}" Name="normalOrderBTN"  Foreground="White" Margin="50,10,0,10">
+        <DockPanel Margin="0,351,0.2,-0.4" >
+            <Button Style="{StaticResource orderWindowBTN}" Name="normalOrderBTN" DockPanel.Dock="Left"  Foreground="White" Margin="50,10,0,10">
             <Button.Content>
                 <TextBlock Text="سفارش عادی" Height="26" TextAlignment="Center"/>
             </Button.Content>
@@ -19,7 +19,7 @@
             </Button.Resources>
         </Button>
 
-        <Button Style="{StaticResource orderWindowBTN}" Name="specialOrderBTN" Foreground="White" Margin="20,10,10,10">
+            <Button Style="{StaticResource orderWindowBTN}" Name="specialOrderBTN" DockPanel.Dock="Right" Foreground="White" Margin="0,10,10,10">
             <Button.Content>
                 <TextBlock Text="سفارش ویژه" Height="26" TextAlignment="Center"/>
             </Button.Content>
@@ -30,6 +30,6 @@
             </Button.Resources>
         </Button>
 
-        </StackPanel>
+        </DockPanel>
     </Grid>
 </Window>

@@ -79,7 +79,6 @@
                             <DropShadowBitmapEffect ShadowDepth="9" Softness="2" Opacity="0.3" Color="Black"/>
                         </Setter.Value>
                     </Setter>
-
                 </Style.Setters>
             </Style>
         </ResourceDictionary>
