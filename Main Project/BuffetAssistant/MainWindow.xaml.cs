@@ -44,10 +44,12 @@ namespace BuffetAssistant
         private void orderBTN_Click(object sender, RoutedEventArgs e)
         {
             OrderWindow orderWindow = new OrderWindow();
+            mainGrid.Opacity = 0.4;
             this.Background.Opacity = 0.4;
             orderWindow.ShowDialog();
 
-            if (orderWindow.WindowState== WindowState.Normal)
+            if (orderWindow.WindowState == WindowState.Normal)
+                mainGrid.Opacity = 0.8;
                 this.Background.Opacity = 0.8;
         }
     }

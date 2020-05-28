@@ -14,7 +14,7 @@
         <CommandBinding Command="ApplicationCommands.Close" Executed="CloseCommandHandler"/>
     </Window.CommandBindings>
 
-    <Grid>
+    <Grid Name="mainGrid">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
