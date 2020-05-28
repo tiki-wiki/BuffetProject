@@ -30,6 +30,7 @@
                 </Button.Resources>
             </Button>
         </DockPanel>
-        <Image Source="Assets\Images\SimpleOrder.jpg" Margin="57,31,58.2,240.6"/>
+        <Image Source="Assets\Images\SimpleOrder.jpg" Margin="118,10,116.2,241.6"/>
+        <Image Source="Assets\Images\SpecialOrder.jpg" Margin="118,176,116.2,92.6"/>
     </Grid>
 </Window>
