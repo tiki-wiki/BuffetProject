@@ -34,7 +34,6 @@ namespace BuffetAssistant
             imgNormalgray.Opacity = 1;
 
         }
-
         private void specialOrderBTN_MouseEnter(object sender, MouseEventArgs e)
         {
             imgSpecialGray.Opacity = 0;
