@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using System.Drawing.Text;
 namespace BuffetAssistant.Pages
 {
     /// <summary>
@@ -23,6 +23,19 @@ namespace BuffetAssistant.Pages
         public GeneralSettingsPage()
         {
             InitializeComponent();
+
+            //when this page open
+            fontComboBox.SelectedIndex = 0;
+            foreach (FontFamily fonts in Fonts.SystemFontFamilies)
+            {
+                fontComboBox.Items.Add(fonts);
+            }
+        }
+
+        private void fontComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Properties.Settings.Default.AppFont = (FontFamily)fontComboBox.SelectedItem;
+            Properties.Settings.Default.Save();
         }
     }
 }

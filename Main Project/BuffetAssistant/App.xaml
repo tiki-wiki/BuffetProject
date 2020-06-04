@@ -93,6 +93,13 @@
                 <Style.Setters>
                     <Setter Property="Height" Value="45"/>
                 </Style.Setters>
+                
+                <!--change selected item color-->
+                <Style.Triggers>
+                    <Trigger Property="IsSelected" Value="True">
+                        <Setter Property="Foreground" Value="MediumBlue"/>
+                    </Trigger>
+                </Style.Triggers>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

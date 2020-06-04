@@ -22,5 +22,16 @@ namespace BuffetAssistant.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Windows.Media.FontFamily AppFont {
+            get {
+                return ((global::System.Windows.Media.FontFamily)(this["AppFont"]));
+            }
+            set {
+                this["AppFont"] = value;
+            }
+        }
     }
 }
