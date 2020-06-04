@@ -3,20 +3,27 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:local="clr-namespace:BuffetAssistant.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800" Height="432" Width="445">
     <Grid Background="White">
-        <GroupBox Header="ظاهر" FontFamily="B Yekan" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="0.8" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="425" FlowDirection="RightToLeft"/>
-
-        <GroupBox Name="fontGroup" Header="فونت" FontFamily="B Yekan" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="0.8" Height="145" Margin="10,115,0,0" VerticalAlignment="Top" Width="425" FlowDirection="RightToLeft">
+        <GroupBox Header="ظاهر" FontFamily="B Yekan" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="0.8" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="425" FlowDirection="RightToLeft">
+        </GroupBox>
+        <GroupBox Name="fontGroup" Header="فونت" FontFamily="B Yekan" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="0.8" Height="240" Margin="10,115,0,0" VerticalAlignment="Top" Width="425" FlowDirection="RightToLeft">
             <Grid >
-                <TextBlock Text="اندازه قلم:" Margin="0,0,363.8,63.8"/>
-                <Slider Margin="64,0,203.8,88.6" FlowDirection="RightToLeft" Maximum="48" Minimum="8" TickPlacement="BottomRight"
+                <TextBlock Text="اندازه قلم:" Margin="0,0,363.8,193.8"/>
+                <Slider Margin="64,0,227.8,183.8" FlowDirection="RightToLeft" Maximum="48" Minimum="8" TickPlacement="BottomRight"
                         IsSnapToTickEnabled="True"/>
+                <TextBlock Text="نوع قلم:" Margin="0,43,373.8,150.8"/>
+                
+                <ComboBox ItemsSource="{x:Static Fonts.SystemFontFamilies}" Name="fontComboBox" Margin="64,43,227.8,150.8" FlowDirection="LeftToRight" SelectionChanged="fontComboBox_SelectionChanged" MaxDropDownHeight="115"/>
+                <TextBlock Text="رنگ قلم:" Margin="319,0,54.8,192.8"/>
+                <materialDesign:ColorPicker Margin="259,27,9.8,25.8" />
+                
+                <TextBlock Text="سبک قلم:" Margin="0,91,363.8,101.8"/>
+                <ComboBox ItemsSource="{Binding SelectedItem.FamilyTypefaces, ElementName=fontComboBox}" Name="typeFaceComboBox" Margin="64,91,227.8,102.8" FlowDirection="LeftToRight" SelectionChanged="fontComboBox_SelectionChanged" MaxDropDownHeight="115"/>
 
-                <TextBlock Text="نوع قلم:" Margin="214,0,159.8,99.6"/>
-                <ComboBox Name="fontComboBox" Margin="258,0,33.8,101.6" SelectionChanged="fontComboBox_SelectionChanged" MaxDropDownHeight="100"/>
             </Grid>
         </GroupBox>
     </Grid>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
-        Title="OrderWindow" Height="488.4" Width="489.6" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
+        Title="سفارش" Height="488.4" Width="489.6" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
     <Grid Name="orderGrid">
 
         <DockPanel Margin="0,351,0.2,-0.4" >

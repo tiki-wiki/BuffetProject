@@ -6,7 +6,7 @@
         xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
-        Title="SettingWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="460.6" Width="728.2">
+        Title="تنظیمات" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="460.6" Width="728.2">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="300*"/>
@@ -39,7 +39,6 @@
             </ListViewItem>
             <Separator Width="256" Margin="0"/>
         </ListView>
-
         <!--Show  Settings-->
         <Frame HorizontalAlignment="Left" Name="settingFrame"/>
     </Grid>

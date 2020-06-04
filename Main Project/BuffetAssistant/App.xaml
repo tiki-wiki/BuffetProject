@@ -89,6 +89,7 @@
                     <Setter Property="Margin" Value="0,0,10,0"/>
                 </Style.Setters>
             </Style>
+            
             <Style x:Key="listViewItems" TargetType="ListBoxItem">
                 <Style.Setters>
                     <Setter Property="Height" Value="45"/>

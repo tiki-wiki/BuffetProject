@@ -26,10 +26,6 @@ namespace BuffetAssistant.Pages
 
             //when this page open
             fontComboBox.SelectedIndex = 0;
-            foreach (FontFamily fonts in Fonts.SystemFontFamilies)
-            {
-                fontComboBox.Items.Add(fonts);
-            }
         }
 
         private void fontComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
