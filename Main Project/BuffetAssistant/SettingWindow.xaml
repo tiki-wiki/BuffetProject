@@ -13,36 +13,34 @@
             <ColumnDefinition Width="61*"/>
         </Grid.ColumnDefinitions>
         <!--list view section-->
-        <ListView BorderThickness="0" Name="settingListView" SelectionChanged="settingListView_SelectionChanged" HorizontalAlignment="Right" Height="432" Background="White" VerticalAlignment="Top" Width="277" Margin="0,0,-0.4,0" Grid.ColumnSpan="2">
-            <ListViewItem HorizontalAlignment="Right">
+        <ListView  BorderThickness="0" Name="settingListView" SelectionChanged="settingListView_SelectionChanged" HorizontalAlignment="Right" Height="432" Background="White" VerticalAlignment="Top" Width="277" Margin="0,0,-0.4,0" Grid.ColumnSpan="2">
+            <ListViewItem HorizontalAlignment="Right" Style="{StaticResource listViewItems}">
                 <StackPanel Orientation="Horizontal" Width="260" FlowDirection="RightToLeft">
-                    <TextBlock Text="عمومی" Style="{StaticResource settingListView}"/>
+                    <TextBlock Text="عمومی" Style="{StaticResource listViewText}"/>
                     <materialIcon:PackIcon Kind="HomeEdit" Width="99" Height="28"/>
                 </StackPanel>
             </ListViewItem>
             <Separator Width="256" Margin="0"/>
 
-            <ListViewItem HorizontalAlignment="Right">
+            <ListViewItem HorizontalAlignment="Right" Style="{StaticResource listViewItems}">
                 <StackPanel Orientation="Horizontal" Width="261" FlowDirection="RightToLeft">
-                    <TextBlock Text="پیشرفته" Style="{StaticResource settingListView}"/>
+                    <TextBlock Text="پیشرفته" Style="{StaticResource listViewText}"/>
                     <materialIcon:PackIcon Kind="SettingsOutline" Width="66" Height="28"/>
-
                 </StackPanel>
             </ListViewItem>
             <Separator Width="256" Margin="0"/>
 
-            <ListViewItem HorizontalAlignment="Right">
+            <ListViewItem HorizontalAlignment="Right" Style="{StaticResource listViewItems}">
                 <StackPanel Orientation="Horizontal" Width="261" FlowDirection="RightToLeft">
-                    <TextBlock Text="بروزرسانی" Style="{StaticResource settingListView}"/>
+                    <TextBlock Text="بروزرسانی" Style="{StaticResource listViewText}"/>
                     <materialIcon:PackIcon Kind="CircleArrows" Width="40" Height="28"/>
 
                 </StackPanel>
             </ListViewItem>
             <Separator Width="256" Margin="0"/>
-
         </ListView>
 
         <!--Show  Settings-->
-        <Frame HorizontalAlignment="Left" Name="settingFrame" Width="445"/>
+        <Frame HorizontalAlignment="Left" Name="settingFrame"/>
     </Grid>
 </Window>

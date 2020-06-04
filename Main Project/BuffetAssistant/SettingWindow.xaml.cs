@@ -23,6 +23,7 @@ namespace BuffetAssistant
         public SettingWindow()
         {
             InitializeComponent();
+            settingListView.SelectedIndex = 0;
         }
 
         private void settingListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -30,9 +31,7 @@ namespace BuffetAssistant
             GeneralSettingsPage generalPage = new GeneralSettingsPage();
             settingFrame.NavigationUIVisibility = NavigationUIVisibility.Hidden;
             if (settingListView.SelectedIndex == 0)
-            {
                 settingFrame.Navigate(generalPage);
-            }
         }
     }
 }

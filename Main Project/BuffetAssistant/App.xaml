@@ -81,15 +81,19 @@
                 </Style.Setters>
             </Style>
             
-            <!--Setting Window-->
-            <Style x:Key="settingListView" TargetType="TextBlock">
+            <!--Setting Window section-->
+            <Style x:Key="listViewText" TargetType="TextBlock">
                 <Style.Setters>
                     <Setter Property="FontSize" Value="19"/>
                     <Setter Property="FontFamily" Value="B Yekan"/>
                     <Setter Property="Margin" Value="0,0,10,0"/>
                 </Style.Setters>
             </Style>
-           
+            <Style x:Key="listViewItems" TargetType="ListBoxItem">
+                <Style.Setters>
+                    <Setter Property="Height" Value="45"/>
+                </Style.Setters>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
