@@ -3,31 +3,45 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
         Title="SettingWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="460.6" Width="728.2">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="295*"/>
-            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="305*"/>
+            <ColumnDefinition Width="56*"/>
         </Grid.ColumnDefinitions>
         <!--list view section-->
         <ListView BorderThickness="0" Name="settingListView" SelectionChanged="settingListView_SelectionChanged" HorizontalAlignment="Right" Height="432" Background="White" VerticalAlignment="Top" Width="277" Margin="0,0,-0.4,0" Grid.ColumnSpan="2">
             <ListViewItem HorizontalAlignment="Right">
                 <StackPanel Orientation="Horizontal" Width="260" FlowDirection="RightToLeft">
                     <TextBlock Text="عمومی" Style="{StaticResource settingListView}"/>
+                    <materialIcon:PackIcon Kind="SettingsOutline" Width="26" Height="28" Margin="28,0,0,0"/>
                 </StackPanel>
             </ListViewItem>
             <Separator Width="256" Margin="0"/>
+
             <ListViewItem HorizontalAlignment="Right">
                 <StackPanel Orientation="Horizontal" Width="261" FlowDirection="RightToLeft">
                     <TextBlock Text="پیشرفته" Style="{StaticResource settingListView}"/>
+
                 </StackPanel>
             </ListViewItem>
             <Separator Width="256" Margin="0"/>
+
+            <ListViewItem HorizontalAlignment="Right">
+                <StackPanel Orientation="Horizontal" Width="261" FlowDirection="RightToLeft">
+                    <TextBlock Text="بروزرسانی" Style="{StaticResource settingListView}"/>
+                    <materialIcon:PackIcon Kind="Update" Width="26" Height="28"/>
+
+                </StackPanel>
+            </ListViewItem>
+            <Separator Width="256" Margin="0"/>
+
         </ListView>
 
         <!--Show  Settings-->
-        <Frame HorizontalAlignment="Left" Name="settingFrame" Height="432" Width="445"/>
+        <Frame HorizontalAlignment="Left" Name="settingFrame" Width="445"/>
     </Grid>
 </Window>
