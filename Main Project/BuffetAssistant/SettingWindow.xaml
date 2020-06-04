@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
-        Title="SettingWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="470.6" Width="778.2">
+        Title="SettingWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="460.6" Width="728.2">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="295*"/>
+            <ColumnDefinition Width="61*"/>
+        </Grid.ColumnDefinitions>
         <!--list view section-->
-        <ListView BorderThickness="0" Name="settingListView" SelectionChanged="settingListView_SelectionChanged" HorizontalAlignment="Right" Height="442" Background="White" VerticalAlignment="Top" Width="277" Margin="0,0,0,-0.4">
+        <ListView BorderThickness="0" Name="settingListView" SelectionChanged="settingListView_SelectionChanged" HorizontalAlignment="Right" Height="432" Background="White" VerticalAlignment="Top" Width="277" Margin="0,0,-0.4,0" Grid.ColumnSpan="2">
             <ListViewItem HorizontalAlignment="Right">
                 <StackPanel Orientation="Horizontal" Width="260" FlowDirection="RightToLeft">
                     <TextBlock Text="عمومی" Style="{StaticResource settingListView}"/>
@@ -22,8 +26,8 @@
             </ListViewItem>
             <Separator Width="256" Margin="0"/>
         </ListView>
-        
+
         <!--Show  Settings-->
-        <Frame HorizontalAlignment="Left" Name="settingFrame" Height="442" VerticalAlignment="Top" Width="495" Margin="0,0,0,-0.4"/>
+        <Frame HorizontalAlignment="Left" Name="settingFrame" Height="432" Width="445"/>
     </Grid>
 </Window>

@@ -89,6 +89,7 @@
                     <Setter Property="Margin" Value="0,0,10,0"/>
                 </Style.Setters>
             </Style>
+           
         </ResourceDictionary>
     </Application.Resources>
 </Application>
