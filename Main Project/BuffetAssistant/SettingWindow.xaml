@@ -9,15 +9,15 @@
         Title="SettingWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="460.6" Width="728.2">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="305*"/>
-            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="300*"/>
+            <ColumnDefinition Width="61*"/>
         </Grid.ColumnDefinitions>
         <!--list view section-->
         <ListView BorderThickness="0" Name="settingListView" SelectionChanged="settingListView_SelectionChanged" HorizontalAlignment="Right" Height="432" Background="White" VerticalAlignment="Top" Width="277" Margin="0,0,-0.4,0" Grid.ColumnSpan="2">
             <ListViewItem HorizontalAlignment="Right">
                 <StackPanel Orientation="Horizontal" Width="260" FlowDirection="RightToLeft">
                     <TextBlock Text="عمومی" Style="{StaticResource settingListView}"/>
-                    <materialIcon:PackIcon Kind="SettingsOutline" Width="26" Height="28" Margin="28,0,0,0"/>
+                    <materialIcon:PackIcon Kind="HomeEdit" Width="99" Height="28"/>
                 </StackPanel>
             </ListViewItem>
             <Separator Width="256" Margin="0"/>
@@ -25,6 +25,7 @@
             <ListViewItem HorizontalAlignment="Right">
                 <StackPanel Orientation="Horizontal" Width="261" FlowDirection="RightToLeft">
                     <TextBlock Text="پیشرفته" Style="{StaticResource settingListView}"/>
+                    <materialIcon:PackIcon Kind="SettingsOutline" Width="66" Height="28"/>
 
                 </StackPanel>
             </ListViewItem>
@@ -33,7 +34,7 @@
             <ListViewItem HorizontalAlignment="Right">
                 <StackPanel Orientation="Horizontal" Width="261" FlowDirection="RightToLeft">
                     <TextBlock Text="بروزرسانی" Style="{StaticResource settingListView}"/>
-                    <materialIcon:PackIcon Kind="Update" Width="26" Height="28"/>
+                    <materialIcon:PackIcon Kind="CircleArrows" Width="40" Height="28"/>
 
                 </StackPanel>
             </ListViewItem>
