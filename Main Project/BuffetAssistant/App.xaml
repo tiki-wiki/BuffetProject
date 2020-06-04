@@ -80,6 +80,15 @@
                     </Setter>
                 </Style.Setters>
             </Style>
+            
+            <!--Setting Window-->
+            <Style x:Key="settingListView" TargetType="TextBlock">
+                <Style.Setters>
+                    <Setter Property="FontSize" Value="19"/>
+                    <Setter Property="FontFamily" Value="B Yekan"/>
+                    <Setter Property="Margin" Value="0,0,10,0"/>
+                </Style.Setters>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

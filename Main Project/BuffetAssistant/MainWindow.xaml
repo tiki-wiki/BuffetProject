@@ -14,12 +14,12 @@
         <CommandBinding Command="ApplicationCommands.Close" Executed="CloseCommandHandler"/>
     </Window.CommandBindings>
 
-    <Grid Name="mainGrid">
+    <Grid Name="mainGrid" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <WrapPanel Margin="0,0,0.2,-1">
+        <WrapPanel Margin="0,0,0.2,-1" VerticalAlignment="Top" HorizontalAlignment="Left">
             <Grid Height="561" Width="953">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="477*"/>
@@ -37,7 +37,7 @@
                 <TextBlock Style="{StaticResource appNameStyle}" Text="بوفه یار" Margin="10,25,10,10" />
 
                 <!--big buttons-->
-                <Button x:Name="orderBTN" Click="orderBTN_Click" Grid.Column="0" Grid.Row="1"  Margin="109,85.6,97.8,82" Foreground="White" Grid.RowSpan="2">
+                <Button x:Name="orderBTN" Click="orderBTN_Click" Grid.Column="0"  Grid.Row="1"  Margin="109,85.6,97.8,82" Foreground="White" Grid.RowSpan="2">
                     <Button.Resources>
                         <Style TargetType="{x:Type Border}">
                             <Setter Property="CornerRadius" Value="20"/>
@@ -107,7 +107,7 @@
                     <materialIcon:PackIcon  Kind="WindowMinimize" Foreground="White" Background="Transparent" FontSize="100" Height="35" Width="50"/>
                 </Button>
 
-                <Button Background="Transparent"  x:Name="settingBTN" BorderThickness="0" Grid.Column="0" Grid.Row="4">
+                <Button Background="Transparent" Click="settingBTN_Click" x:Name="settingBTN" BorderThickness="0" Grid.Column="0" Grid.Row="4">
                     <Button.Margin>
                         <Thickness>10,50.6,426.8,25.8</Thickness>
                     </Button.Margin>

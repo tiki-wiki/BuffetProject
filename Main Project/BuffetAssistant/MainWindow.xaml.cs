@@ -51,7 +51,18 @@ namespace BuffetAssistant
 
             if (orderWindow.WindowState == WindowState.Normal)
                 mainGrid.Opacity = 1;
-                this.Background.Opacity = 0.8;
+            this.Background.Opacity = 0.8;
+        }
+
+        private void settingBTN_Click(object sender, RoutedEventArgs e)
+        {
+            SettingWindow settingWindow = new SettingWindow();
+            mainGrid.Opacity = 0.4;
+            this.Background.Opacity = 0.4;
+            settingWindow.ShowDialog();
+            if (settingWindow.WindowState == WindowState.Normal)
+                mainGrid.Opacity = 1;
+            this.Background.Opacity = 0.8;
         }
     }
 }

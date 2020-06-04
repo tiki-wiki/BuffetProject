@@ -1,0 +1,29 @@
+﻿<Window x:Class="BuffetAssistant.SettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuffetAssistant"
+        mc:Ignorable="d"
+        Title="SettingWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="470.6" Width="778.2">
+    <Grid>
+        <!--list view section-->
+        <ListView BorderThickness="0" Name="settingListView" SelectionChanged="settingListView_SelectionChanged" HorizontalAlignment="Right" Height="442" Background="White" VerticalAlignment="Top" Width="277" Margin="0,0,0,-0.4">
+            <ListViewItem HorizontalAlignment="Right">
+                <StackPanel Orientation="Horizontal" Width="260" FlowDirection="RightToLeft">
+                    <TextBlock Text="عمومی" Style="{StaticResource settingListView}"/>
+                </StackPanel>
+            </ListViewItem>
+            <Separator Width="256" Margin="0"/>
+            <ListViewItem HorizontalAlignment="Right">
+                <StackPanel Orientation="Horizontal" Width="261" FlowDirection="RightToLeft">
+                    <TextBlock Text="پیشرفته" Style="{StaticResource settingListView}"/>
+                </StackPanel>
+            </ListViewItem>
+            <Separator Width="256" Margin="0"/>
+        </ListView>
+        
+        <!--Show  Settings-->
+        <Frame HorizontalAlignment="Left" Name="settingFrame" Height="442" VerticalAlignment="Top" Width="495" Margin="0,0,0,-0.4"/>
+    </Grid>
+</Window>
