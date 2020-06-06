@@ -74,5 +74,13 @@ namespace BuffetAssistant
         {
 
         }
+
+        private void MaximizeBTN_Click(object sender, RoutedEventArgs e)
+        {
+            if (WindowState == WindowState.Maximized)
+                WindowState = WindowState.Normal;
+            else if (WindowState == WindowState.Normal)
+                WindowState = WindowState.Maximized;
+        }
     }
 }
