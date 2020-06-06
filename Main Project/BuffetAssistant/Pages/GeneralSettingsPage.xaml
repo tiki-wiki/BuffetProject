@@ -13,7 +13,7 @@
         <GroupBox Header="ظاهر" FontFamily="B Yekan" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="0.8" Height="108" Margin="10,10,0,0" VerticalAlignment="Top" Width="425" FlowDirection="RightToLeft">
             <Grid>
                 <!--green blue card-->
-                <Label Margin="347,31,23.8,9.8">
+                <Label Margin="324,21,46.8,19.8">
                     <Label.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                             <GradientStop Color="#FF25FFA1"/>
@@ -23,7 +23,7 @@
                 </Label>
 
                 <!--Orange Card-->
-                <Label Margin="295,31,75.8,9.8">
+                <Label Margin="272,21,98.8,19.8">
                     <Label.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                             <GradientStop Color="White"/>
@@ -34,7 +34,7 @@
                 </Label>
 
                 <!--Purpule card-->
-                <Label Name="purpuleCard" Margin="243,31,127.8,9.8" BorderBrush="DeepSkyBlue" BorderThickness="0">
+                <Label Name="purpuleCard" Margin="220,21,150.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0">
                     <Label.Background>
                         <LinearGradientBrush EndPoint="1,1" StartPoint="0,0" >
                             <GradientStop Color="#FF1B01FF" Offset="1.5"/>
@@ -45,7 +45,7 @@
                 </Label>
 
                 <!--red Card-->
-                <Label Name="redCard" Margin="191,31,179.8,9.8" BorderBrush="DeepSkyBlue" BorderThickness="0" >
+                <Label Name="redCard" Margin="168,21,202.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0" >
                     <Label.Background>
                         <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
                             <GradientStop Color="Red" Offset="1"/>
@@ -54,8 +54,8 @@
                     </Label.Background>
                 </Label>
 
-                <!--red Card-->
-                <Label Name="card" Margin="139,31,232.8,9.8" BorderBrush="DeepSkyBlue" BorderThickness="0">
+                <!--green Card-->
+                <Label Name="greenCard" Margin="116,21,255.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0">
                     <Label.Background>
                         <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
                             <GradientStop Color="Green" Offset="1"/>
@@ -63,6 +63,17 @@
                         </LinearGradientBrush>
                     </Label.Background>
                 </Label>
+
+                <!--card-->
+                <Label Name="card" Margin="65,21,306.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0">
+                    <Label.Background>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                            <GradientStop Color="DeepPink" Offset="1"/>
+                            <GradientStop Color="White" Offset="0.1"/>
+                        </LinearGradientBrush>
+                    </Label.Background>
+                </Label>
+
             </Grid>
         </GroupBox>
 
@@ -82,7 +93,7 @@
 
                 <ComboBox ItemsSource="{x:Static Fonts.SystemFontFamilies}" Name="fontComboBox" Margin="64,43,227.8,150.8" FlowDirection="LeftToRight" MaxDropDownHeight="145"/>
                 <TextBlock Text="رنگ قلم:" Margin="319,0,54.8,192.8"/>
-                <materialDesign:ColorPicker Margin="259,27,9.8,25.8" Name="colorPicker"/>
+                <materialDesign:ColorPicker Margin="259,27,9.8,56.8" Name="colorPicker"/>
 
                 <TextBlock Text="سبک قلم:" Margin="0,91,363.8,101.8"/>
                 <ComboBox ItemsSource="{Binding ElementName=fontComboBox}" Name="typeFaceComboBox" Margin="64,91,227.8,102.8" FlowDirection="LeftToRight" MaxDropDownHeight="115"/>
