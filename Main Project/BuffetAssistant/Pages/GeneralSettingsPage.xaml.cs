@@ -31,14 +31,15 @@ namespace BuffetAssistant.Pages
             //when this page open
             fontComboBox.SelectedIndex = 0;
         }
-
         private void saveBTN_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void fontSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
+
         }
+
     }
 }
