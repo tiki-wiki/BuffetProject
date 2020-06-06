@@ -93,6 +93,7 @@
 
                 <ComboBox ItemsSource="{x:Static Fonts.SystemFontFamilies}" Name="fontComboBox" Margin="64,43,227.8,150.8" FlowDirection="LeftToRight" MaxDropDownHeight="145"/>
                 <TextBlock Text="رنگ قلم:" Margin="319,0,54.8,192.8"/>
+                <materialDesign:ColorPicker Margin="259,27,9.8,56.8" Name="colorPicker"/>
 
                 <TextBlock Text="سبک قلم:" Margin="0,91,363.8,101.8"/>
                 <ComboBox ItemsSource="{Binding ElementName=fontComboBox}" Name="typeFaceComboBox" Margin="64,91,227.8,102.8" FlowDirection="LeftToRight" MaxDropDownHeight="115"/>
