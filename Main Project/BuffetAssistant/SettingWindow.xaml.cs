@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Navigation;
+using BuffetAssistant.Classes;
+
 namespace BuffetAssistant
 {
     /// <summary>
@@ -32,6 +34,16 @@ namespace BuffetAssistant
             settingFrame.NavigationUIVisibility = NavigationUIVisibility.Hidden;
             if (settingListView.SelectedIndex == 0)
                 settingFrame.Navigate(generalPage);
+        }
+
+        private void ListViewItem_Selected(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("آیا مایلید تنظیمات را ذخیره کنید؟", "سوال", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                AppSetting.SaveSetting();
+                this.Close();
+            }
         }
     }
 }

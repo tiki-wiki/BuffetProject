@@ -38,10 +38,10 @@
             </ListViewItem>
             <Separator Width="256" Margin="0"/>
 
-            <ListViewItem HorizontalAlignment="Right" Style="{StaticResource listViewItems}">
+            <ListViewItem Selected="ListViewItem_Selected" HorizontalAlignment="Right" Style="{StaticResource listViewItems}">
                 <StackPanel Orientation="Horizontal" Width="261" FlowDirection="RightToLeft">
                     <TextBlock Text="بستن" Style="{StaticResource listViewText}"/>
-                    <materialIcon:PackIcon Kind="CircleArrows" Width="40" Height="28"/>
+                    <materialIcon:PackIcon Kind="CloseCircleOutline" Width="106" Height="28"/>
                 </StackPanel>
             </ListViewItem>
             <Separator Width="256" Margin="0"/>

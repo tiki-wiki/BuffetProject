@@ -42,7 +42,6 @@ namespace BuffetAssistant.Pages
         {
             Label label = sender as Label;
             AppSetting.config.Theme = label.Background;
-            AppSetting.SaveSetting();
         }
     }
 }
