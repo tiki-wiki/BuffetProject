@@ -22,10 +22,10 @@
 
         <!--Controls-->
         <StackPanel>
-        <TextBlock Style="{StaticResource appNameStyle}" Text="بوفه یار" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <TextBlock Style="{StaticResource appNameStyle}" Text="بوفه یار" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         </StackPanel>
-        <StackPanel Margin="0,100" VerticalAlignment="Center">
-           
+        <StackPanel Margin="0,150,0.2,70.2" VerticalAlignment="Center" Height="335">
+
             <!--big buttons-->
             <Button x:Name="orderBTN" Click="orderBTN_Click" Margin="60,15,10,10" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left">
                 <Button.Resources>
@@ -87,6 +87,8 @@
                 </StackPanel>
             </Button>
         </StackPanel>
+
+        <!--control box section-->
         <Button Margin="0,10,20,0"
                          Background="Transparent" Command="ApplicationCommands.Close"  x:Name="closeBTN" BorderThickness="0" Height="30" Width="30" HorizontalAlignment="Right" VerticalAlignment="Top">
             <materialIcon:PackIcon  Kind="CloseBox" Foreground="White" Background="Transparent" FontSize="100" Height="30" Width="30"/>
@@ -100,14 +102,15 @@
                          Background="Transparent" Click="MaximizeBTN_Click"  x:Name="maximizeBTN" BorderThickness="0"  Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Right">
             <materialIcon:PackIcon  Kind="WindowMaximize" Foreground="White" Background="Transparent" FontSize="100" Height="30" Width="30"/>
         </Button>
+
         <StackPanel Margin="0,457,0,0" VerticalAlignment="Bottom">
-        <Button Background="Transparent" Click="settingBTN_Click" x:Name="settingBTN" BorderThickness="0"  HorizontalAlignment="Left" Margin="30">
-       
-            <Button.BitmapEffect>
-                <DropShadowBitmapEffect ShadowDepth="6" Softness="1" Opacity="0.4" Color="Black"/>
-            </Button.BitmapEffect>
-            <materialIcon:PackIcon  Kind="Settings" Foreground="White" Background="Transparent" FontSize="100" Height="29" Width="32"/>
-        </Button>
+            <Button Background="Transparent" Click="settingBTN_Click" x:Name="settingBTN" BorderThickness="0"  HorizontalAlignment="Left" Margin="30">
+
+                <Button.BitmapEffect>
+                    <DropShadowBitmapEffect ShadowDepth="6" Softness="1" Opacity="0.4" Color="Black"/>
+                </Button.BitmapEffect>
+                <materialIcon:PackIcon  Kind="Settings" Foreground="White" Background="Transparent" FontSize="100" Height="29" Width="32"/>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

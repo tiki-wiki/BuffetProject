@@ -7,71 +7,32 @@
       xmlns:local="clr-namespace:BuffetAssistant.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800" Height="432" Width="445">
-    <Grid Background="White">
+    <Grid Background="White" Name="pageGrid">
 
         <!--appreance group box-->
-        <GroupBox Header="ظاهر" FontFamily="B Yekan" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="0.8" Height="108" Margin="10,10,0,0" VerticalAlignment="Top" Width="425" FlowDirection="RightToLeft">
+        <GroupBox Header="تم" FontFamily="B Yekan" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="0.8" Height="108" Margin="10,10,0,0" VerticalAlignment="Top" Width="425" FlowDirection="RightToLeft">
             <Grid>
                 <!--green blue card-->
-                <Label Margin="324,21,46.8,19.8">
-                    <Label.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                            <GradientStop Color="#FF25FFA1"/>
-                            <GradientStop Color="#FF72A3FE" Offset="1.2"/>
-                        </LinearGradientBrush>
-                    </Label.Background>
-                </Label>
+                <Label Margin="352,21,18.8,19.8" Name="greenBlueCard" Style="{StaticResource greenBlueTheme}" MouseDown="Peek_Theme"/>
 
                 <!--Orange Card-->
-                <Label Margin="272,21,98.8,19.8">
-                    <Label.Background>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                            <GradientStop Color="White"/>
-                            <GradientStop Color="#FFFF9300" Offset="1.5"/>
-                            <GradientStop Color="#FFFFA62F" Offset="0.7"/>
-                        </LinearGradientBrush>
-                    </Label.Background>
-                </Label>
+                <Label Margin="300,21,70.8,19.8" Name="orangeCard" Style="{StaticResource orangeTheme}"/>
 
                 <!--Purpule card-->
-                <Label Name="purpuleCard" Margin="220,21,150.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0">
-                    <Label.Background>
-                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0" >
-                            <GradientStop Color="#FF1B01FF" Offset="1.5"/>
-                            <GradientStop Color="#FF9EA7FF" Offset="0.682"/>
-                            <GradientStop Color="#FFC0E6FF"/>
-                        </LinearGradientBrush>
-                    </Label.Background>
-                </Label>
+                <Label Name="purpuleCard" Margin="248,21,122.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0" Style="{StaticResource purpuleTheme}" />
 
                 <!--red Card-->
-                <Label Name="redCard" Margin="168,21,202.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0" >
-                    <Label.Background>
-                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
-                            <GradientStop Color="Red" Offset="1"/>
-                            <GradientStop Color="White" Offset="0.0"/>
-                        </LinearGradientBrush>
-                    </Label.Background>
-                </Label>
+                <Label Name="redCard" Margin="196,21,174.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0" Style="{StaticResource redTheme}"/>
 
                 <!--green Card-->
-                <Label Name="greenCard" Margin="116,21,255.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0">
-                    <Label.Background>
-                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
-                            <GradientStop Color="Green" Offset="1"/>
-                            <GradientStop Color="White" Offset="0.0"/>
-                        </LinearGradientBrush>
-                    </Label.Background>
-                </Label>
+                <Label Name="greenCard" Margin="144,21,227.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0" Style="{StaticResource greenTheme}"/>
 
-                <!--card-->
-                <Label Name="card" Margin="65,21,306.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0">
-                    <Label.Background>
-                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
-                            <GradientStop Color="DeepPink" Offset="1"/>
-                            <GradientStop Color="White" Offset="0.1"/>
-                        </LinearGradientBrush>
-                    </Label.Background>
+                <!--pink card-->
+                <Label Name="pinkCard" Margin="93,21,278.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0" Style="{StaticResource pinkTheme}"/>
+
+                <!--costum card-->
+                <Label Name="customCard" Margin="38,21,333.8,19.8" BorderBrush="DeepSkyBlue" BorderThickness="0" Background="LightGray"
+                       Content="دستی" FontSize="13" VerticalContentAlignment="Center">
                 </Label>
 
             </Grid>
@@ -79,43 +40,27 @@
 
 
         <!--font group box-->
-        <GroupBox Name="fontGroup" Header="فونت" FontFamily="B Yekan" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="0.8" Height="240" Margin="10,123,0,0" VerticalAlignment="Top" Width="425" FlowDirection="RightToLeft">
-            <Grid >
-                <TextBlock Text="اندازه قلم:" Margin="0,0,363.8,193.8"/>
+        <GroupBox Name="fontGroup" Header="فونت" FontFamily="B Yekan" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="0.8" Height="187" Margin="10,123,0,0" VerticalAlignment="Top" Width="425" FlowDirection="RightToLeft">
+            <GroupBox.Content>
+                <Grid Margin="0,0,-2.2,-50">
+                    <TextBlock Text="اندازه قلم:" Margin="0,0,363.8,193.8"/>
 
-                <!--percent Text-->
-                <TextBlock Name="percentTextBlock" Text="{Binding ElementName=fontSlider,Path=Value}" Margin="190,0,203.8,197.8"/>
+                    <!--percent Text-->
+                    <TextBlock Name="percentTextBlock" Text="{Binding ElementName=fontSlider,Path=Value}" Margin="190,0,203.8,197.8"/>
 
-                <!--slider-->
-                <Slider Margin="64,0,227.8,183.8" Name="fontSlider" FlowDirection="RightToLeft" Value="8" Maximum="48" Minimum="8" TickPlacement="BottomRight"
+                    <!--slider-->
+                    <Slider Margin="64,0,227.8,183.8" Name="fontSlider" FlowDirection="RightToLeft" Value="8" Maximum="48" Minimum="8" TickPlacement="BottomRight"
                         IsSnapToTickEnabled="True"/>
-                <TextBlock Text="نوع قلم:" Margin="0,43,373.8,150.8"/>
+                    <TextBlock Text="نوع قلم:" Margin="0,38,374,155"/>
 
-                <ComboBox ItemsSource="{x:Static Fonts.SystemFontFamilies}" Name="fontComboBox" Margin="64,43,227.8,150.8" FlowDirection="LeftToRight" MaxDropDownHeight="145"/>
-                <TextBlock Text="رنگ قلم:" Margin="319,0,54.8,192.8"/>
-                <materialDesign:ColorPicker Margin="259,27,9.8,56.8" Name="colorPicker"/>
+                    <ComboBox ItemsSource="{x:Static Fonts.SystemFontFamilies}" Name="fontComboBox" Margin="64,38,228,156" FlowDirection="LeftToRight" MaxDropDownHeight="145"/>
+                    <TextBlock Text="رنگ قلم:" Margin="319,0,54.8,192.8"/>
+                    <materialDesign:ColorPicker Margin="259,27,9.8,56.8" Name="colorPicker"/>
 
-                <TextBlock Text="سبک قلم:" Margin="0,91,363.8,101.8"/>
-                <ComboBox ItemsSource="{Binding ElementName=fontComboBox}" Name="typeFaceComboBox" Margin="64,91,227.8,102.8" FlowDirection="LeftToRight" MaxDropDownHeight="115"/>
-                <!--save button-->
-                <Button Width="90" Click="saveBTN_Click" Height="30" Margin="219,241,103.8,-56.2" Name="saveBTN">
-                    <Button.Content>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="ذخیره"/>
-                            <materialDesign:PackIcon Kind="ContentSaveCog" Margin="5,0,0,0" Height="19"/>
-                        </StackPanel>
-                    </Button.Content>
-                </Button>
-                <!--cancel button-->
-                <Button Width="90" Click="saveBTN_Click" Height="30" Margin="95,241,227.8,-56.2" Name="cancelBtn">
-                    <Button.Content>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="لغو"/>
-                            <materialDesign:PackIcon Kind="FileCancel" Margin="5,0,0,0" Height="19"/>
-                        </StackPanel>
-                    </Button.Content>
-                </Button>
-            </Grid>
+                    <TextBlock Text="سبک قلم:" Margin="0,74,364,118"/>
+                    <ComboBox ItemsSource="{Binding ElementName=fontComboBox}" Name="typeFaceComboBox" Margin="64,73,228,120" FlowDirection="LeftToRight" MaxDropDownHeight="115"/>
+                </Grid>
+            </GroupBox.Content>
         </GroupBox>
     </Grid>
 </Page>

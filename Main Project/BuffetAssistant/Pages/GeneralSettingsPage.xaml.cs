@@ -15,8 +15,9 @@ using System.Windows.Shapes;
 using System.Drawing.Text;
 using System.Configuration;
 using System.Security.Cryptography.X509Certificates;
-using System.Drawing;
 using BuffetAssistant.Properties;
+using BuffetAssistant.Classes;
+
 namespace BuffetAssistant.Pages
 {
     /// <summary>
@@ -31,15 +32,17 @@ namespace BuffetAssistant.Pages
             //when this page open
             fontComboBox.SelectedIndex = 0;
         }
-        private void saveBTN_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
+        private void Peek_Theme(object sender, MouseButtonEventArgs e)
+        {
+            Label label = sender as Label;
+            AppSetting.config.Theme = label.Background;
+            AppSetting.SaveSetting();
+        }
     }
 }

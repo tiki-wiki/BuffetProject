@@ -17,7 +17,7 @@
             <BitmapImage x:Key="manageIcon" UriSource="Assets\Icons\manage.png" />
             <BitmapImage x:Key="normalOrderImage" UriSource="Assets\Images\SimpleOrder.jpg" />
             <BitmapImage x:Key="specialOrderImage" UriSource="Assets\Images\SpecialOrder.jpg" />
-            
+
             <!--main window button styles-->
             <Style x:Key="mainWindowButtons" TargetType="Button">
                 <Style.Setters>
@@ -54,7 +54,7 @@
                     <Setter Property="FontStyle" Value="Italic"/>
                 </Style.Setters>
             </Style>
-            
+
             <!--order window button styles-->
             <Style x:Key="orderWindowBTN" TargetType="Button">
                 <Style.Setters>
@@ -80,7 +80,7 @@
                     </Setter>
                 </Style.Setters>
             </Style>
-            
+
             <!--Setting Window section-->
             <Style x:Key="listViewText" TargetType="TextBlock">
                 <Style.Setters>
@@ -89,12 +89,79 @@
                     <Setter Property="Margin" Value="0,0,10,0"/>
                 </Style.Setters>
             </Style>
-            
+
+            <!--general setting page-->
+
+            <!--themes-->
+            <Style x:Key="greenBlueTheme" TargetType="Label">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#FF25FFA1"/>
+                            <GradientStop Color="#FF72A3FE" Offset="1.2"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="orangeTheme" TargetType="Label">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFFF9300" Offset="1.5"/>
+                            <GradientStop Color="#FFFFA62F" Offset="0.7"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="purpuleTheme" TargetType="Label">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0" >
+                            <GradientStop Color="#FF1B01FF" Offset="1.5"/>
+                            <GradientStop Color="#FF9EA7FF" Offset="0.682"/>
+                            <GradientStop Color="#FFC0E6FF"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="redTheme" TargetType="Label">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                            <GradientStop Color="Red" Offset="1"/>
+                            <GradientStop Color="White" Offset="0.0"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="greenTheme" TargetType="Label">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                            <GradientStop Color="Green" Offset="1"/>
+                            <GradientStop Color="White" Offset="0.0"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="pinkTheme" TargetType="Label">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                            <GradientStop Color="DeepPink" Offset="1"/>
+                            <GradientStop Color="White" Offset="0.1"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+
             <Style x:Key="listViewItems" TargetType="ListBoxItem">
                 <Style.Setters>
                     <Setter Property="Height" Value="45"/>
                 </Style.Setters>
-                
+
                 <!--change selected item color-->
                 <Style.Triggers>
                     <Trigger Property="IsSelected" Value="True">
