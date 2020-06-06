@@ -64,5 +64,15 @@ namespace BuffetAssistant
                 mainGrid.Opacity = 1;
             this.Background.Opacity = 0.8;
         }
+
+        private void StoreBTN_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ReportBTN_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
