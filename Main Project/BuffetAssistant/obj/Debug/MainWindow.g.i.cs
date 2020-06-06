@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿#pragma checksum "..\..\MainWindow.xaml" "{8829d00f-11b8-4213-878b-770e8597ac16}" "1C894970CDD73C3318A6A7106B48F3D0ABCB5F7DCE0CDFAD4B1B8B29CA0B0A3A"
+=======
+﻿#pragma checksum "..\..\MainWindow.xaml" "{8829d00f-11b8-4213-878b-770e8597ac16}" "95E73FF203823567371EB918D8E3EF0FDF73E44093788BA8DB3A68BA9487EDFE"
+>>>>>>> parent of f4b7062... add percent label
 =======
 ﻿#pragma checksum "..\..\MainWindow.xaml" "{8829d00f-11b8-4213-878b-770e8597ac16}" "95E73FF203823567371EB918D8E3EF0FDF73E44093788BA8DB3A68BA9487EDFE"
 >>>>>>> parent of f4b7062... add percent label
@@ -57,7 +61,11 @@ namespace BuffetAssistant {
         
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         #line 25 "..\..\MainWindow.xaml"
+=======
+        #line 30 "..\..\MainWindow.xaml"
+>>>>>>> parent of f4b7062... add percent label
 =======
         #line 30 "..\..\MainWindow.xaml"
 >>>>>>> parent of f4b7062... add percent label
@@ -69,7 +77,11 @@ namespace BuffetAssistant {
         
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         #line 40 "..\..\MainWindow.xaml"
+=======
+        #line 45 "..\..\MainWindow.xaml"
+>>>>>>> parent of f4b7062... add percent label
 =======
         #line 45 "..\..\MainWindow.xaml"
 >>>>>>> parent of f4b7062... add percent label
@@ -81,7 +93,11 @@ namespace BuffetAssistant {
         
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         #line 55 "..\..\MainWindow.xaml"
+=======
+        #line 60 "..\..\MainWindow.xaml"
+>>>>>>> parent of f4b7062... add percent label
 =======
         #line 60 "..\..\MainWindow.xaml"
 >>>>>>> parent of f4b7062... add percent label
@@ -93,7 +109,11 @@ namespace BuffetAssistant {
         
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         #line 70 "..\..\MainWindow.xaml"
+=======
+        #line 75 "..\..\MainWindow.xaml"
+>>>>>>> parent of f4b7062... add percent label
 =======
         #line 75 "..\..\MainWindow.xaml"
 >>>>>>> parent of f4b7062... add percent label
@@ -105,7 +125,11 @@ namespace BuffetAssistant {
         
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         #line 86 "..\..\MainWindow.xaml"
+=======
+        #line 91 "..\..\MainWindow.xaml"
+>>>>>>> parent of f4b7062... add percent label
 =======
         #line 91 "..\..\MainWindow.xaml"
 >>>>>>> parent of f4b7062... add percent label
@@ -117,7 +141,11 @@ namespace BuffetAssistant {
         
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         #line 91 "..\..\MainWindow.xaml"
+=======
+        #line 96 "..\..\MainWindow.xaml"
+>>>>>>> parent of f4b7062... add percent label
 =======
         #line 96 "..\..\MainWindow.xaml"
 >>>>>>> parent of f4b7062... add percent label
@@ -129,7 +157,11 @@ namespace BuffetAssistant {
         
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         #line 95 "..\..\MainWindow.xaml"
+=======
+        #line 100 "..\..\MainWindow.xaml"
+>>>>>>> parent of f4b7062... add percent label
 =======
         #line 100 "..\..\MainWindow.xaml"
 >>>>>>> parent of f4b7062... add percent label
@@ -192,7 +224,11 @@ namespace BuffetAssistant {
             this.orderBTN = ((System.Windows.Controls.Button)(target));
             
 <<<<<<< HEAD
+<<<<<<< HEAD
             #line 25 "..\..\MainWindow.xaml"
+=======
+            #line 30 "..\..\MainWindow.xaml"
+>>>>>>> parent of f4b7062... add percent label
 =======
             #line 30 "..\..\MainWindow.xaml"
 >>>>>>> parent of f4b7062... add percent label
@@ -205,7 +241,11 @@ namespace BuffetAssistant {
             this.reportBTN = ((System.Windows.Controls.Button)(target));
             
 <<<<<<< HEAD
+<<<<<<< HEAD
             #line 40 "..\..\MainWindow.xaml"
+=======
+            #line 45 "..\..\MainWindow.xaml"
+>>>>>>> parent of f4b7062... add percent label
 =======
             #line 45 "..\..\MainWindow.xaml"
 >>>>>>> parent of f4b7062... add percent label
@@ -227,7 +267,11 @@ namespace BuffetAssistant {
             this.minimizeBTN = ((System.Windows.Controls.Button)(target));
             
 <<<<<<< HEAD
+<<<<<<< HEAD
             #line 91 "..\..\MainWindow.xaml"
+=======
+            #line 96 "..\..\MainWindow.xaml"
+>>>>>>> parent of f4b7062... add percent label
 =======
             #line 96 "..\..\MainWindow.xaml"
 >>>>>>> parent of f4b7062... add percent label
@@ -240,7 +284,11 @@ namespace BuffetAssistant {
             this.settingBTN = ((System.Windows.Controls.Button)(target));
             
 <<<<<<< HEAD
+<<<<<<< HEAD
             #line 95 "..\..\MainWindow.xaml"
+=======
+            #line 100 "..\..\MainWindow.xaml"
+>>>>>>> parent of f4b7062... add percent label
 =======
             #line 100 "..\..\MainWindow.xaml"
 >>>>>>> parent of f4b7062... add percent label
