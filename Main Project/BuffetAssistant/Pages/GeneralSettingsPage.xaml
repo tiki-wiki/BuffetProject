@@ -13,35 +13,56 @@
         <GroupBox Header="ظاهر" FontFamily="B Yekan" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="0.8" Height="108" Margin="10,10,0,0" VerticalAlignment="Top" Width="425" FlowDirection="RightToLeft">
             <Grid>
                 <!--green blue card-->
-                <materialDesign:Card Width="40" Height="40" Margin="309,33,63.8,9.8">
-                    <materialDesign:Card.Background>
+                <Label Margin="347,31,23.8,9.8">
+                    <Label.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                             <GradientStop Color="#FF25FFA1"/>
                             <GradientStop Color="#FF72A3FE" Offset="1.2"/>
                         </LinearGradientBrush>
-                    </materialDesign:Card.Background>
-                </materialDesign:Card>
+                    </Label.Background>
+                </Label>
 
                 <!--Orange Card-->
-                <materialDesign:Card Width="40" Height="40" Margin="259,33,113.8,9.8">
-                    <materialDesign:Card.Background>
+                <Label Margin="295,31,75.8,9.8">
+                    <Label.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                             <GradientStop Color="White"/>
                             <GradientStop Color="#FFFF9300" Offset="1.5"/>
                             <GradientStop Color="#FFFFA62F" Offset="0.7"/>
                         </LinearGradientBrush>
-                    </materialDesign:Card.Background>
-                </materialDesign:Card>
+                    </Label.Background>
+                </Label>
 
-                <materialDesign:Card Width="40" Height="40" Margin="209,33,163.8,9.8">
-                    <materialDesign:Card.Background>
-                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                <!--Purpule card-->
+                <Label Name="purpuleCard" Margin="243,31,127.8,9.8" BorderBrush="DeepSkyBlue" BorderThickness="0">
+                    <Label.Background>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0" >
                             <GradientStop Color="#FF1B01FF" Offset="1.5"/>
-                            <GradientStop Color="#FF9EA7FF" Offset="0.579"/>
-                            <GradientStop Color="#FFA4DBFF"/>
+                            <GradientStop Color="#FF9EA7FF" Offset="0.682"/>
+                            <GradientStop Color="#FFC0E6FF"/>
                         </LinearGradientBrush>
-                    </materialDesign:Card.Background>
-                </materialDesign:Card>
+                    </Label.Background>
+                </Label>
+
+                <!--red Card-->
+                <Label Name="redCard" Margin="191,31,179.8,9.8" BorderBrush="DeepSkyBlue" BorderThickness="0" >
+                    <Label.Background>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                            <GradientStop Color="Red" Offset="1"/>
+                            <GradientStop Color="White" Offset="0.0"/>
+                        </LinearGradientBrush>
+                    </Label.Background>
+                </Label>
+
+                <!--red Card-->
+                <Label Name="card" Margin="139,31,232.8,9.8" BorderBrush="DeepSkyBlue" BorderThickness="0">
+                    <Label.Background>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                            <GradientStop Color="Green" Offset="1"/>
+                            <GradientStop Color="White" Offset="0.0"/>
+                        </LinearGradientBrush>
+                    </Label.Background>
+                </Label>
             </Grid>
         </GroupBox>
 
@@ -50,8 +71,12 @@
         <GroupBox Name="fontGroup" Header="فونت" FontFamily="B Yekan" HorizontalAlignment="Left" BorderBrush="Black" BorderThickness="0.8" Height="240" Margin="10,123,0,0" VerticalAlignment="Top" Width="425" FlowDirection="RightToLeft">
             <Grid >
                 <TextBlock Text="اندازه قلم:" Margin="0,0,363.8,193.8"/>
-                <TextBlock Name="percentTextBlock" Text="." Margin="190,0,203.8,197.8"/>
-                <Slider Margin="64,0,227.8,183.8" Name="fontSlider" ValueChanged="fontSlider_ValueChanged" FlowDirection="RightToLeft" Value="8" Maximum="48" Minimum="8" TickPlacement="BottomRight"
+
+                <!--percent Text-->
+                <TextBlock Name="percentTextBlock" Text="{Binding ElementName=fontSlider,Path=Value}" Margin="190,0,203.8,197.8"/>
+
+                <!--slider-->
+                <Slider Margin="64,0,227.8,183.8" Name="fontSlider" FlowDirection="RightToLeft" Value="8" Maximum="48" Minimum="8" TickPlacement="BottomRight"
                         IsSnapToTickEnabled="True"/>
                 <TextBlock Text="نوع قلم:" Margin="0,43,373.8,150.8"/>
 
