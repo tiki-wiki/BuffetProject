@@ -15,14 +15,11 @@
     </Window.CommandBindings>
 
     <Grid Name="mainGrid" >
-<<<<<<< HEAD
-=======
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
 
->>>>>>> parent of f4b7062... add percent label
         <!--Controls-->
         <StackPanel>
         <TextBlock Style="{StaticResource appNameStyle}" Text="بوفه یار" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
