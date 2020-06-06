@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BuffetAssistant"
         xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" MouseDown="Drag" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" Height="560" Width="960" MinHeight="560" MinWidth="960" WindowStyle="None">
+        Title="MainWindow" MouseDown="Drag" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" Height="562.1" Width="957.4" WindowStyle="None">
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}" Opacity="0.8"/>
     </Window.Background>
@@ -15,6 +15,11 @@
     </Window.CommandBindings>
 
     <Grid Name="mainGrid" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
         <!--Controls-->
         <StackPanel>
         <TextBlock Style="{StaticResource appNameStyle}" Text="بوفه یار" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
