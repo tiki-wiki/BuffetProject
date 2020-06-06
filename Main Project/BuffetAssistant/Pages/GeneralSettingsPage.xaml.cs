@@ -13,6 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing.Text;
+using System.Configuration;
+using System.Security.Cryptography.X509Certificates;
+using System.Drawing;
+using BuffetAssistant.Properties;
 namespace BuffetAssistant.Pages
 {
     /// <summary>
@@ -28,10 +32,13 @@ namespace BuffetAssistant.Pages
             fontComboBox.SelectedIndex = 0;
         }
 
-        private void fontComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void saveBTN_Click(object sender, RoutedEventArgs e)
         {
-            Properties.Settings.Default.AppFont = (FontFamily)fontComboBox.SelectedItem;
-            Properties.Settings.Default.Save();
+
+        }
+
+        private void fontSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
         }
     }
 }
