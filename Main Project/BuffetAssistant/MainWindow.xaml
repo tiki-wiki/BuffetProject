@@ -14,103 +14,121 @@
         <CommandBinding Command="ApplicationCommands.Close" Executed="CloseCommandHandler"/>
     </Window.CommandBindings>
 
-    <Grid Name="mainGrid" >
+    <Grid Name="mainGrid">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="197*"/>
+            <ColumnDefinition Width="636*"/>
         </Grid.ColumnDefinitions>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="106*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="52*"/>
+        </Grid.RowDefinitions>
         <!--Controls-->
-        <StackPanel>
-            <TextBlock Style="{StaticResource appNameStyle}" Text="بوفه یار" Margin="10" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-        </StackPanel>
-        <StackPanel Margin="0,150,0.2,70.2" VerticalAlignment="Center" Height="335">
 
-            <!--big buttons-->
-            <Button x:Name="orderBTN" Click="orderBTN_Click" Margin="60,15,10,10" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Style>
-                    <StaticResource ResourceKey="mainWindowButtons"/>
-                </Button.Style>
-                <StackPanel Orientation="Horizontal" Height="56">
-                    <Image Source="{StaticResource orderIcon}" Height="51" Width="73"/>
-                    <TextBlock Text="ثبت سفارش" Height="49" Margin="10,15,10,10" TextAlignment="Center"/>
-                </StackPanel>
-            </Button>
 
-            <Button x:Name="reportBTN"  Margin="60,15,10,10" Click="ReportBTN_Click" VerticalAlignment="Center"  HorizontalAlignment="Left" >
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Style>
-                    <StaticResource ResourceKey="mainWindowButtons"/>
-                </Button.Style>
-                <StackPanel Orientation="Horizontal" Height="42">
-                    <Image Source="{StaticResource reportIcon}" Height="41" Width="81" />
-                    <TextBlock Text="گزارش مالی" Margin="10,6,10,0" TextAlignment="Center" />
-                </StackPanel>
-            </Button>
+        <!--Title-->
+        <TextBlock Style="{StaticResource appNameStyle}" Text="بوفه یار"  Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="Auto" Margin="0,10,0,11"/>
 
-            <Button x:Name="storeBTN"  Margin="60,15,10,10" VerticalAlignment="Center"  HorizontalAlignment="Left">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Style>
-                    <StaticResource ResourceKey="mainWindowButtons"/>
-                </Button.Style>
-                <StackPanel Orientation="Horizontal" Height="42">
-                    <Image Source="{StaticResource storeIcon}" Height="41" Width="81" />
-                    <TextBlock Text="انبار" Width="88" Margin="0,6,10,0" TextAlignment="Center"/>
-                </StackPanel>
-            </Button>
 
-            <Button x:Name="manageBTN" Margin="60,15,0,0" VerticalAlignment="Center"  HorizontalAlignment="Left">
-                <Button.Resources>
-                    <Style TargetType="{x:Type Border}">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-                <Button.Style>
-                    <StaticResource ResourceKey="mainWindowButtons"/>
-                </Button.Style>
-                <StackPanel Orientation="Horizontal" Height="42">
-                    <Image Source="{StaticResource manageIcon}" Width="39"  />
-                    <TextBlock Text="مدیریت" Width="88" Margin="10,8,10,0" TextAlignment="Center"/>
-                </StackPanel>
-            </Button>
-        </StackPanel>
+
+
+        <!--big buttons-->
+
+        <!--Button Add Order-->
+        <Button x:Name="orderBTN" Click="orderBTN_Click"  Foreground="White"  Grid.Row="2" Grid.Column="1" >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <StaticResource ResourceKey="mainWindowButtons"/>
+            </Button.Style>
+            <StackPanel Orientation="Horizontal" Height="56">
+                <Image Source="{StaticResource orderIcon}" Height="51" Width="73"/>
+                <TextBlock Text="ثبت سفارش" Height="49" Margin="10,15,10,10" TextAlignment="Center"/>
+            </StackPanel>
+        </Button>
+
+        <!--Button Report-->
+        <Button x:Name="reportBTN"  Click="ReportBTN_Click" Grid.Row="4" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <StaticResource ResourceKey="mainWindowButtons"/>
+            </Button.Style>
+            <StackPanel Orientation="Horizontal" Height="42">
+                <Image Source="{StaticResource reportIcon}" Height="41" Width="81" />
+                <TextBlock Text="گزارش مالی" Margin="10,6,10,0" TextAlignment="Center" />
+            </StackPanel>
+        </Button>
+
+        <!--Button Store-->
+        <Button x:Name="storeBTN"  Grid.Row="6" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <StaticResource ResourceKey="mainWindowButtons"/>
+            </Button.Style>
+            <StackPanel Orientation="Horizontal" Height="42">
+                <Image Source="{StaticResource storeIcon}" Height="41" Width="81" />
+                <TextBlock Text="انبار" Width="88" Margin="0,6,10,0" TextAlignment="Center"/>
+            </StackPanel>
+        </Button>
+
+        <!--Button Add Order-->
+        <Button x:Name="manageBTN"  Grid.Row="8" Grid.Column="1" >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+            <Button.Style>
+                <StaticResource ResourceKey="mainWindowButtons"/>
+            </Button.Style>
+            <StackPanel Orientation="Horizontal" Height="42">
+                <Image Source="{StaticResource manageIcon}" Width="39"  />
+                <TextBlock Text="مدیریت" Width="88" Margin="10,8,10,0" TextAlignment="Center"/>
+            </StackPanel>
+        </Button>
 
         <!--control box section-->
         <Button Margin="0,10,20,0"
-                         Background="Transparent" Command="ApplicationCommands.Close"  x:Name="closeBTN" BorderThickness="0" Height="30" Width="30" HorizontalAlignment="Right" VerticalAlignment="Top">
+                         Background="Transparent" Command="ApplicationCommands.Close"  x:Name="closeBTN" BorderThickness="0" Height="30" Width="30" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="2">
             <materialIcon:PackIcon  Kind="CloseBox" Foreground="White" Background="Transparent" FontSize="100" Height="30" Width="30"/>
         </Button>
 
         <Button Margin="0,10,140,0"
-                         Background="Transparent" Click="minimizeBTN_Click"  x:Name="minimizeBTN" BorderThickness="0"  Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Right">
+                         Background="Transparent" Click="minimizeBTN_Click"  x:Name="minimizeBTN" BorderThickness="0"  Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="2">
             <materialIcon:PackIcon  Kind="WindowMinimize" Foreground="White" Background="Transparent" FontSize="100" Height="30" Width="30"/>
         </Button>
         <Button Margin="0,10,80,0"
-                         Background="Transparent" Click="MaximizeBTN_Click"  x:Name="maximizeBTN" BorderThickness="0"  Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Right">
+                         Background="Transparent" Click="MaximizeBTN_Click"  x:Name="maximizeBTN" BorderThickness="0"  Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Column="2">
             <materialIcon:PackIcon  Kind="WindowMaximize" Foreground="White" Background="Transparent" FontSize="100" Height="30" Width="30"/>
         </Button>
 
-        <StackPanel Margin="0,457,0,0" VerticalAlignment="Bottom">
-            <Button Background="Transparent" Click="settingBTN_Click" x:Name="settingBTN" BorderThickness="0"  HorizontalAlignment="Left" Margin="30">
+        <Button Background="Transparent" Click="settingBTN_Click" x:Name="settingBTN" Grid.Column="0" Grid.Row="10"  BorderThickness="0" >
 
-                <Button.BitmapEffect>
-                    <DropShadowBitmapEffect ShadowDepth="6" Softness="1" Opacity="0.4" Color="Black"/>
-                </Button.BitmapEffect>
-                <materialIcon:PackIcon  Kind="Settings" Foreground="White" Background="Transparent" FontSize="100" Height="29" Width="32"/>
-            </Button>
-        </StackPanel>
+            <Button.BitmapEffect>
+                <DropShadowBitmapEffect ShadowDepth="6" Softness="1" Opacity="0.4" Color="Black"/>
+            </Button.BitmapEffect>
+            <materialIcon:PackIcon  Kind="Settings" Foreground="White"  BorderThickness="0"  Background="Transparent" FontSize="100" Height="29" Width="32"/>
+        </Button>
     </Grid>
 </Window>

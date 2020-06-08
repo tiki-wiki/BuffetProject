@@ -82,5 +82,10 @@ namespace BuffetAssistant
             else if (WindowState == WindowState.Normal)
                 WindowState = WindowState.Maximized;
         }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+
+        }
     }
 }
