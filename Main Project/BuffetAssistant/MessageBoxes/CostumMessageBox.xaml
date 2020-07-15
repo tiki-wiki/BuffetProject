@@ -11,16 +11,37 @@
     <!--messageBox ui codes-->
     <Grid Name="mainGrid">
         <Border CornerRadius="25" BorderBrush="White" BorderThickness="0.7" Background="White"/>
-
+        
+        
+        <!--control Area grid-->
         <Grid Name="controlArea" MouseDown="controlArea_MouseDown" Margin="0,0,-0.2,195" Background="Transparent">
             <Border CornerRadius="20,0,0,0" BorderBrush="Transparent" BorderThickness="0.7" Background="#FFF0F0F0" Margin="-1,-1,19,0"/>
+            <TextBlock Text="Caption" Foreground="Black" TextAlignment="Center" FontSize="15" Margin="157,-1,160,1"/>
         </Grid>
-
-
+        
+       
+        <!--close Button-->
         <Button Name="btnClose" Click="btnClose_Click" Style="{StaticResource closeBTNMessageBox}"  Margin="340,-1,-0.2,195" Background="#FFFE5454">
             <Button.Content>
                 <materialIcon:PackIcon Kind="Close" Height="35" Width="38" Foreground="White"/>
             </Button.Content>
         </Button>
+
+        <Line
+                X1="0" Y1="0" X2="200" Y2="200" Stroke="Gray" StrokeThickness="0.6" Margin="105,70,90.8,-52" RenderTransformOrigin="0.5,0.5">
+            <Line.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="45.008"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Line.RenderTransform>
+        </Line>
+
+        <Grid Margin="0,40,-0.2,55">
+            <TextBlock Margin="110,10,20,0" Text="پیغام" TextAlignment="Right"/>
+            <Image x:Name="messageBoxIcon" Margin="20,35,320,20" Stretch="Uniform"/>
+        </Grid>
     </Grid>
 </Window>

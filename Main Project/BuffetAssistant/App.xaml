@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:BuffetAssistant"
              xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:materialColor="clr-namespace:MaterialDesignColors.Recommended;assembly=MaterialDesignColors"
-             StartupUri="CostumMessageBox.xaml">
+             StartupUri="MessageBoxes\CostumMessageBox.xaml">
     <Application.Resources>
         <!--styles-->
         <ResourceDictionary>

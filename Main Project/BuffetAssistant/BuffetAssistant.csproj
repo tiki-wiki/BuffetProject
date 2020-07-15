@@ -74,6 +74,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\AppSetting.cs" />
+    <Compile Include="MessageBoxes\CostumMessageBox.cs" />
     <Compile Include="Pages\GeneralSettingsPage.xaml.cs">
       <DependentUpon>GeneralSettingsPage.xaml</DependentUpon>
     </Compile>
@@ -151,12 +152,18 @@
   <ItemGroup>
     <Resource Include="Assets\Images\SpecialOrder.jpg" />
     <Resource Include="Assets\Images\SimpleOrder.jpg" />
-    <Resource Include="Assets\Icons\money.png" />
-    <Resource Include="Assets\Icons\manage.png" />
+    <Resource Include="Assets\Icons\money.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Icons\manage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Content Include="Assets\Icons\order.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Assets\Icons\store.png" />
+    <Resource Include="Assets\Icons\store.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Content Include="Assets\Images\MainWindowBackground.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
