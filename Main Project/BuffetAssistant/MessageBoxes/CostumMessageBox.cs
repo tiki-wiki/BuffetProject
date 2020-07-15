@@ -9,7 +9,7 @@ namespace BuffetAssistant.MessageBoxes
 {
     class CostumMessageBox
     {
-        public enum Buttons
+        public enum MessageButtons
         {
             Yes,
             No,
@@ -17,9 +17,21 @@ namespace BuffetAssistant.MessageBoxes
             Retry,
             OK
         }
-        public static string Show(string text,string Caption)
+        public enum MessageIcons
         {
-            return Show(text, Buttons.OK);
+
+        }
+        public static string Show(string text)
+        {
+            return Show(text);
+        }
+        public static string Show(string text, string caption)
+        {
+            return Show(text, caption);
+        }
+        public static string Show(string text, string caption, MessageButtons messageButtons)
+        {
+            return Show(text, caption,messageButtons);
         }
     }
 }

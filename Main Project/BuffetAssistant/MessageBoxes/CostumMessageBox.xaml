@@ -16,7 +16,7 @@
         <!--control Area grid-->
         <Grid Name="controlArea" MouseDown="controlArea_MouseDown" Margin="0,0,-0.2,195" Background="Transparent">
             <Border CornerRadius="20,0,0,0" BorderBrush="Transparent" BorderThickness="0.7" Background="#FFF0F0F0" Margin="-1,-1,19,0"/>
-            <TextBlock Text="Caption" Foreground="Black" TextAlignment="Center" FontSize="15" Margin="157,-1,160,1"/>
+            <TextBlock Text="عنوان" FontFamily="Byekan" Foreground="Black" TextAlignment="Center" FontSize="16" Margin="157,4,160,0"/>
         </Grid>
         
        
@@ -40,7 +40,7 @@
         </Line>
 
         <Grid Margin="0,40,-0.2,55">
-            <TextBlock Margin="110,10,20,0" Text="پیغام" TextAlignment="Right"/>
+            <TextBlock Margin="110,10,20,0" Text="پیغام" FontSize="13" FontFamily="BYekan" TextAlignment="Right"/>
             <Image x:Name="messageBoxIcon" Margin="20,35,320,20" Stretch="Uniform"/>
         </Grid>
     </Grid>
