@@ -10,10 +10,22 @@
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}" Opacity="0.8"/>
     </Window.Background>
+
+    <!--All resources-->
+    <Window.Resources>
+        <RoutedUICommand x:Key="settingCommand" Text="setting"/>
+    </Window.Resources>
+    
+    <!--all command bindings-->
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Close" Executed="CloseCommandHandler"/>
+        <CommandBinding Command="{StaticResource settingCommand}" Executed="CommandBinding_Executed"/>
     </Window.CommandBindings>
-
+    
+    <!--All InputKeys-->
+    <Window.InputBindings>
+        <KeyBinding Key="S" Modifiers="Alt" Command="{StaticResource settingCommand}"/>
+    </Window.InputBindings>
     <Grid Name="mainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="119*"/>
@@ -121,7 +133,7 @@
         </Button>
 
         <!-- setting Button-->
-        <Button Background="Transparent" Click="settingBTN_Click" Name="settingBTN" Grid.Column="0" Grid.Row="10"  BorderThickness="0" >
+        <Button Background="Transparent" Command="{Binding settingCommand}" Click="settingBTN_Click" Name="settingBTN" Grid.Column="0" Grid.Row="10"  BorderThickness="0" Margin="10,7.2,59.6,10.2" >
             <Button.BitmapEffect>
                 <DropShadowBitmapEffect ShadowDepth="6" Softness="1" Opacity="0.4" Color="Black"/>
             </Button.BitmapEffect>

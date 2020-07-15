@@ -87,5 +87,12 @@ namespace BuffetAssistant
         {
 
         }
+
+        //command for open setting
+        private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            SettingWindow settingWindow = new SettingWindow();
+            settingWindow.ShowDialog();
+        }
     }
 }
