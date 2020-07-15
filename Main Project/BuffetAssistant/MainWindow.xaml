@@ -39,9 +39,6 @@
         <!--Title-->
         <TextBlock Style="{StaticResource appNameStyle}" Text="بوفه یار"  Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="Auto" Margin="0,10,0,11"/>
 
-
-
-
         <!--big buttons-->
 
         <!--Button Add Order-->
@@ -123,8 +120,8 @@
             <materialIcon:PackIcon  Kind="WindowMaximize" Foreground="White" Background="Transparent" FontSize="100" Height="30" Width="30"/>
         </Button>
 
-        <Button Background="Transparent" Click="settingBTN_Click" x:Name="settingBTN" Grid.Column="0" Grid.Row="10"  BorderThickness="0" >
-
+        <!-- setting Button-->
+        <Button Background="Transparent" Click="settingBTN_Click" Name="settingBTN" Grid.Column="0" Grid.Row="10"  BorderThickness="0" >
             <Button.BitmapEffect>
                 <DropShadowBitmapEffect ShadowDepth="6" Softness="1" Opacity="0.4" Color="Black"/>
             </Button.BitmapEffect>
