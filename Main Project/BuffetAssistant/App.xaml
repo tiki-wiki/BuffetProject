@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:BuffetAssistant"
              xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:materialColor="clr-namespace:MaterialDesignColors.Recommended;assembly=MaterialDesignColors"
-             StartupUri="MessageBoxes\CostumMessageBox.xaml">
+             StartupUri="MainWindow.xaml">
     <Application.Resources>
         <!--styles-->
         <ResourceDictionary>
@@ -159,7 +159,7 @@
                 <Style.Setters>
                     <Setter Property="Height" Value="45"/>
                 </Style.Setters>
-                
+
                 <!--change selected item color-->
                 <Style.Triggers>
                     <Trigger Property="IsSelected" Value="True">
@@ -167,28 +167,7 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-            
-            <!--Costum MessageBox Style-->
-            <Style x:Key="CostumMessageBox" TargetType="Button">
-                <Style.Setters>
-                    <Setter Property="Cursor" Value="Hand"/>
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="Button">
-                                <Border CornerRadius="20" Background="{TemplateBinding Background}" BorderThickness="0">
-                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                </Border>
-                                <ControlTemplate.Triggers>
-                                    <Trigger Property="IsEnabled" Value="False">
-                                        <Setter Property="Opacity" Value="0.3"/>
-                                    </Trigger>
-                                </ControlTemplate.Triggers>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style.Setters>
-            </Style>
-            
+
             <!--Close Button Style-->
             <Style x:Key="closeBTNMessageBox" TargetType="Button">
                 <Style.Setters>
@@ -200,8 +179,8 @@
                                     <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Border>
                                 <ControlTemplate.Triggers>
-                                    <Trigger Property="IsEnabled" Value="False">
-                                        <Setter Property="Opacity" Value="0.3"/>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Opacity" Value="0.6"/>
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
@@ -214,8 +193,10 @@
             <Style x:Key="messageBoxButtons" TargetType="Button">
                 <Style.Setters>
                     <Setter Property="Cursor" Value="Hand"/>
-                    <Setter Property="Background" Value="#FF03A9D7"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="Background" Value="#FF03B1D7"/>
                     <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Width" Value="60"/>
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="Button">
@@ -223,8 +204,8 @@
                                     <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Border>
                                 <ControlTemplate.Triggers>
-                                    <Trigger Property="IsEnabled" Value="False">
-                                        <Setter Property="Opacity" Value="0.3"/>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Opacity" Value="0.6"/>
                                     </Trigger>
                                 </ControlTemplate.Triggers>
                             </ControlTemplate>
@@ -232,9 +213,6 @@
                     </Setter>
                 </Style.Setters>
             </Style>
-
-
-
 
         </ResourceDictionary>
     </Application.Resources>
