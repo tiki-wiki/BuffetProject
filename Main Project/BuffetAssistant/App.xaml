@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:BuffetAssistant"
              xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
              xmlns:materialColor="clr-namespace:MaterialDesignColors.Recommended;assembly=MaterialDesignColors"
-             StartupUri="MainWindow.xaml">
+             StartupUri="CostumMessageBox.xaml">
     <Application.Resources>
         <!--styles-->
         <ResourceDictionary>
@@ -153,13 +153,13 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-
-
+            
+            <!--ListView style-->
             <Style x:Key="listViewItems" TargetType="ListBoxItem">
                 <Style.Setters>
                     <Setter Property="Height" Value="45"/>
                 </Style.Setters>
-
+                
                 <!--change selected item color-->
                 <Style.Triggers>
                     <Trigger Property="IsSelected" Value="True">
@@ -167,6 +167,51 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
+            
+            <!--Costum MessageBox Style-->
+            <Style x:Key="CostumMessageBox" TargetType="Button">
+                <Style.Setters>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="20" Background="{TemplateBinding Background}" BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsEnabled" Value="False">
+                                        <Setter Property="Opacity" Value="0.3"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style.Setters>
+            </Style>
+
+            <Style x:Key="closeBTNMessageBox" TargetType="Button">
+                <Style.Setters>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="0,20,0,20" Background="{TemplateBinding Background}" BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsEnabled" Value="False">
+                                        <Setter Property="Opacity" Value="0.3"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style.Setters>
+            </Style>
+
+
+
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

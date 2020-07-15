@@ -94,5 +94,14 @@ namespace BuffetAssistant
             SettingWindow settingWindow = new SettingWindow();
             settingWindow.ShowDialog();
         }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MessageBoxResult exitResult = MessageBox.Show("آیا از خروج خود اطمینان دارید؟","خروج",MessageBoxButton.YesNo,MessageBoxImage.Question);
+            if (exitResult == MessageBoxResult.Yes)
+            {
+                Application.Current.Shutdown();
+            }
+        }
     }
 }

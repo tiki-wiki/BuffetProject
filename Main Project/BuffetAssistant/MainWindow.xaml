@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BuffetAssistant"
         xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" MouseDown="Drag" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" Height="560" Width="960" MinHeight="560" MinWidth="960" WindowStyle="None">
+        Title="MainWindow" MouseDown="Drag" Closing="Window_Closing" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" Height="560" Width="960" MinHeight="560" MinWidth="960" WindowStyle="None">
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}" Opacity="0.8"/>
     </Window.Background>
@@ -26,6 +26,7 @@
     <Window.InputBindings>
         <KeyBinding Key="S" Modifiers="Alt" Command="{StaticResource settingCommand}"/>
     </Window.InputBindings>
+    
     <Grid Name="mainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="119*"/>
@@ -46,7 +47,6 @@
             <RowDefinition Height="52*"/>
         </Grid.RowDefinitions>
         <!--Controls-->
-
 
         <!--Title-->
         <TextBlock Style="{StaticResource appNameStyle}" Text="بوفه یار"  Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="Auto" Margin="0,10,0,11"/>
