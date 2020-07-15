@@ -188,7 +188,8 @@
                     </Setter>
                 </Style.Setters>
             </Style>
-
+            
+            <!--Close Button Style-->
             <Style x:Key="closeBTNMessageBox" TargetType="Button">
                 <Style.Setters>
                     <Setter Property="Cursor" Value="Hand"/>
@@ -196,6 +197,29 @@
                         <Setter.Value>
                             <ControlTemplate TargetType="Button">
                                 <Border CornerRadius="0,20,0,20" Background="{TemplateBinding Background}" BorderThickness="0">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsEnabled" Value="False">
+                                        <Setter Property="Opacity" Value="0.3"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style.Setters>
+            </Style>
+
+            <!--messageBox answer Buttons-->
+            <Style x:Key="messageBoxButtons" TargetType="Button">
+                <Style.Setters>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Background" Value="#FF03A9D7"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="15" Background="{TemplateBinding Background}" BorderThickness="0">
                                     <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                 </Border>
                                 <ControlTemplate.Triggers>
