@@ -1,4 +1,5 @@
 ﻿using BuffetAssistant.Classes;
+using BuffetAssistant.MessageBoxes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,11 +71,6 @@ namespace BuffetAssistant
 
         }
 
-        private void ReportBTN_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void MaximizeBTN_Click(object sender, RoutedEventArgs e)
         {
             if (WindowState == WindowState.Maximized)
@@ -83,10 +79,6 @@ namespace BuffetAssistant
                 WindowState = WindowState.Maximized;
         }
 
-        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
-
-        }
 
         //command for open setting
         private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
@@ -95,13 +87,9 @@ namespace BuffetAssistant
             settingWindow.ShowDialog();
         }
 
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        private void reportBTN_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult exitResult = MessageBox.Show("آیا از خروج خود اطمینان دارید؟","خروج",MessageBoxButton.YesNo,MessageBoxImage.Question);
-            if (exitResult == MessageBoxResult.Yes)
-            {
-                Application.Current.Shutdown();
-            }
+          CostumMessageBox.Show("اولین پیام","سلام",CostumMessageBox.MessageIcons.Information,CostumMessageBox.MessageButtons.YesNoCancel);
         }
     }
 }

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BuffetAssistant"
         xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" MouseDown="Drag" Closing="Window_Closing" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" Height="560" Width="960" MinHeight="560" MinWidth="960" WindowStyle="None">
+        Title="MainWindow" MouseDown="Drag" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" Height="560" Width="960" MinHeight="560" MinWidth="960" WindowStyle="None">
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}" Opacity="0.8"/>
     </Window.Background>
@@ -70,7 +70,7 @@
         </Button>
 
         <!--Button Report-->
-        <Button x:Name="reportBTN"  Click="ReportBTN_Click" Grid.Row="4" Grid.Column="1">
+        <Button x:Name="reportBTN" Grid.Row="4" Grid.Column="1" Click="reportBTN_Click_1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>

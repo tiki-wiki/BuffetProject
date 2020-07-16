@@ -6,7 +6,7 @@
         xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
-        Title="Window1" Height="230" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}"  Width="414.997">
+        Title="Window1" Height="230" Closing="Window_Closing" WindowStartupLocation="CenterScreen" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}"  Width="414.997">
 
     <!--messageBox ui codes-->
     <Grid Name="mainGrid">
@@ -15,13 +15,13 @@
 
         <!--control Area grid-->
         <Grid Name="controlArea" MouseDown="controlArea_MouseDown" Margin="0,0,-0.2,195" Background="Transparent">
-            <Border CornerRadius="20,0,0,0" BorderBrush="Transparent" BorderThickness="0.7" Background="#FFECECEC" Margin="-1,-1,19,0"/>
-            <TextBlock Name="captionLabel" Text="عنوان" FontFamily="Byekan" Foreground="Black" TextAlignment="Center" FontSize="16" Margin="157,4,160,0"/>
+            <Border CornerRadius="20,0,0,0" BorderBrush="Transparent" BorderThickness="0.7" Background="#FFE0E0E0" Margin="-1,-1,19,0"/>
+            <TextBlock Name="captionLabel" Text="پیام" FontFamily="Byekan" Foreground="Black" TextAlignment="Center" FontSize="16" Margin="157,4,160,0"/>
         </Grid>
 
 
         <!--close Button-->
-        <Button Name="btnClose" Click="btnClose_Click" Style="{StaticResource closeBTNMessageBox}"  Margin="345,-1,-0.2,195" Background="#FFFD5454">
+        <Button Name="btnClose" Click="btnClose_Click" Style="{StaticResource closeBTNMessageBox}"  Margin="350,-1,-0.2,195" Background="#FFFD5454">
             <Button.Content>
                 <materialIcon:PackIcon Kind="Close" Height="35" Width="38" Foreground="White"/>
             </Button.Content>
@@ -47,10 +47,10 @@
         </Grid>
 
         <!-- All MessageBox Buttons-->
-        <Button Content="باشه" Style="{StaticResource messageBoxButtons}" Height="30" Margin="271,173,83.8,27" />
-        <Button Content="نه" Style="{StaticResource messageBoxButtons}" Height="30" Margin="206,173,148.8,27"/>
-        <Button Content="لغو" Style="{StaticResource messageBoxButtons}" Height="30" Margin="139,173,215.8,27"/>
-        <Button Content="دوباره" Style="{StaticResource messageBoxButtons}" Height="30" Margin="74,173,280.8,27"/>
+        <Button Name="yesBTN" Content="بله" Visibility="Hidden" Style="{StaticResource messageBoxButtons}"  Margin="235,172,94.8,28" />
+        <Button Name="cancelBTN" Content="لغو" Visibility="Hidden" Style="{StaticResource messageBoxButtons}" Margin="165,172,164.8,28"/>
+        <Button x:Name="noBTN" Visibility="Hidden" Content="نه" Style="{StaticResource messageBoxButtons}"  Margin="96,172,233.8,28"/>
+        <Button x:Name="okBTN" Content="باشه" Style="{StaticResource messageBoxButtons}"  Margin="165,172,164.8,28"/>
 
     </Grid>
 </Window>
