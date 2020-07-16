@@ -89,7 +89,7 @@ namespace BuffetAssistant
 
         private void reportBTN_Click_1(object sender, RoutedEventArgs e)
         {
-          CostumMessageBox.Show("اولین پیام","سلام",CostumMessageBox.MessageIcons.Information,CostumMessageBox.MessageButtons.YesNoCancel);
+          CostumMessageBox.Show("نمیدونم نرم افزار چرا باگ داره!","سوال",CostumMessageBox.MessageIcons.Error,CostumMessageBox.MessageButtons.OK);
         }
     }
 }

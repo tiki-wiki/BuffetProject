@@ -9,7 +9,7 @@ namespace BuffetAssistant.MessageBoxes
 {
     public class CostumMessageBox
     {
-        private static Window1 window1;
+        private static Window1 messageBoxWindow;
         public enum MessageButtons
         {
             YesNoCancel,
@@ -32,14 +32,15 @@ namespace BuffetAssistant.MessageBoxes
         }
         public static int Show(string text)
         {
-            window1 = new Window1(text);
-            window1.Show();
+            messageBoxWindow = new Window1(text);
+            messageBoxWindow.ShowDialog();
             return -1;
         }
+
         public static void Show(string text, string caption, MessageIcons messageIcon, MessageButtons messageButtons)
         {
-            window1 = new Window1(text, caption, messageIcon, messageButtons);
-            window1.Show();
+            messageBoxWindow = new Window1(text, caption, messageIcon, messageButtons);
+            messageBoxWindow.ShowDialog();
         }
     }
 }

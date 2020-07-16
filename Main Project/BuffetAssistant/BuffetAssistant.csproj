@@ -152,12 +152,12 @@
   <ItemGroup>
     <Resource Include="Assets\Images\SpecialOrder.jpg" />
     <Resource Include="Assets\Images\SimpleOrder.jpg" />
-    <Resource Include="Assets\Icons\money.png">
+    <Content Include="Assets\Icons\money.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\Icons\manage.png">
+    </Content>
+    <Content Include="Assets\Icons\manage.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    </Content>
     <Content Include="Assets\Icons\MessageBoxIcons\Error.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -167,14 +167,18 @@
     <Content Include="Assets\Icons\MessageBoxIcons\Information.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Assets\Icons\MessageBoxIcons\Question.png" />
-    <Resource Include="Assets\Icons\MessageBoxIcons\warning.png" />
+    <Content Include="Assets\Icons\MessageBoxIcons\Question.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Icons\MessageBoxIcons\warning.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Icons\order.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Assets\Icons\store.png">
+    <Content Include="Assets\Icons\store.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    </Content>
     <Content Include="Assets\Images\MainWindowBackground.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -34,6 +34,8 @@ namespace BuffetAssistant
         //constructor 2
         public Window1(string text, string caption, CostumMessageBox.MessageIcons icon,CostumMessageBox.MessageButtons buttons)
         {
+            InitializeComponent();
+
             //initial MessageBox Text
             messageLabel.Text = text;
 
