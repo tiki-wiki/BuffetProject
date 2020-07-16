@@ -22,6 +22,12 @@ namespace BuffetAssistant
     /// </summary>
     public partial class Window1 : Window
     {
+        //Button Events
+        private delegate int ButtonClick();
+        private event ButtonClick OkClick;
+        private event ButtonClick YesClick;
+        private event ButtonClick NoClick;
+        private event ButtonClick CancelClick;
 
         //constructor 1
         public Window1(string text)
@@ -29,6 +35,27 @@ namespace BuffetAssistant
             InitializeComponent();
             //initial MessageBox Text
             messageLabel.Text = text;
+
+            //click events
+            OkClick += Return1;
+            YesClick += Return1;
+            NoClick += ReturnNo;
+            CancelClick += ReturnCancel;
+        }
+
+        private int ReturnCancel()
+        {
+            return 0;
+        }
+
+        //costum event handlers
+        private int Return1()
+        {
+            return 1;
+        }
+        private int ReturnNo()
+        {
+            return -1;
         }
 
         //constructor 2
@@ -59,6 +86,9 @@ namespace BuffetAssistant
                     break;
                 case CostumMessageBox.MessageIcons.Warning:
                     messageBoxIcon.Source = GetImageSource(@"D:\Temp\BuffetProject\Main Project\BuffetAssistant\Assets\Icons\MessageBoxIcons\warning.png");
+                    break;
+                case CostumMessageBox.MessageIcons.OK:
+                    messageBoxIcon.Source = GetImageSource(@"D:\Temp\BuffetProject\Main Project\BuffetAssistant\Assets\Icons\MessageBoxIcons\OK.png");
                     break;
             }
 
@@ -114,6 +144,25 @@ namespace BuffetAssistant
 
         private void Animation_Completed(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        //this event is for yes and ok buttons
+        private void okBTN_Click(object sender, RoutedEventArgs e)
+        {
+            Return1();
+            this.Close();
+        }
+
+        private void noBTN_Click(object sender, RoutedEventArgs e)
+        {
+            ReturnNo();
+            this.Close();
+        }
+
+        private void cancelBTN_Click(object sender, RoutedEventArgs e)
+        {
+            ReturnCancel();
             this.Close();
         }
     }

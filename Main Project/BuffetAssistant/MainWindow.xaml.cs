@@ -89,7 +89,7 @@ namespace BuffetAssistant
 
         private void reportBTN_Click_1(object sender, RoutedEventArgs e)
         {
-          CostumMessageBox.Show("نمیدونم نرم افزار چرا باگ داره!","سوال",CostumMessageBox.MessageIcons.Error,CostumMessageBox.MessageButtons.OK);
+          CostumMessageBox.Show("همه مشکلات به خوبی حل شدند","پیام",CostumMessageBox.MessageIcons.OK,CostumMessageBox.MessageButtons.YesNoCancel);
         }
     }
 }

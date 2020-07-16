@@ -152,6 +152,7 @@
   <ItemGroup>
     <Resource Include="Assets\Images\SpecialOrder.jpg" />
     <Resource Include="Assets\Images\SimpleOrder.jpg" />
+    <Resource Include="Assets\Icons\MessageBoxIcons\Ok.png" />
     <Content Include="Assets\Icons\money.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

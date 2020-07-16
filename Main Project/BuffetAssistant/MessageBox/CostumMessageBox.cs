@@ -28,13 +28,14 @@ namespace BuffetAssistant.MessageBoxes
             Exclamation,
             Information,
             Question,
-            Warning
+            Warning,
+            OK
         }
         public static int Show(string text)
         {
             messageBoxWindow = new Window1(text);
             messageBoxWindow.ShowDialog();
-            return -1;
+            return 1;
         }
 
         public static void Show(string text, string caption, MessageIcons messageIcon, MessageButtons messageButtons)
