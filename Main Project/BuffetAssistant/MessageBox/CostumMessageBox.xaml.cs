@@ -22,44 +22,16 @@ namespace BuffetAssistant
     /// </summary>
     public partial class Window1 : Window
     {
-        //Button Events
-        private delegate int ButtonClick();
-        private event ButtonClick OkClick;
-        private event ButtonClick YesClick;
-        private event ButtonClick NoClick;
-        private event ButtonClick CancelClick;
-
         //constructor 1
         public Window1(string text)
         {
             InitializeComponent();
             //initial MessageBox Text
             messageLabel.Text = text;
-
-            //click events
-            OkClick += Return1;
-            YesClick += Return1;
-            NoClick += ReturnNo;
-            CancelClick += ReturnCancel;
-        }
-
-        private int ReturnCancel()
-        {
-            return 0;
-        }
-
-        //costum event handlers
-        private int Return1()
-        {
-            return 1;
-        }
-        private int ReturnNo()
-        {
-            return -1;
         }
 
         //constructor 2
-        public Window1(string text, string caption, CostumMessageBox.MessageIcons icon,CostumMessageBox.MessageButtons buttons)
+        public Window1(string text, string caption, CostumMessageBox.MessageIcons icon, CostumMessageBox.MessageButtons buttons)
         {
             InitializeComponent();
 
@@ -147,23 +119,46 @@ namespace BuffetAssistant
             this.Close();
         }
 
-        //this event is for yes and ok buttons
-        private void okBTN_Click(object sender, RoutedEventArgs e)
+        // MessageBox Results
+        private CostumMessageBox.MessageResult ReturnCancel()
         {
-            Return1();
-            this.Close();
+            return CostumMessageBox.MessageResult.Cancel;
+        }
+        private CostumMessageBox.MessageResult ReturnYes()
+        {
+            return CostumMessageBox.MessageResult.Yes;
+        }
+        private CostumMessageBox.MessageResult ReturnNo()
+        {
+            return CostumMessageBox.MessageResult.No;
+        }
+        private CostumMessageBox.MessageResult ReturnOK()
+        {
+            return CostumMessageBox.MessageResult.OK;
         }
 
+        //this event is for yes and ok buttons
+
+        private void okBTN_Click(object sender, RoutedEventArgs e)
+        {
+            ReturnOK();
+            Close();
+        }
         private void noBTN_Click(object sender, RoutedEventArgs e)
         {
             ReturnNo();
-            this.Close();
+            Close();
         }
-
         private void cancelBTN_Click(object sender, RoutedEventArgs e)
         {
             ReturnCancel();
-            this.Close();
+            Close();
+        }
+
+        private void yesBTN_Click(object sender, RoutedEventArgs e)
+        {
+            ReturnYes();
+            Close();
         }
     }
 }

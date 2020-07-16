@@ -47,7 +47,7 @@
         </Grid>
 
         <!-- All MessageBox Buttons-->
-        <Button Name="yesBTN" Click="okBTN_Click" Content="بله" Visibility="Hidden" Style="{StaticResource messageBoxButtons}"  Margin="250,172,79.8,28" />
+        <Button Name="yesBTN" Click="yesBTN_Click" Content="بله" Visibility="Hidden" Style="{StaticResource messageBoxButtons}"  Margin="250,172,79.8,28" />
         <Button Name="cancelBTN" Click="cancelBTN_Click" Content="لغو" Visibility="Hidden" Style="{StaticResource messageBoxButtons}" Margin="160,172,169.8,28"/>
         <Button x:Name="noBTN"  Click="noBTN_Click" Visibility="Hidden" Content="نه" Style="{StaticResource messageBoxButtons}"  Margin="70,172,259.8,28"/>
         <Button x:Name="okBTN" Click="okBTN_Click" Visibility="Visible" Content="باشه" Style="{StaticResource messageBoxButtons}"  Margin="160,171,169.8,29"/>

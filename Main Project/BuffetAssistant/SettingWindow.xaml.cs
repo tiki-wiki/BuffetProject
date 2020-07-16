@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Navigation;
 using BuffetAssistant.Classes;
+using BuffetAssistant.MessageBoxes;
 
 namespace BuffetAssistant
 {
@@ -38,12 +39,12 @@ namespace BuffetAssistant
 
         private void ListViewItem_Selected(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("آیا مایلید تنظیمات را ذخیره کنید؟", "سوال", MessageBoxButton.YesNo, MessageBoxImage.Question);
-            if (result == MessageBoxResult.Yes)
-            {
-                AppSetting.SaveSetting();
-                this.Close();
-            }
+             MessageBoxResult result = MessageBox.Show("آیا مایلید تنظیمات را ذخیره کنید؟", "سوال", MessageBoxButton.YesNo, MessageBoxImage.Question);
+             if (result == MessageBoxResult.Yes)
+             {
+                 AppSetting.SaveSetting();
+                 this.Close();
+             }
         }
     }
 }
