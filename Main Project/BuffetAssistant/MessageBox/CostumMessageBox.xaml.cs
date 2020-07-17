@@ -22,6 +22,9 @@ namespace BuffetAssistant
     /// </summary>
     public partial class Window1 : Window
     {
+        //varuiable for return value
+       public string dialogCode = string.Empty;
+
         //constructor 1
         public Window1(string text)
         {
@@ -67,19 +70,24 @@ namespace BuffetAssistant
             //initial button
             switch (buttons)
             {
-                case CostumMessageBox.MessageButtons.YesNoCancel:
+                case CostumMessageBox.MessageButtons.YesNo:
+
                     yesBTN.Visibility = Visibility.Visible;
                     noBTN.Visibility = Visibility.Visible;
-                    cancelBTN.Visibility = Visibility.Visible;
 
+                    cancelBTN.Visibility = Visibility.Hidden;
                     okBTN.Visibility = Visibility.Hidden;
+
                     break;
-                case CostumMessageBox.MessageButtons.OK:
+
+                case CostumMessageBox.MessageButtons.OKCancel:
+
                     okBTN.Visibility = Visibility.Visible;
+                    cancelBTN.Visibility = Visibility.Visible;
 
                     yesBTN.Visibility = Visibility.Hidden;
                     noBTN.Visibility = Visibility.Hidden;
-                    cancelBTN.Visibility = Visibility.Hidden;
+
                     break;
             }
         }
@@ -119,45 +127,28 @@ namespace BuffetAssistant
             this.Close();
         }
 
-        // MessageBox Results
-        private CostumMessageBox.MessageResult ReturnCancel()
-        {
-            return CostumMessageBox.MessageResult.Cancel;
-        }
-        private CostumMessageBox.MessageResult ReturnYes()
-        {
-            return CostumMessageBox.MessageResult.Yes;
-        }
-        private CostumMessageBox.MessageResult ReturnNo()
-        {
-            return CostumMessageBox.MessageResult.No;
-        }
-        private CostumMessageBox.MessageResult ReturnOK()
-        {
-            return CostumMessageBox.MessageResult.OK;
-        }
 
         //this event is for yes and ok buttons
 
         private void okBTN_Click(object sender, RoutedEventArgs e)
         {
-            ReturnOK();
+            dialogCode = "Ok";
             Close();
         }
         private void noBTN_Click(object sender, RoutedEventArgs e)
         {
-            ReturnNo();
+            dialogCode = "No";
             Close();
         }
         private void cancelBTN_Click(object sender, RoutedEventArgs e)
         {
-            ReturnCancel();
+            dialogCode = "Cancel";
             Close();
         }
 
         private void yesBTN_Click(object sender, RoutedEventArgs e)
         {
-            ReturnYes();
+            dialogCode = "Yes";
             Close();
         }
     }

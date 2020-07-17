@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,8 @@ namespace BuffetAssistant.MessageBoxes
         private static Window1 messageBoxWindow;
         public enum MessageButtons
         {
-            YesNoCancel,
+            YesNo,
+            OKCancel,
             OK
         }
         public enum MessageResult
@@ -38,10 +40,33 @@ namespace BuffetAssistant.MessageBoxes
             return 1;
         }
 
-        public static void Show(string text, string caption, MessageIcons messageIcon, MessageButtons messageButtons)
+        public static CostumMessageBox.MessageResult Show(string text, string caption, MessageIcons messageIcon, MessageButtons messageButtons)
         {
             messageBoxWindow = new Window1(text, caption, messageIcon, messageButtons);
             messageBoxWindow.ShowDialog();
+
+            //cheking idalog result
+
+            if (messageButtons == MessageButtons.YesNo)
+            {
+
+                if (messageBoxWindow.dialogCode == "Yes")
+                    return MessageResult.Yes;
+                else
+                    return MessageResult.No;
+            }
+
+            else if (messageButtons == MessageButtons.OKCancel)
+            {
+
+                if (messageBoxWindow.dialogCode == "Ok")
+                    return MessageResult.OK;
+                else
+                    return MessageResult.Cancel;
+            }
+
+            else
+                return 0;
         }
     }
 }

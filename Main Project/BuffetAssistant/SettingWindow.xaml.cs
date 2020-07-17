@@ -39,12 +39,16 @@ namespace BuffetAssistant
 
         private void ListViewItem_Selected(object sender, RoutedEventArgs e)
         {
-             MessageBoxResult result = MessageBox.Show("آیا مایلید تنظیمات را ذخیره کنید؟", "سوال", MessageBoxButton.YesNo, MessageBoxImage.Question);
-             if (result == MessageBoxResult.Yes)
-             {
-                 AppSetting.SaveSetting();
-                 this.Close();
-             }
+            CostumMessageBox.MessageResult res = CostumMessageBox.Show("آیا مایلید تنظیمات را ذخیره کنید؟", "سوال",
+                CostumMessageBox.MessageIcons.Question,CostumMessageBox.MessageButtons.OKCancel);
+
+            if (res == CostumMessageBox.MessageResult.OK)
+            {
+                AppSetting.SaveSetting();
+                Close();
+            }
+            else
+                Close();
         }
     }
 }
