@@ -39,10 +39,10 @@ namespace BuffetAssistant
 
         private void ListViewItem_Selected(object sender, RoutedEventArgs e)
         {
-            CostumMessageBox.MessageResult res = CostumMessageBox.Show("آیا مایلید تنظیمات را ذخیره کنید؟", "سوال",
+            CostumMessageBox.MessageResult result = CostumMessageBox.Show("آیا مایلید تنظیمات را ذخیره کنید؟", "سوال",
                 CostumMessageBox.MessageIcons.Question,CostumMessageBox.MessageButtons.OKCancel);
 
-            if (res == CostumMessageBox.MessageResult.OK)
+            if (result == CostumMessageBox.MessageResult.OK)
             {
                 AppSetting.SaveSetting();
                 Close();

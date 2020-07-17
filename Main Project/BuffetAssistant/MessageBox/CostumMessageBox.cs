@@ -33,12 +33,6 @@ namespace BuffetAssistant.MessageBoxes
             Warning,
             OK
         }
-        public static int Show(string text)
-        {
-            messageBoxWindow = new Window1(text);
-            messageBoxWindow.ShowDialog();
-            return 1;
-        }
 
         public static CostumMessageBox.MessageResult Show(string text, string caption, MessageIcons messageIcon, MessageButtons messageButtons)
         {

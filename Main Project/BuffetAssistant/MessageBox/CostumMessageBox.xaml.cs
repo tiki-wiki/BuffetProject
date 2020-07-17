@@ -20,7 +20,7 @@ namespace BuffetAssistant
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public sealed partial  class Window1 : Window
     {
         //varuiable for return value
        public string dialogCode = string.Empty;

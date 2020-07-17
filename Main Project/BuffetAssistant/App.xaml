@@ -9,7 +9,7 @@
         <!--styles-->
         <ResourceDictionary>
 
-            <!--Images-->
+            <!--All software Images-->
             <BitmapImage x:Key="MainwindowBackground" UriSource="Assets\Images\MainWindowBackground.jpeg"/>
             <BitmapImage x:Key="orderIcon" UriSource="Assets\Icons\order.png" />
             <BitmapImage x:Key="reportIcon" UriSource="Assets\Icons\money.png" />

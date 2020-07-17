@@ -14,7 +14,7 @@
 
         <!--control Area grid-->
         <Grid Name="controlArea" MouseDown="controlArea_MouseDown" Margin="0,0,-0.2,195" Background="Transparent">
-            <Border CornerRadius="20,0,0,0" BorderBrush="Transparent" BorderThickness="0.7" Background="#FF92D6FF" Margin="-1,-1,19,0"/>
+            <Border  CornerRadius="20,15,0,0" BorderBrush="Transparent" BorderThickness="0.7" Background="#FF90D5FF" Margin="-1,-1,50,-0.2"/>
             <TextBlock Name="captionLabel" Text="پیام" FontFamily="Byekan" Foreground="Black" TextAlignment="Center" FontSize="16" Margin="157,4,160,0"/>
         </Grid>
 
