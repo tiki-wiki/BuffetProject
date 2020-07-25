@@ -49,12 +49,12 @@
                     <TextBlock Name="percentTextBlock" Text="{Binding ElementName=fontSlider,Path=Value}" Margin="190,0,203.8,197.8"/>
 
                     <!--slider-->
-                    <Slider Margin="64,0,227.8,183.8" Name="fontSlider" FlowDirection="RightToLeft" Value="8" Maximum="48" Minimum="8" TickPlacement="BottomRight"
+                    <Slider Margin="64,0,227.8,183.8" Name="fontSlider" ValueChanged="fontSlider_ValueChanged" FlowDirection="RightToLeft" Value="8" Maximum="48" Minimum="8" TickPlacement="BottomRight"
                         IsSnapToTickEnabled="True"/>
                     
                     <TextBlock Text="نوع قلم:" Margin="0,38,374,155"/>
 
-                    <ComboBox ItemsSource="{x:Static Fonts.SystemFontFamilies}" Name="fontComboBox" Margin="64,38,228,156" FlowDirection="LeftToRight" MaxDropDownHeight="145"/>
+                    <ComboBox SelectionChanged="fontComboBox_SelectionChanged" ItemsSource="{x:Static Fonts.SystemFontFamilies}" Name="fontComboBox" Margin="64,38,228,156" FlowDirection="LeftToRight" MaxDropDownHeight="145"/>
                     
                     <TextBlock Text="رنگ قلم:" Margin="319,0,54.8,192.8"/>
                     

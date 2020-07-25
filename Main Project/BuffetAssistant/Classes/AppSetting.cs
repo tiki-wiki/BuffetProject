@@ -12,13 +12,14 @@ namespace BuffetAssistant.Classes
     internal class AppSetting
     {
         private static readonly string settingsPath = $"{AppDomain.CurrentDomain.BaseDirectory}AppConfig.json";
-        public static AppConfig config { get; set; }
+        public static AppConfiguration config { get; set; }
 
         //methods
         public static void SaveSetting()
         {
             var jsonFile = JsonConvert.SerializeObject(config);
             File.WriteAllText(settingsPath, jsonFile);
+
         }
         public static void SettingReader()
         {
@@ -27,21 +28,21 @@ namespace BuffetAssistant.Classes
                 try
                 {
                     var json = File.ReadAllText(settingsPath);
-                    config = JsonConvert.DeserializeObject<AppConfig>(json);
+                    config = JsonConvert.DeserializeObject<AppConfiguration>(json);
                 }
                 catch
                 {
-                    config = new AppConfig();
+                    config = new AppConfiguration();
                 }
             }
 
         }
-        internal class AppConfig
+        internal class AppConfiguration
         {
             //font section
-            public int FontSize { get; set; }
+            public double FontSize { get; set; }
             public Brushes FontColor { get; set; }
-            public FontFamily FontFamily { get; set; }
+            public object FontFamily { get; set; }
 
             //theme section
             public System.Windows.Media.Brush Theme { get; set; }

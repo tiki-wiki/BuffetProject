@@ -40,8 +40,18 @@ namespace BuffetAssistant.Pages
 
         private void Peek_Theme(object sender, MouseButtonEventArgs e)
         {
-            Label label = sender as Label;
-            AppSetting.config.Theme = label.Background;
+         //   Label label = sender as Label;
+         //   AppSetting.config.Theme = label.Background;
+        }
+
+        private void fontSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+           // AppSetting.config.FontSize = fontSlider.Value;
+        }
+
+        private void fontComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           // AppSetting.config.FontFamily = fontComboBox.SelectedItem;
         }
     }
 }
