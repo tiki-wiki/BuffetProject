@@ -38,10 +38,12 @@
             </Line.RenderTransform>
         </Line>
 
+        <!--text section-->
         <Grid Margin="0,40,-0.2,79.8">
-            <TextBlock TextWrapping="Wrap" Name="messageLabel" Margin="115,19,20,0"  FontSize="13" FontFamily="BYekan" TextAlignment="Right" MaxHeight="122">
-                    متن پیغام
-            </TextBlock>
+            <TextBox TextWrapping="Wrap" IsHitTestVisible="False" Text="متن پیغام" MaxLength="261" Background="Transparent" IsReadOnly="True"
+                     BorderThickness="0" Name="messageSection" Margin="115,19,20,0" 
+                     FontSize="13" FontFamily="BYekan" TextAlignment="Right"/>
+            
             <Image x:Name="messageBoxIcon" Margin="35,30,305,10" Stretch="Uniform" Source="D:\Temp\BuffetProject\Main Project\BuffetAssistant\Assets\Icons\MessageBoxIcons\Information.png"/>
         </Grid>
 

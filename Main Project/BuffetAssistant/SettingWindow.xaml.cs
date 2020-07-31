@@ -40,7 +40,7 @@ namespace BuffetAssistant
         private void ListViewItem_Selected(object sender, RoutedEventArgs e)
         {
             CostumMessageBox.MessageResult result = CostumMessageBox.Show("آیا مایلید تنظیمات را ذخیره کنید؟", "سوال",
-                CostumMessageBox.MessageIcons.Question,CostumMessageBox.MessageButtons.OKCancel);
+                CostumMessageBox.MessageIcons.Question,CostumMessageBox.MessageButtons.OKCancel,CostumMessageBox.MessageOption.LtrReading);
 
             if (result == CostumMessageBox.MessageResult.OK)
             {

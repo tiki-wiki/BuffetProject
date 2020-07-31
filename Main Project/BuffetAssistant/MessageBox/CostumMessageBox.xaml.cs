@@ -30,16 +30,16 @@ namespace BuffetAssistant
         {
             InitializeComponent();
             //initial MessageBox Text
-            messageLabel.Text = text;
+            messageSection.Text = text;
         }
 
         //constructor 2
-        public Window1(string text, string caption, CostumMessageBox.MessageIcons icon, CostumMessageBox.MessageButtons buttons)
+        public Window1(string text, string caption, CostumMessageBox.MessageIcons icon, CostumMessageBox.MessageButtons buttons,CostumMessageBox.MessageOption option)
         {
             InitializeComponent();
 
             //initial MessageBox Text
-            messageLabel.Text = text;
+            messageSection.Text = text;
 
             //initial MessageBox Caption
             captionLabel.Text = caption;
@@ -88,6 +88,16 @@ namespace BuffetAssistant
                     yesBTN.Visibility = Visibility.Hidden;
                     noBTN.Visibility = Visibility.Hidden;
 
+                    break;
+            }
+            //set TextBox Direction
+            switch (option)
+            {
+                case CostumMessageBox.MessageOption.RtlReading:
+                    messageSection.TextAlignment = TextAlignment.Right;
+                    break;
+                case CostumMessageBox.MessageOption.LtrReading:
+                    messageSection.TextAlignment = TextAlignment.Left;
                     break;
             }
         }

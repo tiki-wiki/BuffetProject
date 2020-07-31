@@ -33,10 +33,15 @@ namespace BuffetAssistant.MessageBoxes
             Warning,
             OK
         }
-
-        public static CostumMessageBox.MessageResult Show(string text, string caption, MessageIcons messageIcon, MessageButtons messageButtons)
+        public enum MessageOption
         {
-            messageBoxWindow = new Window1(text, caption, messageIcon, messageButtons);
+            RtlReading,
+            LtrReading
+        }
+
+        public static CostumMessageBox.MessageResult Show(string text, string caption, MessageIcons messageIcon, MessageButtons messageButtons,MessageOption messageOption)
+        {
+            messageBoxWindow = new Window1(text, caption, messageIcon, messageButtons, messageOption);
             messageBoxWindow.ShowDialog();
 
             //cheking idalog result

@@ -6,7 +6,7 @@
         xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
-        Title="تنظیمات" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="460.6" Width="728.2">
+        Title="تنظیمات" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Height="460.6" Width="728.2" ShowInTaskbar="False">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="300*"/>

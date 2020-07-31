@@ -46,13 +46,8 @@ namespace BuffetAssistant
         {
             //chnage opacity
             OrderWindow orderWindow = new OrderWindow();
-            mainGrid.Opacity = 0.4;
-            this.Background.Opacity = 0.4;
+            this.Close();
             orderWindow.ShowDialog();
-
-            if (orderWindow.WindowState == WindowState.Normal)
-                mainGrid.Opacity = 1;
-            this.Background.Opacity = 0.8;
         }
 
         private void settingBTN_Click(object sender, RoutedEventArgs e)

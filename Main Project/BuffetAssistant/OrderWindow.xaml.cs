@@ -24,24 +24,53 @@ namespace BuffetAssistant
             InitializeComponent();
         }
 
-        private void normalOrderBTN_MouseEnter(object sender, MouseEventArgs e)
+
+        private void minimizeBTN_Click(object sender, RoutedEventArgs e)
         {
-            imgNormalgray.Opacity = 0;
+            this.WindowState = WindowState.Minimized;
         }
 
-        private void normalOrderBTN_MouseLeave(object sender, MouseEventArgs e)
+        private void maximizeBTN_Click(object sender, RoutedEventArgs e)
         {
-            imgNormalgray.Opacity = 1;
+            //maximize window
+            if (this.WindowState == WindowState.Normal)
+                this.WindowState = WindowState.Maximized;
 
-        }
-        private void specialOrderBTN_MouseEnter(object sender, MouseEventArgs e)
-        {
-            imgSpecialGray.Opacity = 0;
+            //minimiz window
+            else if (this.WindowState == WindowState.Maximized)
+                this.WindowState = WindowState.Normal;
         }
 
-        private void specialOrderBTN_MouseLeave(object sender, MouseEventArgs e)
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            imgSpecialGray.Opacity = 1;
+            DragMove();
         }
+
+        private void closeBTN_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            new MainWindow().ShowDialog();
+            this.Close();
+        }
+
+        // private void normalOrderBTN_MouseEnter(object sender, MouseEventArgs e)
+        // {
+        //     imgNormalgray.Opacity = 0;
+        // }
+        //
+        // private void normalOrderBTN_MouseLeave(object sender, MouseEventArgs e)
+        // {
+        //     imgNormalgray.Opacity = 1;
+        //
+        // }
+        // private void specialOrderBTN_MouseEnter(object sender, MouseEventArgs e)
+        // {
+        //     imgSpecialGray.Opacity = 0;
+        // }
+        //
+        // private void specialOrderBTN_MouseLeave(object sender, MouseEventArgs e)
+        // {
+        //     imgSpecialGray.Opacity = 1;
+        // }
     }
 }

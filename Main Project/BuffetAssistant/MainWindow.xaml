@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BuffetAssistant"
         xmlns:materialIcon="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" MouseDown="Drag" ResizeMode="CanResize" WindowStartupLocation="CenterScreen" Height="560" Width="960" MinHeight="560" MinWidth="960" WindowStyle="None">
+        Title="MainWindow" MouseDown="Drag" ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen" Height="560" Width="960" MinHeight="560" MinWidth="960" WindowStyle="None">
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource MainwindowBackground}" Opacity="0.8"/>
     </Window.Background>
@@ -15,18 +15,18 @@
     <Window.Resources>
         <RoutedUICommand x:Key="settingCommand" Text="setting"/>
     </Window.Resources>
-    
+
     <!--all command bindings-->
     <Window.CommandBindings>
         <CommandBinding Command="ApplicationCommands.Close" Executed="CloseCommandHandler"/>
         <CommandBinding Command="{StaticResource settingCommand}" Executed="CommandBinding_Executed"/>
     </Window.CommandBindings>
-    
+
     <!--All InputKeys-->
     <Window.InputBindings>
         <KeyBinding Key="S" Modifiers="Alt" Command="{StaticResource settingCommand}"/>
     </Window.InputBindings>
-    
+
     <Grid Name="mainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="119*"/>
@@ -65,7 +65,7 @@
             </Button.Style>
             <StackPanel Orientation="Horizontal" Height="56">
                 <Image Source="{StaticResource orderIcon}" Height="51" Width="73"/>
-                <TextBlock Text="ثبت سفارش" Height="49" Margin="10,15,10,10" TextAlignment="Center"/>
+                <TextBlock Text="سفارشات" Margin="10,15,10,10" TextAlignment="Center"/>
             </StackPanel>
         </Button>
 
