@@ -85,5 +85,8 @@
             </Button.Content>
         </Button>
 
+
+
+        <Image Margin="130,175,470.2,150.2" Name="fooooodiImage"/>
     </Grid>
 </Window>

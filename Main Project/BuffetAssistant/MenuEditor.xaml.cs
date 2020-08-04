@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BuffetAssistant.Classes;
 using Microsoft.Win32;
 namespace BuffetAssistant
 {
@@ -43,6 +44,25 @@ namespace BuffetAssistant
         {
             TextBox infoTextBox = sender as TextBox;
             infoTextBox.Text = string.Empty;
+        }
+
+        private void clearBtn_Click(object sender, RoutedEventArgs e)
+        {
+            nameBox.Clear();
+            numberBox.Clear();
+            IngrediantBox.Clear();
+            nameBox.Text = "نام دسته";
+            numberBox.Text = "شماره";
+            IngrediantBox.Text = "مواد تشکیل دهنده";
+        }
+
+        private void saveBtn_Click(object sender, RoutedEventArgs e)
+        {
+            OrderWindow.foodName = nameBox.Text;
+            OrderWindow.id = numberBox.Text;
+            OrderWindow.image = foodImage.Source;
+            OrderWindow.ingredients = IngrediantBox.Text;
+            this.Close();
         }
     }
 }

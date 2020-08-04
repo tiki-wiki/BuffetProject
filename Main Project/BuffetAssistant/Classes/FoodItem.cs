@@ -20,15 +20,17 @@ namespace BuffetAssistant.Classes
         private string name;
         private string id;
         private ImageSource image;
-        private int rank;
         private string ingredient;
 
-        public FoodItem(string name,string id,ImageSource image,int rank,string ingredient)
+        //seperate field
+        private int rank;
+        //
+
+        public FoodItem(string name,string id,ImageSource image,string ingredient)
         {
             this.name = name;
             this.id = id;
             this.image = image;
-            this.rank = rank;
             this.ingredient = ingredient;
         }
         public string Name

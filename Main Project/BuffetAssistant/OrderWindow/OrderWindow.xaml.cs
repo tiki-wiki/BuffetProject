@@ -21,6 +21,13 @@ namespace BuffetAssistant
     /// </summary>
     public partial class OrderWindow : Window
     {
+        //object definitions
+
+        //transfer variables definition
+        public static string foodName;
+        public static string id;
+        public static ImageSource image;
+        public static string ingredients;
         public OrderWindow()
         {
             InitializeComponent();
