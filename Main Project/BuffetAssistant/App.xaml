@@ -233,7 +233,7 @@
                     <Setter Property="FontFamily" Value="B Yekan"/>
                     <Setter Property="Foreground" Value="White"/>
                     <Setter Property="BorderBrush" Value="Black"/>
-                    <Setter Property="BorderThickness" Value="0.8"/>
+                    <Setter Property="BorderThickness" Value="0.5"/>
                     <Setter Property="BitmapEffect">
                         <Setter.Value>
                             <DropShadowBitmapEffect ShadowDepth="2" Softness="2" Opacity="0.3" Color="Black"/>

@@ -103,7 +103,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="OrderWindow.xaml">
+    <Page Include="OrderWindow\OrderWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,7 +121,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OrderWindow.xaml.cs">
+    <Compile Include="OrderWindow\OrderWindow.xaml.cs">
       <DependentUpon>OrderWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">

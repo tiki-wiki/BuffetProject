@@ -72,7 +72,7 @@
         <!--Button Report-->
         <Button x:Name="reportBTN" Grid.Row="4" Grid.Column="1" Click="reportBTN_Click_1">
             <Button.Resources>
-                <Style TargetType="{x:Type Border}">
+                <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </Button.Resources>

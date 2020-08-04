@@ -25,7 +25,6 @@ namespace BuffetAssistant
         public OrderWindow()
         {
             InitializeComponent();
-
         }
 
         private void minimizeBTN_Click(object sender, RoutedEventArgs e)
@@ -69,8 +68,13 @@ namespace BuffetAssistant
         private void addBtn_Click(object sender, RoutedEventArgs e)
         {
 
-
         }
+
+        private void removeBTN_Click(object sender, RoutedEventArgs e)
+        {
+            menuBox.Items.Remove(menuBox.SelectedItem);
+        }
+
         // private void normalOrderBTN_MouseEnter(object sender, MouseEventArgs e)
         // {
         //     imgNormalgray.Opacity = 0;
