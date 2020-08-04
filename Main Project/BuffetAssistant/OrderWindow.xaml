@@ -59,6 +59,7 @@
         </StackPanel>
 
         <!--Food Menu Buttons-->
+
         <Button Style="{StaticResource orderWindowBTN}"  Margin="875,540,40.2,20.2">
             <Button.Content>
                 <StackPanel Orientation="Horizontal">
@@ -83,5 +84,6 @@
                 </StackPanel>
             </Button.Content>
         </Button>
+
     </Grid>
 </Window>
