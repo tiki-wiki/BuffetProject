@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BuffetAssistant.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,6 @@ namespace BuffetAssistant
         {
             InitializeComponent();
         }
-
 
         private void minimizeBTN_Click(object sender, RoutedEventArgs e)
         {

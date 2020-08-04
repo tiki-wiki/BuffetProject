@@ -53,32 +53,6 @@
                 </Style.Setters>
             </Style>
 
-            <!--order window button styles-->
-            <Style x:Key="orderWindowBTN" TargetType="Button">
-                <Style.Setters>
-                    <Setter Property="Background">
-                        <Setter.Value>
-                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1" Opacity="0.8">
-                                <GradientStop Color="#FF51FFB8" Offset="1.8"/>
-                                <GradientStop Color="#FF39B89C" Offset="0.3"/>
-                            </LinearGradientBrush>
-                        </Setter.Value>
-                    </Setter>
-                    <Setter Property="Width" Value="180"/>
-                    <Setter Property="Height" Value="45"/>
-                    <Setter Property="FontSize" Value="19" />
-                    <Setter Property="FontFamily" Value="B Yekan"/>
-                    <Setter Property="Foreground" Value="White"/>
-                    <Setter Property="BorderBrush" Value="Black"/>
-                    <Setter Property="BorderThickness" Value="0.8"/>
-                    <Setter Property="BitmapEffect">
-                        <Setter.Value>
-                            <DropShadowBitmapEffect ShadowDepth="9" Softness="2" Opacity="0.3" Color="Black"/>
-                        </Setter.Value>
-                    </Setter>
-                </Style.Setters>
-            </Style>
-
             <!--Setting Window section-->
             <Style x:Key="listViewText" TargetType="TextBlock">
                 <Style.Setters>
@@ -156,9 +130,7 @@
 
             <!--ListView style-->
             <Style x:Key="listViewItems" TargetType="ListBoxItem">
-                <Style.Setters>
-                    <Setter Property="Height" Value="45"/>
-                </Style.Setters>
+                <Setter Property="Height" Value="45"/>
 
                 <!--change selected item color-->
                 <Style.Triggers>
@@ -225,11 +197,11 @@
                 </Style.Setters>
                 <Style.Triggers>
                     <DataTrigger Binding="{Binding ElementName=searchBox,Path=IsKeyboardFocused}" Value="True">
-                        
+
                         <DataTrigger.EnterActions>
                             <BeginStoryboard>
                                 <Storyboard>
-                                    <DoubleAnimation Duration="0:0:0.8" To="230"  Storyboard.TargetProperty="Width"/>
+                                    <DoubleAnimation Duration="0:0:0.5" To="230"  Storyboard.TargetProperty="Width"/>
                                 </Storyboard>
                             </BeginStoryboard>
                         </DataTrigger.EnterActions>
@@ -237,13 +209,37 @@
                         <DataTrigger.ExitActions>
                             <BeginStoryboard>
                                 <Storyboard>
-                                    <DoubleAnimation Duration="0:0:0.8" To="70"  Storyboard.TargetProperty="Width"/>
+                                    <DoubleAnimation Duration="0:0:0.5" To="70"  Storyboard.TargetProperty="Width"/>
                                 </Storyboard>
                             </BeginStoryboard>
                         </DataTrigger.ExitActions>
 
                     </DataTrigger>
                 </Style.Triggers>
+            </Style>
+            
+            <!--Order Window Buttons Style-->
+            <Style x:Key="orderWindowBTN" TargetType="Button">
+                <Style.Setters>
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1" Opacity="0.8">
+                                <GradientStop Color="#FF51FFB8" Offset="1.8"/>
+                                <GradientStop Color="#FF39B89C" Offset="0.3"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="FontSize" Value="12" />
+                    <Setter Property="FontFamily" Value="B Yekan"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+                    <Setter Property="BorderThickness" Value="0.8"/>
+                    <Setter Property="BitmapEffect">
+                        <Setter.Value>
+                            <DropShadowBitmapEffect ShadowDepth="2" Softness="2" Opacity="0.3" Color="Black"/>
+                        </Setter.Value>
+                    </Setter>
+                </Style.Setters>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

@@ -38,13 +38,50 @@
             </Grid>
         </Border>
 
-        <StackPanel Margin="675,35,10.2,0.2">
-            <TextBox Width="230" Height="25" MaxLength="40"  x:Name="searchBox" GotFocus="TextBox_GotFocus" LostFocus="searchBox_LostFocus" TextAlignment="Center" 
+        <StackPanel Margin="675,35,25.2,60.2" Name="menuPanel">
+
+            <TextBox Width="230" Height="25" MaxLength="40"  Name="searchBox" GotFocus="TextBox_GotFocus" LostFocus="searchBox_LostFocus" TextAlignment="Center" 
                      Text="... جست و جو" Foreground="Gray" FontFamily="BYekan" BorderThickness="0" Margin="5,0"/>
+
             <Border Style="{StaticResource serachBorder}"/>
+
+            <!--Food Menu-->
+            <ListBox Name="menuBox" Height="454" Margin="0,10,0.2,0" HorizontalContentAlignment="Right" FontFamily="Byekan" FontSize="25">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
         </StackPanel>
 
-        <Button Width="100" Height="50">Button</Button>
-
+        <!--Food Menu Buttons-->
+        <Button Style="{StaticResource orderWindowBTN}"  Margin="875,540,40.2,20.2">
+            <Button.Content>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="اضافه "/>
+                    <materialIcon:PackIcon Kind="AddCircle" Height="19"/>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource orderWindowBTN}" Margin="790,540,125.2,20.2"         >
+            <Button.Content>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="حذف "/>
+                    <materialIcon:PackIcon Kind="RemoveCircle" Height="19"/>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+        <Button Style="{StaticResource orderWindowBTN}"  Margin="705,540,210.2,20.2">
+            <Button.Content>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="تغییر "/>
+                    <materialIcon:PackIcon Kind="FormatListCheckbox" Height="19"/>
+                </StackPanel>
+            </Button.Content>
+        </Button>
     </Grid>
 </Window>
