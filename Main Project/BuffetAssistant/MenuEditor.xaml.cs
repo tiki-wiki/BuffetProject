@@ -31,13 +31,18 @@ namespace BuffetAssistant
             iconSource.EndInit();
             return iconSource;
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void imageBtn_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog imageFile = new OpenFileDialog();
             imageFile.Filter = "Image Files (*.jpg)|*.jpg|(*.png)|*.png|(*.ico)|*.ico";
             if (imageFile.ShowDialog() == true)
                 foodImage.Source = GetImageSource(imageFile.FileName);
+        }
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox infoTextBox = sender as TextBox;
+            infoTextBox.Text = string.Empty;
         }
     }
 }

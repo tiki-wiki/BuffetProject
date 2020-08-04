@@ -12,8 +12,15 @@
         <Border BorderBrush="Black" BorderThickness="0.6" Margin="10,10,208.6,151.2">
             <Image Name="foodImage" Stretch="Fill"/>
         </Border>
-        <TextBox Margin="160,10,23.6,236.2" Text="دسته" TextAlignment="Right"/>
-        <TextBox Margin="160,91,23.6,10.2" Text="مواد تشکیل دهنده" TextAlignment="Right"/>
-        <TextBox Margin="160,46,23.6,200.2" Text="شماره" TextAlignment="Right"/>
+
+        <!--Text Based Information-->
+        <TextBox Margin="160,10,23.6,236.2" Text="نام دسته" TextAlignment="Center" FontFamily="BNazanin" GotFocus="TextBox_GotFocus"/>
+        <TextBox Margin="160,46,23.6,200.2" Text="شماره" TextAlignment="Center" FontFamily="BNazanin" GotFocus="TextBox_GotFocus"/>
+        <TextBox Margin="160,91,23.6,26.2" Text="مواد تشکیل دهنده" TextAlignment="Right" FontFamily="BNazanin" GotFocus="TextBox_GotFocus"/>
+
+        <!--Buttons-->
+        <Button Name="imageBtn"  Click="imageBtn_Click" Margin="25,135,228.6,106.2" Content="عکس" FontFamily="BYekan"/>
+        <Button Name="clearBtn" Margin="25,176,228.6,66.2" Content="پاک کردن" FontFamily="BYekan"/>
+        <Button Name="saveBtn" Margin="25,215,228.6,26.2" Content="ذخیره" FontFamily="BYekan"/>
     </Grid>
 </Window>
