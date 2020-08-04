@@ -14,7 +14,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
 namespace BuffetAssistant
 {
     /// <summary>
@@ -67,7 +66,8 @@ namespace BuffetAssistant
 
         private void addBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            MenuEditor editor = new MenuEditor();
+            editor.ShowDialog();
         }
 
         private void removeBTN_Click(object sender, RoutedEventArgs e)

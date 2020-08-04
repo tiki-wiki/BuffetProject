@@ -75,6 +75,9 @@
     </ApplicationDefinition>
     <Compile Include="Classes\AppSetting.cs" />
     <Compile Include="Classes\FoodItem.cs" />
+    <Compile Include="MenuEditor.xaml.cs">
+      <DependentUpon>MenuEditor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MessageBox\CostumMessageBox.cs" />
     <Compile Include="Pages\GeneralSettingsPage.xaml.cs">
       <DependentUpon>GeneralSettingsPage.xaml</DependentUpon>
@@ -103,6 +106,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MenuEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="OrderWindow\OrderWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
