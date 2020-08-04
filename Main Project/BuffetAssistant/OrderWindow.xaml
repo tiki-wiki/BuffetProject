@@ -38,7 +38,13 @@
             </Grid>
         </Border>
 
+        <StackPanel Margin="675,35,10.2,0.2">
+            <TextBox Width="230" Height="25" MaxLength="40"  x:Name="searchBox" GotFocus="TextBox_GotFocus" LostFocus="searchBox_LostFocus" TextAlignment="Center" 
+                     Text="... جست و جو" Foreground="Gray" FontFamily="BYekan" BorderThickness="0" Margin="5,0"/>
+            <Border Style="{StaticResource serachBorder}"/>
+        </StackPanel>
 
+        <Button Width="100" Height="50">Button</Button>
 
     </Grid>
 </Window>

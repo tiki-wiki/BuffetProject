@@ -53,6 +53,16 @@ namespace BuffetAssistant
             this.Close();
         }
 
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            searchBox.Text = string.Empty;
+        }
+
+        private void searchBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            searchBox.Text = "... جست و جو";
+        }
+
         // private void normalOrderBTN_MouseEnter(object sender, MouseEventArgs e)
         // {
         //     imgNormalgray.Opacity = 0;

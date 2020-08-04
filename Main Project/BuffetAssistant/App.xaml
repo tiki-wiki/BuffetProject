@@ -153,7 +153,7 @@
                     </Setter.Value>
                 </Setter>
             </Style>
-            
+
             <!--ListView style-->
             <Style x:Key="listViewItems" TargetType="ListBoxItem">
                 <Style.Setters>
@@ -215,6 +215,36 @@
                 </Style.Setters>
             </Style>
 
+
+            <!--OrderWindow Section-->
+            <Style x:Key="serachBorder" TargetType="Border">
+                <Style.Setters>
+                    <Setter Property="Width" Value="70"/>
+                    <Setter Property="BorderThickness" Value="0.3"/>
+                    <Setter Property="BorderBrush" Value="Gray"/>
+                </Style.Setters>
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding ElementName=searchBox,Path=IsKeyboardFocused}" Value="True">
+                        
+                        <DataTrigger.EnterActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Duration="0:0:0.8" To="230"  Storyboard.TargetProperty="Width"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </DataTrigger.EnterActions>
+
+                        <DataTrigger.ExitActions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Duration="0:0:0.8" To="70"  Storyboard.TargetProperty="Width"/>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </DataTrigger.ExitActions>
+
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
