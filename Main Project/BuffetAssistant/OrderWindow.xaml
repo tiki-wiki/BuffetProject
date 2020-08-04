@@ -50,7 +50,7 @@
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-
+                            <TextBlock Text="{Binding Category}"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
@@ -60,7 +60,7 @@
 
         <!--Food Menu Buttons-->
 
-        <Button Style="{StaticResource orderWindowBTN}"  Margin="875,540,40.2,20.2">
+        <Button Style="{StaticResource orderWindowBTN}" Name="addBtn" Click="addBtn_Click" Margin="875,540,40.2,20.2">
             <Button.Content>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Text="اضافه "/>

@@ -1,6 +1,8 @@
 ﻿using BuffetAssistant.Classes;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,7 @@ namespace BuffetAssistant
         public OrderWindow()
         {
             InitializeComponent();
+
         }
 
         private void minimizeBTN_Click(object sender, RoutedEventArgs e)
@@ -63,6 +66,11 @@ namespace BuffetAssistant
             searchBox.Text = "... جست و جو";
         }
 
+        private void addBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+
+        }
         // private void normalOrderBTN_MouseEnter(object sender, MouseEventArgs e)
         // {
         //     imgNormalgray.Opacity = 0;
