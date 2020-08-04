@@ -74,6 +74,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\AppSetting.cs" />
+    <Compile Include="Classes\FoodMenu.cs" />
     <Compile Include="MessageBox\CostumMessageBox.cs" />
     <Compile Include="Pages\GeneralSettingsPage.xaml.cs">
       <DependentUpon>GeneralSettingsPage.xaml</DependentUpon>
