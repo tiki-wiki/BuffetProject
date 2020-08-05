@@ -58,10 +58,10 @@ namespace BuffetAssistant
 
         private void saveBtn_Click(object sender, RoutedEventArgs e)
         {
-            OrderWindow.foodName = nameBox.Text;
-            OrderWindow.id = numberBox.Text;
-            OrderWindow.image = foodImage.Source;
-            OrderWindow.ingredients = IngrediantBox.Text;
+            ((OrderWindow)Application.Current.Windows[0]).categoryName = nameBox.Text;
+            ((OrderWindow)Application.Current.Windows[0]).id = numberBox.Text;
+            ((OrderWindow)Application.Current.Windows[0]).image = foodImage.Source;
+            ((OrderWindow)Application.Current.Windows[0]).ingredients = IngrediantBox.Text;
             this.Close();
         }
     }

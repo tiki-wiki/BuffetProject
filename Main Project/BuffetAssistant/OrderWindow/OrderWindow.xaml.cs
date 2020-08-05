@@ -21,16 +21,17 @@ namespace BuffetAssistant
     /// </summary>
     public partial class OrderWindow : Window
     {
-        //object definitions
 
-        //transfer variables definition
-        public static string foodName;
-        public static string id;
-        public static ImageSource image;
-        public static string ingredients;
+        //transfering variables Definition
+        public string categoryName;
+        public string id;
+        public ImageSource image;
+        public string ingredients;
+
         public OrderWindow()
         {
             InitializeComponent();
+            myBox.Text = ingredients;
         }
 
         private void minimizeBTN_Click(object sender, RoutedEventArgs e)
@@ -81,25 +82,5 @@ namespace BuffetAssistant
         {
             menuBox.Items.Remove(menuBox.SelectedItem);
         }
-
-        // private void normalOrderBTN_MouseEnter(object sender, MouseEventArgs e)
-        // {
-        //     imgNormalgray.Opacity = 0;
-        // }
-        //
-        // private void normalOrderBTN_MouseLeave(object sender, MouseEventArgs e)
-        // {
-        //     imgNormalgray.Opacity = 1;
-        //
-        // }
-        // private void specialOrderBTN_MouseEnter(object sender, MouseEventArgs e)
-        // {
-        //     imgSpecialGray.Opacity = 0;
-        // }
-        //
-        // private void specialOrderBTN_MouseLeave(object sender, MouseEventArgs e)
-        // {
-        //     imgSpecialGray.Opacity = 1;
-        // }
     }
 }

@@ -14,8 +14,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        
-        
+
         <Border Margin="0,0,0.2,565.2" MouseDown="Border_MouseDown" Grid.Row="0">
             <Border.Background>
                 <LinearGradientBrush StartPoint="1,0" EndPoint="1,1" Opacity="0.8">
@@ -90,7 +89,6 @@
             </Button.Content>
         </Button>
 
-
-
+        <TextBox Margin="180,160,575.2,235.6" Name="myBox"/>
     </Grid>
 </Window>
