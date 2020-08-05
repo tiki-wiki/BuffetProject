@@ -11,7 +11,12 @@
 
 
     <Grid Name="orderGrid" Background="White">
-        <Border Margin="0,0,0.2,565.2" MouseDown="Border_MouseDown">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        
+        <Border Margin="0,0,0.2,565.2" MouseDown="Border_MouseDown" Grid.Row="0">
             <Border.Background>
                 <LinearGradientBrush StartPoint="1,0" EndPoint="1,1" Opacity="0.8">
                     <GradientStop Color="#FF51FFB8" Offset="1.8"/>
@@ -38,7 +43,7 @@
             </Grid>
         </Border>
 
-        <StackPanel Margin="675,35,25.2,60.2" Name="menuPanel">
+        <StackPanel Margin="675,35,25.2,60.2" Name="menuPanel" >
 
             <TextBox Width="230" Height="25" MaxLength="40"  Name="searchBox" GotFocus="TextBox_GotFocus" LostFocus="searchBox_LostFocus" TextAlignment="Center" 
                      Text="... جست و جو" Foreground="Gray" FontFamily="BYekan" BorderThickness="0" Margin="5,0"/>
@@ -87,6 +92,5 @@
 
 
 
-        <Image Margin="130,175,470.2,150.2" Name="fooooodiImage"/>
     </Grid>
 </Window>
