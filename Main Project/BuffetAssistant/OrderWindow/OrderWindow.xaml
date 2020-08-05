@@ -88,7 +88,5 @@
                 </StackPanel>
             </Button.Content>
         </Button>
-
-        <TextBox Margin="180,160,575.2,235.6" Name="myBox"/>
     </Grid>
 </Window>

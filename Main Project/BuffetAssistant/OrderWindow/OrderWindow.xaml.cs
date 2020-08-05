@@ -31,7 +31,6 @@ namespace BuffetAssistant
         public OrderWindow()
         {
             InitializeComponent();
-            myBox.Text = ingredients;
         }
 
         private void minimizeBTN_Click(object sender, RoutedEventArgs e)
