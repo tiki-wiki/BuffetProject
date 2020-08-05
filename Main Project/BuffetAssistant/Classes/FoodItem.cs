@@ -33,6 +33,10 @@ namespace BuffetAssistant.Classes
             this.image = image;
             this.ingredient = ingredient;
         }
+        public FoodItem()
+        {
+
+        }
         public string Name
         {
             get { return name; }

@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:BuffetAssistant"
         mc:Ignorable="d"
         Title="سفارش" Height="600" Width="1000" ResizeMode="CanResizeWithGrip" WindowStyle="None"
-        MinHeight="600" Background="Transparent" MinWidth="1000" WindowStartupLocation="CenterScreen">
+        MinHeight="600" Background="Transparent" MinWidth="1000" WindowStartupLocation="CenterScreen" GotFocus="Window_GotFocus">
 
 
     <Grid Name="orderGrid" Background="White">
@@ -50,11 +50,14 @@
             <Border Style="{StaticResource serachBorder}"/>
 
             <!--Food Menu-->
-            <ListBox SelectionMode="Multiple" Name="menuBox" Height="454" Margin="0,10,0.2,0" HorizontalContentAlignment="Right" FontFamily="Byekan" FontSize="25">
+            <ListBox SelectionMode="Single" Name="menuBox" Height="454" Margin="0,10,0.2,0" HorizontalContentAlignment="Right" FontFamily="Byekan" FontSize="25">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding Category}"/>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="{Binding Name}" FontSize="15"/>
+                            <Image Source="{Binding Image}" Stretch="Uniform" Width="50" Height="50"/>
+                            <TextBlock Text="{Binding ID}" FontSize="15"/>
+                            <TextBlock Text="{Binding Ingredient}" FontSize="15"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

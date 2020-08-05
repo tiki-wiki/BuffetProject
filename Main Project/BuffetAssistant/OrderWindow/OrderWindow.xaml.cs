@@ -1,4 +1,5 @@
 ﻿using BuffetAssistant.Classes;
+using BuffetAssistant.MessageBoxes;
 using System;
 using System.CodeDom;
 using System.Collections.Generic;
@@ -31,6 +32,7 @@ namespace BuffetAssistant
         public OrderWindow()
         {
             InitializeComponent();
+
         }
 
         private void minimizeBTN_Click(object sender, RoutedEventArgs e)
@@ -79,7 +81,27 @@ namespace BuffetAssistant
 
         private void removeBTN_Click(object sender, RoutedEventArgs e)
         {
-            menuBox.Items.Remove(menuBox.SelectedItem);
+            try
+            {
+                if (menuBox.SelectedItem != null)
+                    menuBox.Items.Remove(menuBox.SelectedItem);
+                else
+                {
+                    CostumMessageBox.Show("لطفا یک مورد را انتخاب کنید", "هشدار", CostumMessageBox.MessageIcons.Warning,
+                        CostumMessageBox.MessageButtons.OK, CostumMessageBox.MessageOption.RtlReading);
+                }
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void Window_GotFocus(object sender, RoutedEventArgs e)
+        {
+            ObservableCollection<FoodItem> foodList = new ObservableCollection<FoodItem>();
+            foodList.Add(new FoodItem { Name = categoryName, ID = id, Image = image, Ingredient = ingredients });
+            menuBox.ItemsSource = foodList;
         }
     }
 }
